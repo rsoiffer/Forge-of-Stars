@@ -3,7 +3,8 @@ layout: default
 ---
 
 <ul>
-{% for page in site.data.pages %}
+{% assign nav_pages = site.pages | where_exp: "page", "page.title" %}
+{% for page in nav_pages %}
   <li><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endfor %}
 </ul>
