@@ -1,0 +1,13 @@
+---
+layout: page
+title: Power Schools
+---
+{% for category in site.data.schools %}
+  <h2>{{ category.category }}</h2>
+
+  <ul>
+  {% for school in category.schools %}
+    <li>{{ school }}</li>
+  {% endfor %}
+  </ul>
+{% endfor %}
