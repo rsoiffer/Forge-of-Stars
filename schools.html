@@ -5,12 +5,15 @@ sidebar:
   nav: "system"
 ---
 
-{% for category in site.data.schools %}
-  <h2>{{ category.category }}</h2>
+{% for category in site.data.power_schools %}
+  <h2>{{ category[0] }}</h2>
 
-  <ul>
-  {% for school in category.schools %}
-    <li>{{ school }}</li>
+  <table>
+  {% for school in category[1] %}
+    <tr>
+      <td>{{ school[0] }}</td>
+      <td>{{ school[1] }}</td>
+    </tr>
   {% endfor %}
-  </ul>
+  </table>
 {% endfor %}

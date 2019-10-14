@@ -28,9 +28,14 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minimal-mistakes-jekyll
-plugins: []
 
 minimal_mistakes_skin: sunrise
+
+page_gen:
+  - data: schools.strong_melee_dude.powers
+    name: name
+    template: power
+    dir: powers
 
 # Exclude from processing.
 # The following items will not be processed, by default.

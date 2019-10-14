@@ -1,0 +1,19 @@
+---
+layout: single
+title: {{ page.data.name }}
+sidebar:
+  nav: "system"
+---
+
+{{ page.data.type }}
+
+{% for trait in page.data.traits %}
+  [{{ trait }}]
+{% endfor %}
+
+<dl>
+{% for tag in page.data.tags %}
+  <dt>{{ tag[0] | capitalize }}</dt>
+  <dd>{{ tag[1] }}</dd>
+{% endfor %}
+</dl>
