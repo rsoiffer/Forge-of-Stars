@@ -27,8 +27,10 @@ baseurl: /Forge-of-Stars # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: jekyll-theme-slate
+theme: minimal-mistakes-jekyll
 plugins: []
+
+minimal_mistakes_skin: sunrise
 
 # Exclude from processing.
 # The following items will not be processed, by default.
