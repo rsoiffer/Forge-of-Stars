@@ -32,6 +32,10 @@ theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: sunrise
 
 page_gen:
+  - data: schools
+    name: 0
+    template: school
+    dir: schools
   - data: powers
     name: 0
     template: power

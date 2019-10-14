@@ -1,0 +1,18 @@
+---
+layout: single
+sidebar:
+  nav: system
+---
+
+{% assign school = page.data[1] %}
+
+{{ school.description }}
+
+<table>
+{% for power in school.powers %}
+  <tr>
+    <td>{{ power }}</td>
+    <td>{{ site.data.powers[power].type }}</td>
+  </tr>
+{% endfor %}
+</table>
