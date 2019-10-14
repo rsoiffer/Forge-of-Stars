@@ -2,7 +2,19 @@
 
 set -e
 
-dest=${1?please provide destination directory}
+saved_dest="$(dirname "$0")/.deploydest"
+if [ "$1" ]
+then
+    dest="$(cd "$1" && pwd)"
+    echo "$dest" > "$saved_dest"
+elif [ -f "$saved_dest" ]
+then
+    dest="$(cat "$saved_dest")"
+else
+    echo "Please provide destination directory:"
+    echo "$0 destination"
+    exit 1
+fi
 
 bundle exec jekyll build --destination "$dest" --trace
 
@@ -19,7 +31,7 @@ else
     do
         case $choice in
             "Commit and Push")
-                git commit -m "Rebuild site"
+                git commit --message="Rebuild site"
                 git push
                 break
                 ;;
@@ -31,4 +43,4 @@ else
     done
 fi
 
-cd -
+cd - > /dev/null
