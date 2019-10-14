@@ -5,8 +5,8 @@ powers:
 - name: Rage
   type: 1-Action, Encounter
   traits: [Concentrate, Emotion, Mental]
-  effect: "You tap into your inner fury and begin raging. You gain temporary HP equal to your level + CON. While raging, you deal 2 additional damage with melee strikes, you take a -1 penalty to AC, and you can’t use actions with the Concentrate trait unless they also have the Rage trait."
-  duration: "1 minute, until you can’t sense any enemies, or until you fall unconscious"
+  effect: "You tap into your inner fury and begin raging. You gain temporary HP equal to your level + CON. While raging, you deal 2 additional damage with melee strikes, you take a -1 penalty to AC, and you canï¿½t use actions with the Concentrate trait unless they also have the Rage trait."
+  duration: "1 minute, until you canï¿½t sense any enemies, or until you fall unconscious"
 
 - name: Sudden Charge
   type: 2-Action, Encounter
