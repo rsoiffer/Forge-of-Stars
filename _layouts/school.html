@@ -11,7 +11,9 @@ sidebar:
 <table>
 {% for power in school.powers %}
   <tr>
-    <td>{{ power }}</td>
+    <td>
+      <a href="{% link powers/{{ power | slugify }}.html %}">{{ power }}</a>
+    </td>
     <td>{{ site.data.powers[power].type }}</td>
   </tr>
 {% endfor %}
