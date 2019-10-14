@@ -29,6 +29,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 theme: minimal-mistakes-jekyll
 
+feed:
+  path: ""
+
 minimal_mistakes_skin: sunrise
 
 page_gen:
