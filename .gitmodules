@@ -1,0 +1,4 @@
+[submodule "_site"]
+	path = _site
+	url = git@github.com:rsoiffer/Forge-of-Stars.git
+	branch = gh-pages
