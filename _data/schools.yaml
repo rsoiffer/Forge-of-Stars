@@ -1,0 +1,126 @@
+Acrobat:
+  brief: "jumping around"
+  description: ""
+  powers: []
+
+Duelist:
+  brief: "It's time to D-d-d-d-duel!"
+  description: ""
+  powers: []
+
+Stance Master:
+  brief: "all those lightsaber forms"
+  description: ""
+  powers: []
+
+Strong Melee Dude:
+  brief: "big and strong"
+  description: |
+    A strong melee dude, who likes being strong and fighting in melee. The dude
+    part is optional, and doesn't signify gender or anything. Strong melee dudes
+    like punching things or hitting things, especially when those things are
+    enemies or are getting in the way.
+  powers:
+    - Rage
+    - Sudden Charge
+    - Power Attack
+
+Demolitionist:
+  brief: "boom"
+  description: ""
+  powers: []
+
+Machine Gunner:
+  brief: "I am Heavy Weapons Guy"
+  description: ""
+  powers: []
+
+Rogue:
+  brief: "very lucky"
+  description: ""
+  powers: []
+
+Sniper:
+  brief: "karko"
+  description: ""
+  powers: []
+
+Enhancer:
+  brief: "misc buff spells"
+  description: ""
+  powers: []
+
+Mastermind:
+  brief: "chessmaster and friends"
+  description: ""
+  powers: []
+
+Medic:
+  brief: "non-magic healing"
+  description: ""
+  powers: []
+
+Warlord:
+  brief: "the melee parts of tactician"
+  description: ""
+  powers: []
+
+Drone Controller:
+  brief: "non-magic minionmancy"
+  description: ""
+  powers: []
+
+Engineer:
+  brief: "upgrades weapons"
+  description: ""
+  powers: []
+
+Gadgeteer:
+  brief: "builds weird misc. gadgets"
+  description: ""
+  powers: []
+
+Power Armor:
+  brief: "I am Iron Man"
+  description: ""
+  powers: []
+
+Divination:
+  brief: "see the future"
+  description: ""
+  powers: []
+
+Force Pushing:
+  brief: "all those telekinetic things"
+  description: ""
+  powers: []
+
+Illusions:
+  brief: "basically Loki"
+  description: ""
+  powers: []
+
+Mind Controlling:
+  brief: "This is not the power school you're looking for"
+  description: ""
+  powers: []
+
+Elemental Magic:
+  brief: "call lightning, fly"
+  description: ""
+  powers: []
+
+Fundamentalist:
+  brief: "control space, time, and magic"
+  description: ""
+  powers: []
+
+Life/Death Magic:
+  brief: "control life, death, and zombies"
+  description: ""
+  powers: []
+
+Shaping Pure Magic:
+  brief: "basically scarlet witch"
+  description: ""
+  powers: []

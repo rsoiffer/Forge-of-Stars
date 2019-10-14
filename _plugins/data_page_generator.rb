@@ -49,6 +49,7 @@ module Jekyll
 
         self.process(@name)
         self.read_yaml(File.join(base, '_layouts'), template + ".html")
+        self.data['title'] = data[name]
         self.data['data'] = data
       end
     end

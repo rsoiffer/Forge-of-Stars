@@ -32,8 +32,8 @@ theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: sunrise
 
 page_gen:
-  - data: schools.strong_melee_dude.powers
-    name: name
+  - data: powers
+    name: 0
     template: power
     dir: powers
 

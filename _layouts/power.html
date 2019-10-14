@@ -1,18 +1,19 @@
 ---
 layout: single
-title: {{ page.data.name }}
 sidebar:
-  nav: "system"
+  nav: system
 ---
 
-{{ page.data.type }}
+{% assign power = page.data[1] %}
 
-{% for trait in page.data.traits %}
+{{ power.type }}
+
+{% for trait in power.traits %}
   [{{ trait }}]
 {% endfor %}
 
 <dl>
-{% for tag in page.data.tags %}
+{% for tag in power.tags %}
   <dt>{{ tag[0] | capitalize }}</dt>
   <dd>{{ tag[1] }}</dd>
 {% endfor %}

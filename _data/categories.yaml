@@ -1,0 +1,35 @@
+Fighter:
+  - Acrobat
+  - Duelist
+  - Stance Master
+  - Strong Melee Dude
+
+Shooter:
+  - Demolitionist
+  - Machine Gunner
+  - Rogue
+  - Sniper
+
+Support:
+  - Enhancer
+  - Mastermind
+  - Medic
+  - Warlord
+
+Techie:
+  - Drone Controller
+  - Engineer
+  - Gadgeteer
+  - Power Armor
+
+Psion:
+  - Divination
+  - Force Pushing
+  - Illusions
+  - Mind Controlling
+
+Sorcerer:
+  - Elemental Magic
+  - Fundamentalist
+  - Life/Death Magic
+  - Shaping Pure Magic
