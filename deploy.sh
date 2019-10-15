@@ -44,3 +44,10 @@ else
 fi
 
 cd - > /dev/null
+
+if [ "$1" ]
+then
+    echo
+    echo "Note: This script will remember the destination $dest."
+    echo "You can run it again without arguments: $0"
+fi
