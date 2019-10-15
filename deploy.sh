@@ -27,16 +27,16 @@ then
 else
     git status
     
-    select choice in "Commit and Push" "Cancel"
+    while true
     do
-        case $choice in
-            "Commit and Push")
+        read -p "Commit and push? [Yn] " answer
+        case $answer in
+            [Yy] | "")
                 git commit --message="Rebuild site"
                 git push
                 break
                 ;;
-            "Cancel")
-                echo "Canceled."
+            [Nn])
                 break
                 ;;
         esac
