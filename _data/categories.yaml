@@ -1,35 +1,41 @@
 Fighter:
   - Acrobat
+  - Berserker
+  - Champion
   - Duelist
   - Stance Master
-  - Strong Melee Dude
 
-Shooter:
+Sharpshooter:
+  - Assassin
   - Demolitionist
   - Machine Gunner
   - Rogue
   - Sniper
 
-Support:
-  - Enhancer
+Expert:
+  - Battlesmith
+  - Gadgeteer
   - Mastermind
-  - Medic
+  - Roboticist
   - Warlord
 
-Techie:
-  - Drone Controller
-  - Engineer
-  - Gadgeteer
-  - Power Armor
-
-Psion:
-  - Divination
-  - Force Pushing
-  - Illusions
-  - Mind Controlling
+Thaumaturge:
+  - Diviner
+  - Elementalist
+  - Fundamentalist
+  - Necromancer
+  - Psion
 
 Sorcerer:
-  - Elemental Magic
-  - Fundamentalist
-  - Life/Death Magic
-  - Shaping Pure Magic
+  - Artificer
+  - Blaster
+  - Illusionist
+  - Occultist
+  - Summoner
+
+Mystic:
+  - Druid
+  - Enhancer
+  - Invoker
+  - Shapeshifter
+  - Telekinetic

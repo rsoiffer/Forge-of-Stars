@@ -1,126 +1,156 @@
 Acrobat:
-  brief: "jumping around"
+  brief: "You dodge and weave across the battlefield, moving with incredible speed"
   description: ""
   powers: []
 
-Duelist:
-  brief: "It's time to D-d-d-d-duel!"
-  description: ""
-  powers: []
-
-Stance Master:
-  brief: "all those lightsaber forms"
-  description: ""
-  powers: []
-
-Strong Melee Dude:
-  brief: "big and strong"
+Berserker:
+  brief: "You smash enemies with aggressive bursts of murderous rage"
   description: |
     A strong melee dude, who likes being strong and fighting in melee. The dude
     part is optional, and doesn't signify gender or anything. Strong melee dudes
-    like punching things or hitting things, especially when those things are
+    are often found punching things or hitting things, especially when those things are
     enemies or are getting in the way.
   powers:
     - Rage
     - Sudden Charge
     - Power Attack
 
+Champion:
+  brief: "You manifest your belief in a cause as divine blessings on the battlefield"
+  description: ""
+  powers: []
+
+Duelist:
+  brief: "You parry enemy attacks and respond with well-timed ripostes"
+  description: ""
+  powers: []
+
+Stance Master:
+  brief: "Like, weird stances and stuff?"
+  description: ""
+  powers: []
+
+Assassin:
+  brief: "You stalk through the shadows, surprising enemies with deadly sneak attacks"
+  description: ""
+  powers: []
+
 Demolitionist:
-  brief: "boom"
+  brief: "Kablooie!"
   description: ""
   powers: []
 
 Machine Gunner:
-  brief: "I am Heavy Weapons Guy"
+  brief: "I am heavy weapons guy, and this is my power school"
   description: ""
   powers: []
 
 Rogue:
-  brief: "very lucky"
+  brief: "Never tell me the odds!"
   description: ""
   powers: []
 
 Sniper:
-  brief: "karko"
+  brief: "Karko"
   description: ""
   powers: []
 
-Enhancer:
-  brief: "misc buff spells"
-  description: ""
-  powers: []
-
-Mastermind:
-  brief: "chessmaster and friends"
-  description: ""
-  powers: []
-
-Medic:
-  brief: "non-magic healing"
-  description: ""
-  powers: []
-
-Warlord:
-  brief: "the melee parts of tactician"
-  description: ""
-  powers: []
-
-Drone Controller:
-  brief: "non-magic minionmancy"
-  description: ""
-  powers: []
-
-Engineer:
-  brief: "upgrades weapons"
-  description: ""
-  powers: []
-
-Gadgeteer:
-  brief: "builds weird misc. gadgets"
-  description: ""
-  powers: []
-
-Power Armor:
+Battlesmith:
   brief: "I am Iron Man"
   description: ""
   powers: []
 
-Divination:
-  brief: "see the future"
+Gadgeteer:
+  brief: "You invent novel technological devices for a variety of purposes"
   description: ""
   powers: []
 
-Force Pushing:
-  brief: "all those telekinetic things"
+Mastermind:
+  brief: "You support your party both in and out of battle, with a plan for every situation"
   description: ""
   powers: []
 
-Illusions:
-  brief: "basically Loki"
+Roboticist:
+  brief: "Drones! Why did it have to be drones?"
   description: ""
   powers: []
 
-Mind Controlling:
-  brief: "This is not the power school you're looking for"
+Warlord:
+  brief: "You apply strategy to combat, maneuvering allies and enemies into positoin"
   description: ""
   powers: []
 
-Elemental Magic:
-  brief: "call lightning, fly"
+Diviner:
+  brief: "You predict the future, see distant events, and track creatures with magic"
+  description: ""
+  powers: []
+
+Elementalist:
+  brief: "You harness the elements as useful effects, precisely controlling the natural world"
   description: ""
   powers: []
 
 Fundamentalist:
-  brief: "control space, time, and magic"
+  brief: "You manipulate the fundamental laws of reality to control space, time, and magic"
   description: ""
   powers: []
 
-Life/Death Magic:
-  brief: "control life, death, and zombies"
+Necromancer:
+  brief: "You channel necrotic energy to slay the living, then raise the dead to serve you"
   description: ""
   powers: []
 
-Shaping Pure Magic:
-  brief: "basically scarlet witch"
+Psion:
+  brief: "You specialize in mental magic that affects other creatures’ thoughts or actions"
+  description: ""
+  powers: []
+
+Artificer:
+  brief: "You use magic to animate, control, or create man-made objects"
+  description: ""
+  powers: []
+
+Blaster:
+  brief: "You blast enemies away with devastating evocations of elemental energy"
+  description: ""
+  powers: []
+
+Illusionist:
+  brief: "You conjure illusions to deceive or confuse your opponents’ senses"
+  description: ""
+  powers: []
+
+Occultist:
+  brief: "You curse enemies with strange and persistent afflictions or misfortune"
+  description: ""
+  powers: []
+
+Summoner:
+  brief: "You summon powerful magical creatures or spirits to serve you in combat"
+  description: ""
+  powers: []
+
+Druid:
+  brief: "You command nature itself, manipulating wild animals and plants"
+  description: ""
+  powers: []
+
+Enhancer:
+  brief: "You protect your allies with a variety of beneficial blessings and enhancements"
+  description: ""
+  powers: []
+
+Invoker:
+  brief: "You call down radiant light from the heavens to heal your friends and smite your foes"
+  description: ""
+  powers: []
+
+Shapeshifter:
+  brief: "You transform yourself or other creatures into animals or monsters"
+  description: ""
+  powers: []
+
+Telekinetic:
+  brief: "I challenge you to a force arm-wrestling contest!"
   description: ""
   powers: []
