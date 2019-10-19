@@ -18,7 +18,7 @@ def read_write_default(name, value)
 end
 
 destination = read_write_default("deploydest",
-                                 (File.expand_path(ARGV[0]) if ARGV[0]))
+                                 (File.expand_path(ARGV[0]) if ARGV[0])).strip
 unless destination
   puts("Please provide destination directory:")
   puts("#{$0} destination")
