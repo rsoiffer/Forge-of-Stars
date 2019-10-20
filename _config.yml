@@ -53,4 +53,4 @@ page_gen:
 # their entries' file path in the `include:` list.
 exclude:
   - .deploydest
-  - deploy.sh
+  - deploy.rb
