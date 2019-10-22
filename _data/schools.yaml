@@ -15,8 +15,8 @@ Berserker:
     - Sudden Charge
     - Power Attack
 
-Champion:
-  brief: "You manifest your belief in a cause as divine blessings on the battlefield"
+Cyborg:
+  brief: "Metal > meat"
   description: ""
   powers: []
 
@@ -25,7 +25,7 @@ Duelist:
   description: ""
   powers: []
 
-Stance Master:
+Monk:
   brief: "Like, weird stances and stuff?"
   description: ""
   powers: []
@@ -40,7 +40,7 @@ Demolitionist:
   description: ""
   powers: []
 
-Machine Gunner:
+Heavy:
   brief: "I am heavy weapons guy, and this is my power school"
   description: ""
   powers: []
@@ -80,13 +80,8 @@ Warlord:
   description: ""
   powers: []
 
-Diviner:
-  brief: "You predict the future, see distant events, and track creatures with magic"
-  description: ""
-  powers: []
-
-Elementalist:
-  brief: "You harness the elements as useful effects, precisely controlling the natural world"
+Blaster:
+  brief: "You blast enemies away with devastating evocations of elemental energy"
   description: ""
   powers: []
 
@@ -95,23 +90,8 @@ Fundamentalist:
   description: ""
   powers: []
 
-Necromancer:
-  brief: "You channel necrotic energy to slay the living, then raise the dead to serve you"
-  description: ""
-  powers: []
-
-Psion:
-  brief: "You specialize in mental magic that affects other creatures’ thoughts or actions"
-  description: ""
-  powers: []
-
-Artificer:
-  brief: "You use magic to animate, control, or create man-made objects"
-  description: ""
-  powers: []
-
-Blaster:
-  brief: "You blast enemies away with devastating evocations of elemental energy"
+Healer:
+  brief: "Every party needs one"
   description: ""
   powers: []
 
@@ -120,28 +100,23 @@ Illusionist:
   description: ""
   powers: []
 
+Psion:
+  brief: "You specialize in mental magic that affects other creatures’ thoughts or actions"
+  description: ""
+  powers: []
+
+Champion:
+  brief: "You manifest your belief in a cause as divine blessings on the battlefield"
+  description: ""
+  powers: []
+
+Diviner:
+  brief: "You predict the future, see distant events, and track creatures with magic"
+  description: ""
+  powers: []
+
 Occultist:
   brief: "You curse enemies with strange and persistent afflictions or misfortune"
-  description: ""
-  powers: []
-
-Summoner:
-  brief: "You summon powerful magical creatures or spirits to serve you in combat"
-  description: ""
-  powers: []
-
-Druid:
-  brief: "You command nature itself, manipulating wild animals and plants"
-  description: ""
-  powers: []
-
-Enhancer:
-  brief: "You protect your allies with a variety of beneficial blessings and enhancements"
-  description: ""
-  powers: []
-
-Invoker:
-  brief: "You call down radiant light from the heavens to heal your friends and smite your foes"
   description: ""
   powers: []
 
@@ -152,5 +127,30 @@ Shapeshifter:
 
 Telekinetic:
   brief: "I challenge you to a force arm-wrestling contest!"
+  description: ""
+  powers: []
+
+Druid:
+  brief: "You command the spirits of nature, manipulating wild animals and plants"
+  description: ""
+  powers: []
+
+Elementalist:
+  brief: "You harness elemental spirits to precisely control the natural world"
+  description: ""
+  powers: []
+
+Necromancer:
+  brief: "You channel necrotic energy to slay the living, then raise the spirits of the dead"
+  description: ""
+  powers: []
+
+Sage:
+  brief: "As a wise man once said, I only know that I know nothing"
+  description: ""
+  powers: []
+
+Technomancer:
+  brief: "Praise the machine god! For the Omnissiah!"
   description: ""
   powers: []

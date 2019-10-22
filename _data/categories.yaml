@@ -1,14 +1,14 @@
 Fighter:
   - Acrobat
   - Berserker
-  - Champion
+  - Cyborg
   - Duelist
-  - Stance Master
+  - Monk
 
 Sharpshooter:
   - Assassin
   - Demolitionist
-  - Machine Gunner
+  - Heavy
   - Rogue
   - Sniper
 
@@ -19,23 +19,23 @@ Expert:
   - Roboticist
   - Warlord
 
-Thaumaturge:
-  - Diviner
-  - Elementalist
+Sorcerer:
+  - Blaster
   - Fundamentalist
-  - Necromancer
+  - Healer
+  - Illusionist
   - Psion
 
-Sorcerer:
-  - Artificer
-  - Blaster
-  - Illusionist
+Adept:
+  - Champion
+  - Diviner
   - Occultist
-  - Summoner
-
-Mystic:
-  - Druid
-  - Enhancer
-  - Invoker
   - Shapeshifter
   - Telekinetic
+
+Conjurer:
+  - Druid
+  - Elementalist
+  - Necromancer
+  - Sage
+  - Technomancer
