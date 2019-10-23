@@ -22,6 +22,10 @@ page_gen:
     name: 0
     template: power
     dir: powers
+  - data: skills
+    name: 0
+    template: skill
+    dir: skills
 
 exclude:
   - .deploydest

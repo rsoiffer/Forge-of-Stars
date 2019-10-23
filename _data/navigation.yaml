@@ -5,3 +5,5 @@ main:
 system:
   - title: Power Schools
     url: /schools.html
+  - title: Skills
+    url: /skills.html

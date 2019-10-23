@@ -1,0 +1,38 @@
+---
+layout: single
+title: Skills
+sidebar:
+  nav: system
+---
+
+<h2>Combat Skills</h2>
+
+<table>
+{% for skill in site.data.skills %}
+  {% if skill[1].type == "Combat" %}
+    <tr>
+      <td>
+        <a href="{% link skills/{{ skill[0] | slugify }}.html %}">{{ skill[0] }}</a>
+      </td>
+      <td>{{ skill[1].attribute }}</td>
+      <td>{{ skill[1].brief }}</td>
+    </tr>
+  {% endif %}
+{% endfor %}
+</table>
+
+<h2>General Skills</h2>
+
+<table>
+{% for skill in site.data.skills %}
+  {% if skill[1].type == "General" %}
+    <tr>
+      <td>
+        <a href="{% link skills/{{ skill[0] | slugify }}.html %}">{{ skill[0] }}</a>
+      </td>
+      <td>{{ skill[1].attribute }}</td>
+      <td>{{ skill[1].brief }}</td>
+    </tr>
+  {% endif %}
+{% endfor %}
+</table>

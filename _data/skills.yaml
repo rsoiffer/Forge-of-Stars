@@ -1,0 +1,150 @@
+Brawling:
+  attribute: Strength
+  type: Combat
+  brief: "Unarmed strikes and grappling"
+  description: ""
+
+Melee Weapons:
+  attribute: Strength
+  type: Combat
+  brief: "Melee weapons, such as blades or clubs"
+  description: ""
+
+Light Weapons:
+  attribute: Precision
+  type: Combat
+  brief: "Small handheld guns, such as pistols or carbines"
+  description: ""
+
+Heavy Weapons:
+  attribute: Precision
+  type: Combat
+  brief: "Heavy two-handed guns, such as rifles or grenade launchers"
+  description: ""
+
+Vehicle Weapons:
+  attribute: Precision
+  type: Combat
+  brief: "Ranged weapons mounted on vehicles"
+  description: ""
+
+Sorcery:
+  attribute: Intelligence
+  type: Combat
+  brief: "Casting spells I guess?"
+  description: ""
+
+Conjuring:
+  attribute: Charisma
+  type: Combat
+  brief: "Summoning, binding, and banishing spirits"
+  description: ""
+
+Fortitude Save:
+  attribute: Strength
+  type: Combat
+  brief: "Persevere through diseases, poison, or exhausting"
+  description: ""
+
+Reflex Save:
+  attribute: Agility
+  type: Combat
+  brief: "Dodge out of the way of dangerous explosions or spells"
+  description: ""
+
+Will Save:
+  attribute: Wisdom
+  type: Combat
+  brief: "Resist fear or mind control effects with your force of will"
+  description: ""
+
+
+Athletics:
+  attribute: Strength
+  type: General
+  brief: "Perform deeds of physical prowess"
+  description: ""
+
+Acrobatics:
+  attribute: Agility
+  type: General
+  brief: "Perform tasks requiring concentration and grace"
+  description: ""
+
+Stealth:
+  attribute: Agility
+  type: General
+  brief: "Avoid detection, slip past foes, hide, or conceal an item"
+  description: ""
+
+Piloting:
+  attribute: Precision
+  type: General
+  brief: "Maneuver vehicles through difficult terrain and dodge enemy fire"
+  description: ""
+
+Computers:
+  attribute: Intelligence
+  type: General
+  brief: "Use, program, or hack into computer systems"
+  description: ""
+
+Engineering:
+  attribute: Intelligence
+  type: General
+  brief: "Build or repair mechanical items, such as weapons, armor, and vehicles"
+  description: ""
+
+Medicine:
+  attribute: Intelligence
+  type: General
+  brief: "Patch up wounds and hlep people recover from diseases and poisons"
+  description: ""
+
+Nature:
+  attribute: Wisdom
+  type: General
+  brief: "Interact natural world, and train animals and magical beasts"
+  description: ""
+
+Perception:
+  attribute: Wisdom
+  type: General
+  brief: "Spot, hear, or otherwise detect the prescence of something"
+  description: ""
+
+Sense Motive:
+  attribute: Wisdom
+  type: General
+  brief: "Determine the true intentions of a creature"
+  description: ""
+
+Survival:
+  attribute: Wisdom
+  type: General
+  brief: "Live in harsh environments, forage for food, track, and hide your trail"
+  description: ""
+
+Contacts:
+  attribute: Charisma
+  type: General
+  brief: "Know useful people in the right places"
+  description: ""
+
+Deception:
+  attribute: Charisma
+  type: General
+  brief: "Trick and mislead others using disguises, lies, and subterfuge"
+  description: ""
+
+Diplomacy:
+  attribute: Charisma
+  type: General
+  brief: "Influence others through negotiation and flattery"
+  description: ""
+
+Intimidate:
+  attribute: Charisma
+  type: General
+  brief: "Bend other to your will using threats"
+  description: ""
