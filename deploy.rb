@@ -38,8 +38,9 @@ Dir.chdir(destination) do
     puts("No changes made.")
   else
     system("git", "status")
-    if HighLine.agree("Commit and push?")
+    if HighLine.agree("Commit and sync?")
       system("git", "commit", "--message", "Build #{id}")
+      system("git", "pull", "--strategy", "ours")
       system("git", "push")
     end
   end
