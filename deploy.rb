@@ -30,6 +30,8 @@ system("bundle", "exec", "jekyll", "build",
        "--destination", destination)
 puts
 
+id = Open3.capture2("git", "describe", "--always", "--dirty").first.strip
+
 Dir.chdir(destination) do
   system("git", "add", "--all")
   if Open3.capture2("git", "status", "--porcelain").first.empty?
@@ -37,8 +39,7 @@ Dir.chdir(destination) do
   else
     system("git", "status")
     if HighLine.agree("Commit and push?")
-      id = Open3.capture2("git", "describe", "--always", "--dirty").first.strip
-      system("git", "commit", "--message", "Jekyll build (#{id})")
+      system("git", "commit", "--message", "Build #{id}")
       system("git", "push")
     end
   end
