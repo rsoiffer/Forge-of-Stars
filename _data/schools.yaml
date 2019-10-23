@@ -1,156 +1,169 @@
 Acrobat:
-  brief: "You dodge and weave across the battlefield, moving with incredible speed"
+  brief:
+    You dodge and weave across the battlefield, moving with incredible speed
   description: ""
   powers: []
 
 Berserker:
-  brief: "You smash enemies with aggressive bursts of murderous rage"
-  description: |
+  brief: You smash enemies with aggressive bursts of murderous rage
+  description:
     A strong melee dude, who likes being strong and fighting in melee. The dude
     part is optional, and doesn't signify gender or anything. Strong melee dudes
-    are often found punching things or hitting things, especially when those things are
-    enemies or are getting in the way.
+    are often found punching things or hitting things, especially when those
+    things are enemies or are getting in the way.
   powers:
     - Rage
     - Sudden Charge
     - Power Attack
 
 Cyborg:
-  brief: "Metal > meat"
+  brief: Metal > meat
   description: ""
   powers: []
 
 Duelist:
-  brief: "You parry enemy attacks and respond with well-timed ripostes"
+  brief: You parry enemy attacks and respond with well-timed ripostes
   description: ""
   powers: []
 
 Monk:
-  brief: "Like, weird stances and stuff?"
+  brief: Like, weird stances and stuff?
   description: ""
   powers: []
 
 Assassin:
-  brief: "You stalk through the shadows, surprising enemies with deadly sneak attacks"
+  brief:
+    You stalk through the shadows, surprising enemies with deadly sneak attacks
   description: ""
   powers: []
 
 Demolitionist:
-  brief: "Kablooie!"
+  brief: Kablooie!
   description: ""
   powers: []
 
 Heavy:
-  brief: "I am heavy weapons guy, and this is my power school"
+  brief: I am heavy weapons guy, and this is my power school
   description: ""
   powers: []
 
 Rogue:
-  brief: "Never tell me the odds!"
+  brief: Never tell me the odds!
   description: ""
   powers: []
 
 Sniper:
-  brief: "Karko"
+  brief: Karko
   description: ""
   powers: []
 
 Battlesmith:
-  brief: "I am Iron Man"
+  brief: I am Iron Man
   description: ""
   powers: []
 
 Gadgeteer:
-  brief: "You invent novel technological devices for a variety of purposes"
+  brief: You invent novel technological devices for a variety of purposes
   description: ""
   powers: []
 
 Mastermind:
-  brief: "You support your party both in and out of battle, with a plan for every situation"
+  brief:
+    You support your party both in and out of battle, with a plan for every
+    situation
   description: ""
   powers: []
 
 Roboticist:
-  brief: "Drones! Why did it have to be drones?"
+  brief: Drones! Why did it have to be drones?
   description: ""
   powers: []
 
 Warlord:
-  brief: "You apply strategy to combat, maneuvering allies and enemies into positoin"
+  brief:
+    You apply strategy to combat, maneuvering allies and enemies into position
   description: ""
   powers: []
 
 Blaster:
-  brief: "You blast enemies away with devastating evocations of elemental energy"
+  brief: You blast enemies away with devastating evocations of elemental energy
   description: ""
   powers: []
 
 Fundamentalist:
-  brief: "You manipulate the fundamental laws of reality to control space, time, and magic"
+  brief:
+    You manipulate the fundamental laws of reality to control space, time, and
+    magic
   description: ""
   powers: []
 
 Healer:
-  brief: "Every party needs one"
+  brief: Every party needs one
   description: ""
   powers: []
 
 Illusionist:
-  brief: "You conjure illusions to deceive or confuse your opponents’ senses"
+  brief: You conjure illusions to deceive or confuse your opponents’ senses
   description: ""
   powers: []
 
 Psion:
-  brief: "You specialize in mental magic that affects other creatures’ thoughts or actions"
+  brief:
+    You specialize in mental magic that affects other creatures’ thoughts or
+    actions
   description: ""
   powers: []
 
 Champion:
-  brief: "You manifest your belief in a cause as divine blessings on the battlefield"
+  brief:
+    You manifest your belief in a cause as divine blessings on the battlefield
   description: ""
   powers: []
 
 Diviner:
-  brief: "You predict the future, see distant events, and track creatures with magic"
+  brief:
+    You predict the future, see distant events, and track creatures with magic
   description: ""
   powers: []
 
 Occultist:
-  brief: "You curse enemies with strange and persistent afflictions or misfortune"
+  brief: You curse enemies with strange and persistent afflictions or misfortune
   description: ""
   powers: []
 
 Shapeshifter:
-  brief: "You transform yourself or other creatures into animals or monsters"
+  brief: You transform yourself or other creatures into animals or monsters
   description: ""
   powers: []
 
 Telekinetic:
-  brief: "I challenge you to a force arm-wrestling contest!"
+  brief: I challenge you to a force arm-wrestling contest!
   description: ""
   powers: []
 
 Druid:
-  brief: "You command the spirits of nature, manipulating wild animals and plants"
+  brief: You command the spirits of nature, manipulating wild animals and plants
   description: ""
   powers: []
 
 Elementalist:
-  brief: "You harness elemental spirits to precisely control the natural world"
+  brief: You harness elemental spirits to precisely control the natural world
   description: ""
   powers: []
 
 Necromancer:
-  brief: "You channel necrotic energy to slay the living, then raise the spirits of the dead"
+  brief:
+    You channel necrotic energy to slay the living, then raise the spirits of
+    the dead
   description: ""
   powers: []
 
 Sage:
-  brief: "As a wise man once said, I only know that I know nothing"
+  brief: As a wise man once said, I only know that I know nothing
   description: ""
   powers: []
 
 Technomancer:
-  brief: "Praise the machine god! For the Omnissiah!"
+  brief: Praise the machine god! For the Omnissiah!
   description: ""
   powers: []
