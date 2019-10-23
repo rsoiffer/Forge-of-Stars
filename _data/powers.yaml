@@ -2,21 +2,29 @@ Rage:
   type: 1-Action, Encounter
   traits: [Concentrate, Emotion, Mental]
   tags:
-    effect: |
+    effect:
       You tap into your inner fury and begin raging. You gain temporary HP equal
       to your level + CON. While raging, you deal 2 additional damage with melee
-      strikes, you take a -1 penalty to AC, and you can���t use actions with the
+      strikes, you take a -1 penalty to AC, and you can't use actions with the
       Concentrate trait unless they also have the Rage trait.
-    duration: "1 minute, until you can���t sense any enemies, or until you fall unconscious"
+    duration:
+      1 minute, until you can't sense any enemies, or until you fall unconscious
 
 Sudden Charge:
   type: 2-Action, Encounter
   traits: [Flourish, Open]
   tags:
-    effect: "With a quick sprint, you dash up to your foe and swing. Stride twice. If you end your movement within reach of at least one enemy, you can make a melee Strike against that enemy."
+    effect:
+      With a quick sprint, you dash up to your foe and swing. Stride twice. If
+      you end your movement within reach of at least one enemy, you can make a
+      melee Strike against that enemy.
 
 Power Attack:
   type: 2-Action, At-Will
   traits: [Flourish]
   tags:
-    effect: "You unleash a particularly powerful attack that clobbers your foe but leaves you a bit unsteady. Make a melee Strike (which counts as two attacks when calculating your MAP). If this Strike hits, you deal an extra die of weapon damage."
+    effect:
+      You unleash a particularly powerful attack that clobbers your foe but
+      leaves you a bit unsteady. Make a melee Strike (which counts as two
+      attacks when calculating your MAP). If this Strike hits, you deal an extra
+      die of weapon damage.
