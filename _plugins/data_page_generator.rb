@@ -4,24 +4,8 @@
 # Distributed under the conditions of the MIT License
 
 module Jekyll
-
-  module Sanitizer
-    # strip characters and whitespace to create valid filenames, also lowercase
-    def sanitize_filename(name)
-      if(name.is_a? Integer)
-        return name.to_s
-      end
-      return name.tr(
-  "ÀÁÂÃÄÅàáâãäåĀāĂăĄąÇçĆćĈĉĊċČčÐðĎďĐđÈÉÊËèéêëĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħÌÍÎÏìíîïĨĩĪīĬĭĮįİıĴĵĶķĸĹĺĻļĽľĿŀŁłÑñŃńŅņŇňŉŊŋÑñÒÓÔÕÖØòóôõöøŌōŎŏŐőŔŕŖŗŘřŚśŜŝŞşŠšſŢţŤťŦŧÙÚÛÜùúûüŨũŪūŬŭŮůŰűŲųŴŵÝýÿŶŷŸŹźŻżŽž",
-  "AAAAAAaaaaaaAaAaAaCcCcCcCcCcDdDdDdEEEEeeeeEeEeEeEeEeGgGgGgGgHhHhIIIIiiiiIiIiIiIiIiJjKkkLlLlLlLlLlNnNnNnNnnNnNnOOOOOOooooooOoOoOoRrRrRrSsSsSsSssTtTtTtUUUUuuuuUuUuUuUuUuUuWwYyyYyYZzZzZz"
-).downcase.strip.gsub(/[ \/]/, '-').gsub(/[^\w.-]/, '')
-    end
-  end
-
   # this class is used to tell Jekyll to generate a page
   class DataPage < Page
-    include Sanitizer
-
     # - site and base are copied from other plugins: to be honest, I am not sure what they do
     #
     # - `index_files` specifies if we want to generate named folders (true) or not (false)
@@ -42,7 +26,7 @@ module Jekyll
       if data[name] == nil
         puts "error (datapage_gen). empty value for field '#{name}' in record #{data}"
       else
-        filename = sanitize_filename(data[name]).to_s
+        filename = Utils.slugify(data[name])
 
         @dir = dir + (index_files ? "/" + filename + "/" : "")
         @name = (index_files ? "index" : filename) + "." + extension.to_s
@@ -109,8 +93,6 @@ module Jekyll
   end
 
   module DataPageLinkGenerator
-    include Sanitizer
-
     # use it like this: {{input | datapage_url: dir}}
     # to generate a link to a data_page.
     #
@@ -124,10 +106,9 @@ module Jekyll
     # need to generate the links by hand
     def datapage_url(input, dir)
       extension = Jekyll.configuration({})['page_gen-dirs'] ? '/' : '.html'
-      "#{dir}/#{sanitize_filename(input)}#{extension}"
+      "#{dir}/#{Utils.slugify(input)}#{extension}"
     end
   end
-
 end
 
 Liquid::Template.register_filter(Jekyll::DataPageLinkGenerator)
