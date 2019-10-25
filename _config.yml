@@ -17,15 +17,15 @@ page_gen:
   - data: schools
     name: 0
     template: school
-    dir: schools
+    dir: ""
   - data: powers
     name: 0
     template: power
-    dir: powers
+    dir: ""
   - data: skills
     name: 0
     template: skill
-    dir: skills
+    dir: ""
 
 exclude:
   - .deploydest
