@@ -12,7 +12,7 @@ sidebar:
   {% for school in category[1] %}
     <tr>
       <td>
-        <a href="{% link schools/{{ school | slugify }}.html %}">{{ school }}</a>
+        <a href="{% link {{ school | slugify }}.html %}">{{ school }}</a>
       </td>
       <td>{{ site.data.schools[school].brief }}</td>
     </tr>

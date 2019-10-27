@@ -12,7 +12,7 @@ sidebar:
 {% for power in school.powers %}
   <tr>
     <td>
-      <a href="{% link powers/{{ power | slugify }}.html %}">{{ power }}</a>
+      <a href="{% link {{ power | slugify }}.html %}">{{ power }}</a>
     </td>
     <td>{{ site.data.powers[power].type }}</td>
   </tr>
