@@ -14,7 +14,7 @@ module ForgeOfStars
         weapon_types.flat_map do |type|
           type["shapes"].map do |shape|
             {
-              "name" => "#{type["name"]} #{shape["name"]}",
+              "name" => "#{type["name"]} #{shape["name"].downcase}",
               "skill" => shape["skill"],
               "cost" => type["cost"] * shape["cost"],
               "damage" => type["damage"] + shape["damage"],
