@@ -16,7 +16,7 @@ module ForgeOfStars
             {
               "name" => "#{type["name"]} #{shape["name"].downcase}",
               "skill" => shape["skill"],
-              "cost" => type["cost"] * shape["cost"],
+              "cost" => (type["cost"] * shape["cost"]).round,
               "damage" => type["damage"] + shape["damage"],
               "damage_type" => type["damage_type"],
               "weight" => type["weight"] * shape["weight"],

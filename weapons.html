@@ -24,7 +24,7 @@ sidebar:
       {% for weapon in weapons %}
         <tr>
           <td>{{ weapon.name }}</td>
-          <td>{{ weapon.cost | round }} credits</td>
+          <td>{{ weapon.cost }} credits</td>
           <td>1d{{ weapon.damage }} {{ weapon.damage_type }}</td>
           <td>{{ weapon.weight }} lb</td>
           <td>{{ weapon.special | sort | join: ", " }}</td>
