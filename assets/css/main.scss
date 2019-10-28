@@ -7,5 +7,9 @@
 @import "minimal-mistakes";
 
 .page {
-    padding-right: 0;
+  padding-right: 0;
+}
+
+th {
+  border-bottom: 1px solid mix(#000, $border-color, 25%)
 }
