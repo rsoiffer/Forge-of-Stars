@@ -1,0 +1,32 @@
+---
+layout: single
+title: Weapons
+sidebar:
+  nav: system
+---
+
+{% assign weapons_by_skill = site.data.weapon_combinations | group_by: "skill"
+ %}
+
+{% for skill in weapons_by_skill %}
+  <h2>{{ skill.name }}</h2>
+  
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Cost</th>
+      <th>Damage</th>
+      <th>Weight</th>
+      <th>Special</th>
+    </tr>
+    {% for weapon in skill.items %}
+      <tr>
+        <td>{{ weapon.name }}</td>
+        <td>{{ weapon.cost | round }} credits</td>
+        <td>1d{{ weapon.damage }} {{ weapon.damage_type }}</td>
+        <td>{{ weapon.weight }} lb</td>
+        <td>{{ weapon.special | sort | join: ", " }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endfor %}
