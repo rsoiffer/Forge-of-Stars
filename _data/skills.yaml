@@ -1,3 +1,5 @@
+# Combat
+
 Brawling:
   attribute: Strength
   type: Combat
@@ -58,6 +60,7 @@ Will Save:
   brief: "Resist fear or mind control effects with your force of will"
   description: ""
 
+# General
 
 Athletics:
   attribute: Strength
