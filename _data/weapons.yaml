@@ -40,21 +40,21 @@ shapes:
     special: [Concealable]
     
   Double Sword:
-    skill: Melee
+    skill: Melee Weapons
     cost: 1.5
     damage: 2
     weight: 2
     special: [Multiattack]
 
   Pike:
-    skill: Melee
+    skill: Melee Weapons
     cost: 1
     damage: 2
     weight: 2
     special: [Reach]
 
   Sword:
-    skill: Melee
+    skill: Melee Weapons
     cost: 1
     damage: 2
     weight: 1
