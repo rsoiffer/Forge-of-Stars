@@ -8,6 +8,11 @@ sidebar:
 <h2>Combat Skills</h2>
 
 <table>
+  <tr>
+    <th>Name</th>
+    <th>Attribute</th>
+    <th>Description</th>
+  </tr>
 {% for skill in site.data.skills %}
   {% if skill[1].type == "Combat" %}
     <tr>
@@ -24,6 +29,11 @@ sidebar:
 <h2>General Skills</h2>
 
 <table>
+  <tr>
+    <th>Name</th>
+    <th>Attribute</th>
+    <th>Description</th>
+  </tr>
 {% for skill in site.data.skills %}
   {% if skill[1].type == "General" %}
     <tr>

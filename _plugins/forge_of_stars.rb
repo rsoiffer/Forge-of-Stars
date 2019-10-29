@@ -30,7 +30,7 @@ module ForgeOfStars
             "cost" => (type["cost"] * shape["cost"]).round,
             "damage" => type["damage"] + shape["damage"],
             "damage_type" => type["damage_type"],
-            "weight" => type["weight"] * shape["weight"],
+            "weight" => (type["weight"] * shape["weight"]).round,
             "special" => type["special"] + shape["special"]
           }
         end

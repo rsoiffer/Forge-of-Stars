@@ -13,3 +13,21 @@
 th {
   border-bottom: 1px solid mix(#000, $border-color, 25%)
 }
+td {
+  border-bottom: 0px solid mix(#000, $border-color, 25%)
+}
+tr, td, th {
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+}
+
+// default background-color is #e8d5b7
+tr:nth-child(even) {
+  background-color: #ebdeca
+  // background-color: mix(#ffffff, $background-color, 25%)
+}
+tr:nth-child(odd) {
+  background-color: #e2cba4
+  // background-color: #d0d4a7
+  // background-color: mix(#000, $background-color, 5%)
+}

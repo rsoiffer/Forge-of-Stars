@@ -5,6 +5,8 @@ sidebar:
   nav: system
 ---
 
+Now with {{ site.data.weapon_combinations | size }} unique weapons!
+
 {% for skill in site.data.skills %}
   {% assign weapons =
     site.data.weapon_combinations | where: "skill", skill[0]
@@ -24,12 +26,18 @@ sidebar:
       {% for weapon in weapons %}
         <tr>
           <td>{{ weapon.name }}</td>
-          <td>{{ weapon.cost }} credits</td>
+          <td>{{ weapon.cost }} cred</td>
           <td>1d{{ weapon.damage }} {{ weapon.damage_type }}</td>
           <td>{{ weapon.weight }} lb</td>
-          <td>{{ weapon.special | sort | join: ", " }}</td>
+          <td>{{ weapon.special | uniq | sort | join: ", " }}</td>
         </tr>
       {% endfor %}
     </table>
   {% endif %}
+{% endfor %}
+
+<h2>Weapon Traits</h2>
+{% for trait in site.data.weapons.traits %}
+  <h3>{{ trait[0] }}</h3>
+  {{ trait[1] }}
 {% endfor %}
