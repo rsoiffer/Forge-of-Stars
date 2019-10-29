@@ -7,37 +7,31 @@ sidebar:
 
 Now with {{ site.data.weapon_combinations | size }} unique weapons!
 
-{% for skill in site.data.skills %}
-  {% assign weapons =
-    site.data.weapon_combinations | where: "skill", skill[0]
-   %}
+{% for category in site.data.weapons.other.categories %}
+  {% assign weapons = site.data.weapon_combinations | where: "category", category[0] %}
   {% assign num_weapons = weapons | size %}
   {% if num_weapons > 0 %}
-    <h2>{{ skill[0] }}</h2>
-    
+    <h2>{{ category[0] }}</h2>
+
     <table>
       <tr>
-        <th>Name</th>
-        <th>Cost</th>
-        <th>Damage</th>
-        <th>Weight</th>
-        <th>Special</th>
+        {% for column in category[1] %}
+        <th>{{ column }}</th>
+        {% endfor %}
       </tr>
       {% for weapon in weapons %}
-        <tr>
-          <td>{{ weapon.name }}</td>
-          <td>{{ weapon.cost }} cred</td>
-          <td>1d{{ weapon.damage }} {{ weapon.damage_type }}</td>
-          <td>{{ weapon.weight }} lb</td>
-          <td>{{ weapon.special | uniq | sort | join: ", " }}</td>
-        </tr>
+      <tr>
+        {% for column in category[1] %}
+        <td>{{ weapon[ column ] }}</td>
+        {% endfor %}
+      </tr>
       {% endfor %}
     </table>
   {% endif %}
 {% endfor %}
 
 <h2>Weapon Traits</h2>
-{% for trait in site.data.weapons.traits %}
+{% for trait in site.data.weapons.other.traits %}
   <h3>{{ trait[0] }}</h3>
   {{ trait[1] }}
 {% endfor %}

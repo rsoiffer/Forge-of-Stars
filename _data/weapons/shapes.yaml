@@ -1,0 +1,232 @@
+Claws:
+  category: Brawling
+  cost: 1
+  damage: -2
+  weight: .5
+  special: [Agile, Small]
+Fist:
+  category: Brawling
+  cost: 1
+  damage: -2
+  weight: .5
+  special: [Agile, Free-hand]
+Strike:
+  category: Brawling
+  damage: 0
+  special: [Agile, Finesse, Unarmed]
+
+Axe:
+  category: Melee Weapons
+  cost: 1.5
+  damage: 4
+  weight: 2
+  hands: 2
+  special: [Sweep]
+Club:
+  category: Melee Weapons
+  cost: .5
+  damage: 0
+  weight: 1
+  hands: 1
+  special: [Shove]
+Flail:
+  category: Melee Weapons
+  cost: 1.5
+  damage: 0
+  weight: 2
+  hands: 1
+  special: [Disarm, Sweep, Trip]
+Glaive:
+  category: Melee Weapons
+  cost: 1
+  damage: 2
+  weight: 2
+  hands: 2
+  special: [Reach]
+Hammer:
+  category: Melee Weapons
+  cost: 1
+  damage: 4
+  weight: 3
+  hands: 2
+  special: [Backswing, Shove]
+Knife:
+  category: Melee Weapons
+  cost: .5
+  damage: -2
+  weight: .25
+  hands: 1
+  special: [Agile, Finesse, Small, Thrown 10]
+Rapier:
+  category: Melee Weapons
+  cost: 1
+  damage: 0
+  weight: .5
+  hands: 1
+  special: [Deadly d8, Disarm, Finesse]
+Scythe:
+  category: Melee Weapons
+  cost: 2
+  damage: 2
+  weight: 1.5
+  hands: 2
+  special: [Deadly d10, Trip]
+Shortsword:
+  category: Melee Weapons
+  cost: .75
+  damage: 0
+  weight: .75
+  hands: 1
+  special: [Agile, Finesse]
+Shuriken:
+  category: Melee Weapons
+  cost: .25
+  damage: 0
+  weight: .25
+  hands: 1
+  special: [Agile, Thrown 20]
+Spear:
+  category: Melee Weapons
+  cost: 1
+  damage: 0
+  weight: 1
+  hands: 1
+  special: [Thrown 20]
+Staff:
+  category: Melee Weapons
+  cost: 1.5
+  damage: 2
+  weight: 2
+  hands: 2
+  special: [Parry, Reach, Trip]
+Sword:
+  category: Melee Weapons
+  cost: 1
+  damage: 4
+  weight: 1
+  hands: 2
+  special: []
+Whip:
+  category: Melee Weapons
+  cost: 2
+  damage: -2
+  weight: .5
+  hands: 1
+  special: [Disarm, Finesse, Reach, Trip]
+
+Holdout:
+  category: Light Weapons
+  cost: .5
+  damage: -2
+  range: .5
+  weight: .5
+  hands: 1
+  special: [Agile, Small]
+Carbine:
+  category: Light Weapons
+  cost: 1
+  damage: 2
+  range: 1
+  weight: 1
+  hands: 2
+  special: [Backswing]
+Pistol:
+  category: Light Weapons
+  cost: .75
+  damage: 0
+  range: 1
+  weight: .75
+  hands: 1
+  special: [Agile]
+Throw:
+  category: Light Weapons
+  damage: 1
+  range: 1
+  hands: 1
+  special: []
+Wrist Mount:
+  category: Light Weapons
+  cost: 1
+  damage: 0
+  range: .5
+  weight: .5
+  hands: 1
+  special: [Free-hand]
+
+Launcher:
+  category: Heavy Weapons
+  cost: 4
+  damage: 2
+  range: 1
+  weight: 4
+  hands: 2
+  special: [Reload 2]
+Machine Gun:
+  category: Heavy Weapons
+  cost: 4
+  damage: 2
+  range: 1.5
+  weight: 4
+  hands: 2
+  special: [Automatic, Sweep]
+Rifle:
+  category: Heavy Weapons
+  cost: 2
+  damage: 2
+  range: 2
+  weight: 2
+  hands: 2
+  special: []
+Sniper:
+  category: Heavy Weapons
+  cost: 3
+  damage: 2
+  range: 3
+  weight: 3
+  hands: 2
+  special: [Unwieldy]
+Shotgun:
+  category: Heavy Weapons
+  cost: 2
+  damage: 4
+  range: .25
+  weight: 2
+  hands: 2
+  special: []
+
+Cannon:
+  category: Vehicle Weapons
+  cost: 1
+  damage: 2
+  range: 3
+  weight: 1
+  special: []
+Turret:
+  category: Vehicle Weapons
+  cost: 1
+  damage: 4
+  range: 1.5
+  weight: 1
+  special: [Automatic, Downsized]
+
+Grenade:
+  category: Explosives
+  cost: 1
+  damage: 0
+  radius: 1
+  weight: 1
+  special: []
+Mine:
+  category: Explosives
+  cost: 1
+  damage: 2
+  radius: 1
+  weight: 2
+  special: []
+Missile:
+  category: Explosives
+  cost: 2
+  damage: 2
+  radius: 1
+  weight: 4
+  special: []

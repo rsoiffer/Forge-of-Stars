@@ -1,0 +1,225 @@
+Chain:
+  cost: 1000
+  damage: 8
+  damage_type: Physical
+  weight: 4
+  special: []
+  shapes: [Axe, Fist, Flail, Glaive, Knife, Shortsword, Sword]
+Laser:
+  cost: 2000
+  damage: 8
+  damage_type: Laser
+  weight: 0.5
+  special: [AP 5, Finesse]
+  shapes: [Claws, Glaive, Knife, Scythe, Shortsword, Staff, Sword, Whip]
+Nanoedge:
+  cost: 600
+  damage: 6
+  damage_type: Physical
+  weight: 1
+  special: []
+  shapes: [Axe, Claws, Glaive, Knife, Rapier, Shortsword, Shuriken, Sword, Whip]
+Rocket:
+  cost: 1000
+  damage: 6
+  damage_type: Physical
+  weight: 6
+  special: [Shove]
+  shapes: [Axe, Fist, Flail, Glaive, Hammer, Scythe, Shuriken, Spear]
+Stun:
+  cost: 600
+  damage: 6
+  damage_type: Electric
+  weight: 1
+  special: []
+  shapes: [Club, Fist, Glaive, Spear, Staff]
+Unarmed:
+  damage: 2
+  damage_type: Physical
+  special: []
+  shapes: [Strike]
+
+Anti-materiel:
+  cost: 2000
+  damage: 8
+  damage_type: Physical
+  range: 40
+  weight: 2
+  special: [AP 10, Reload 1]
+  shapes: [Rifle, Sniper,  Cannon]
+Blaster:
+  cost: 600
+  damage: 6
+  damage_type: Laser
+  range: 40
+  weight: 1
+  special: [Stunner]
+  shapes: [Carbine, Holdout, Machine Gun, Pistol, Rifle, Sniper, Wrist Mount,  Cannon, Turret]
+Bolter:
+  cost: 1200
+  damage: 8
+  damage_type: Explosive
+  range: 40
+  weight: 2
+  special: []
+  shapes: [Machine Gun, Pistol, Rifle, Shotgun, Wrist Mount,  Cannon, Turret]
+Bowcaster:
+  cost: 1000
+  damage: 10
+  damage_type: Laser
+  range: 50
+  weight: 2
+  special: [Reload 1]
+  shapes: [Carbine, Rifle, Wrist Mount]
+Dart:
+  cost: 1000
+  damage: 6
+  damage_type: Chemical
+  range: 30
+  weight: 1
+  special: []
+  shapes: [Holdout, Pistol, Rifle, Sniper, Wrist Mount]
+Disruptor:
+  cost: 3000
+  damage: 8
+  damage_type: Laser
+  range: 40
+  weight: 2
+  special: [Deadly d10]
+  shapes: [Rifle, Sniper,  Cannon]
+Electrogel:
+  cost: 600
+  damage: 6
+  damage_type: Electric
+  range: 30
+  weight: 1
+  special: []
+  shapes: [Carbine, Holdout, Pistol, Rifle, Shotgun]
+Flame:
+  cost: 800
+  damage: 6
+  damage_type: Fire
+  range: 20
+  weight: 1.5
+  special: [Sweep]
+  shapes: [Carbine, Pistol, Rifle,  Turret]
+Grenade:
+  cost: 1200
+  range: 40
+  weight: 2
+  special: [Special Ammo]
+  shapes: [Launcher, Throw]
+Ion:
+  cost: 400
+  damage: 6
+  damage_type: Electric
+  range: 40
+  weight: 1.5
+  special: [Anti-shield]
+  shapes: [Pistol, Rifle,  Cannon, Turret]
+Microsliver:
+  cost: 1000
+  damage: 6
+  damage_type: Physical
+  range: 50
+  weight: 1
+  special: [Silent]
+  shapes: [Holdout, Pistol, Rifle, Sniper]
+Missile:
+  cost: 1200
+  range: 40
+  weight: 2
+  special: [Special Ammo]
+  shapes: [Launcher, Wrist Mount,  Cannon, Turret]
+Railgun:
+  cost: 2000
+  damage: 8
+  damage_type: Physical
+  range: 50
+  weight: 2
+  special: [AP 10]
+  shapes: [Sniper,  Cannon]
+Slug:
+  cost: 800
+  damage: 6
+  damage_type: Physical
+  range: 40
+  weight: 1
+  special: []
+  shapes: [Carbine, Machine Gun, Pistol, Rifle, Shotgun, Sniper, Wrist Mount,  Cannon, Turret]
+
+Anti-tank:
+  cost: 150
+  damage_mul: 1
+  damage: 6
+  damage_type: Explosive
+  radius: 5
+  weight: 1
+  special: [AP 20]
+  shapes: [Grenade, Mine, Missile]
+Chemical:
+  cost: 100
+  damage_mul: 1
+  damage: 6
+  damage_type: Chemical
+  radius: 10
+  weight: 1
+  special: [Poison d8, Smoke]
+  shapes: [Grenade, Mine]
+EMP:
+  cost: 80
+  damage_mul: 1
+  damage: 6
+  damage_type: Electric
+  radius: 20
+  weight: 1
+  special: [Anti-shield]
+  shapes: [Grenade, Mine, Missile]
+Frag:
+  cost: 100
+  damage_mul: 1
+  damage: 6
+  damage_type: Physical
+  radius: 10
+  weight: 1
+  special: []
+  shapes: [Grenade, Mine]
+Gravity:
+  cost: 100
+  radius: 10
+  weight: 1
+  special: []
+  shapes: [Grenade, Mine]
+Nuclear:
+  cost: 200
+  damage_mul: 1
+  damage: 10
+  damage_type: Explosive
+  radius: 5
+  weight: 1
+  special: [AP 5, Poison d8]
+  shapes: [Grenade, Mine, Missile]
+Smoke:
+  cost: 50
+  radius: 20
+  weight: 1
+  special: [Smoke]
+  shapes: [Grenade]
+Sonic:
+  cost: 120
+  damage_mul: 1
+  damage: 6
+  damage_type: Sonic
+  radius: 20
+  weight: 1
+  special: []
+  shapes: [Grenade]
+Thermal:
+  cost: 100
+  damage_mul: 1
+  damage: 6
+  damage_type: Fire
+  radius: 10
+  weight: 1
+  special: [AP 5]
+  shapes: [Grenade, Mine, Missile]

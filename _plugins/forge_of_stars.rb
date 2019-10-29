@@ -25,13 +25,15 @@ module ForgeOfStars
       joined_weapons.flat_map do |type|
         type["shapes"].map do |shape|
           {
-            "name" => "#{type["name"]} #{shape["name"].downcase}",
-            "skill" => shape["skill"],
-            "cost" => (type["cost"] * shape["cost"]).round,
-            "damage" => type["damage"] + shape["damage"],
-            "damage_type" => type["damage_type"],
-            "weight" => (type["weight"] * shape["weight"]).round,
-            "special" => type["special"] + shape["special"]
+            "category" => shape["category"],
+            "Name" => "#{type["name"]} #{shape["name"]}".capitalize,
+            "Cost" => ("#{(type["cost"] * shape["cost"]).round} cred" if type["cost"] && shape["cost"]),
+            "Damage" => ("#{1 + type["damage_mul"].to_i + shape["damage_mul"].to_i}d#{type["damage"] + shape["damage"]} #{type["damage_type"]}" if type["damage"] && shape["damage"]),
+            "Range" => ("#{(type["range"] * shape["range"]).round} ft" if type["range"] && shape["range"]),
+            "Radius" => ("#{(type["radius"] * shape["radius"]).round} ft" if type["radius"] && shape["radius"]),
+            "Weight" => ("#{(type["weight"] * shape["weight"]).round} lb" if type["weight"] && shape["weight"]),
+            "Hands" => shape["hands"],
+            "Special" => (type["special"] + shape["special"]).sort.uniq.join(", ").capitalize
           }
         end
       end
