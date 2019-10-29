@@ -70,14 +70,14 @@ Bowcaster:
   range: 50
   weight: 2
   special: [Reload 1]
-  shapes: [Carbine, Rifle, Wrist Mount]
+  shapes: [Carbine, Rifle, Sniper, Wrist Mount]
 Dart:
   cost: 1000
   damage: 6
   damage_type: Chemical
   range: 30
   weight: 1
-  special: []
+  special: [Poison d6]
   shapes: [Holdout, Pistol, Rifle, Sniper, Wrist Mount]
 Disruptor:
   cost: 3000
@@ -103,12 +103,6 @@ Flame:
   weight: 1.5
   special: [Sweep]
   shapes: [Carbine, Pistol, Rifle,  Turret]
-Grenade:
-  cost: 1200
-  range: 40
-  weight: 2
-  special: [Special Ammo]
-  shapes: [Launcher, Throw]
 Ion:
   cost: 400
   damage: 6
@@ -125,12 +119,6 @@ Microsliver:
   weight: 1
   special: [Silent]
   shapes: [Holdout, Pistol, Rifle, Sniper]
-Missile:
-  cost: 1200
-  range: 40
-  weight: 2
-  special: [Special Ammo]
-  shapes: [Launcher, Wrist Mount,  Cannon, Turret]
 Railgun:
   cost: 2000
   damage: 8
@@ -148,6 +136,25 @@ Slug:
   special: []
   shapes: [Carbine, Machine Gun, Pistol, Rifle, Shotgun, Sniper, Wrist Mount,  Cannon, Turret]
 
+Grenade:
+  cost: 800
+  range: 40
+  weight: 1.5
+  special: [Special Ammo]
+  shapes: [Launcher, Throw]
+Missile:
+  cost: 1200
+  range: 60
+  weight: 2
+  special: [Special Ammo]
+  shapes: [Launcher, Wrist Mount,  Cannon, Turret]
+Torpedo:
+  cost: 1600
+  range: 60
+  weight: 2
+  special: [Special Ammo, Tracking]
+  shapes: [Launcher,  Cannon]
+
 Anti-tank:
   cost: 150
   damage_mul: 1
@@ -156,7 +163,7 @@ Anti-tank:
   radius: 5
   weight: 1
   special: [AP 20]
-  shapes: [Grenade, Mine, Missile]
+  shapes: [Grenade, Mine, Missile, Torpedo]
 Chemical:
   cost: 100
   damage_mul: 1
@@ -166,6 +173,15 @@ Chemical:
   weight: 1
   special: [Poison d8, Smoke]
   shapes: [Grenade, Mine]
+Cluster:
+  cost: 120
+  damage_mul: 1
+  damage: 6
+  damage_type: Explosive
+  radius: 20
+  weight: 1
+  special: []
+  shapes: [Mine, Missile, Torpedo]
 EMP:
   cost: 80
   damage_mul: 1
@@ -174,7 +190,13 @@ EMP:
   radius: 20
   weight: 1
   special: [Anti-shield]
-  shapes: [Grenade, Mine, Missile]
+  shapes: [Grenade, Mine, Missile, Torpedo]
+Flashbang:
+  cost: 50
+  radius: 15
+  weight: 1
+  special: [Blind]
+  shapes: [Grenade]
 Frag:
   cost: 100
   damage_mul: 1
@@ -188,7 +210,7 @@ Gravity:
   cost: 100
   radius: 10
   weight: 1
-  special: []
+  special: [Entangle]
   shapes: [Grenade, Mine]
 Nuclear:
   cost: 200
@@ -198,7 +220,7 @@ Nuclear:
   radius: 5
   weight: 1
   special: [AP 5, Poison d8]
-  shapes: [Grenade, Mine, Missile]
+  shapes: [Grenade, Mine, Missile, Torpedo]
 Smoke:
   cost: 50
   radius: 20
@@ -213,7 +235,7 @@ Sonic:
   radius: 20
   weight: 1
   special: []
-  shapes: [Grenade]
+  shapes: [Grenade, Missile, Torpedo]
 Thermal:
   cost: 100
   damage_mul: 1
