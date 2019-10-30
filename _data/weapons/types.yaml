@@ -3,7 +3,7 @@ Chain:
   damage: 8
   damage_type: Physical
   weight: 4
-  special: []
+  special: [Messy]
   shapes: [Axe, Fist, Flail, Glaive, Knife, Shortsword, Sword]
 Laser:
   cost: 2000
@@ -61,7 +61,7 @@ Bolter:
   damage_type: Explosive
   range: 40
   weight: 2
-  special: []
+  special: [Messy]
   shapes: [Machine Gun, Pistol, Rifle, Shotgun, Wrist Mount,  Cannon, Turret]
 Bowcaster:
   cost: 1000

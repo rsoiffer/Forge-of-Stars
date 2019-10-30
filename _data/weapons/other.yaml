@@ -12,19 +12,31 @@ traits:
   AP: Pierces through heavy armor
   Automatic: Fires very rapidly
   Backswing: Bonus to hit after missing
+  Blind: Blinds enemies on a hit
   Deadly: On a crit, add more damage
   Disarm: Can disarm without free hand
   Downsized: Counts as one size class smaller
+  Entangle: Restains enemies on a hit
   Fatal: Increase die size on a crit
   Finesse: Can use Agility instead of Strength
   Forceful: Bonus to damage after attacking
   Free-hand: Leaves your hand free
   Grapple: Can grapple without free hand
+  Messy: Damage the environment on a crit miss
   Parry: Can use action to increase defense
+  Poison: Deal recurring damage on a hit
   Propulsive: Add half strength to damage
   Reach: Can attack faraway creatures
+  Reload: Requires actions to reload after firing
   Shove: Can shove without free hand
+  Silent: Makes no sound when attacking
+  Small: Can be easily concealed
+  Smoke: Explodes into obscuring fog
+  Special ammo: Uses individual explosives as ammo
+  Stunner: Can deal nonlethal Electric damage
   Sweep: Bonus to hit after attacking other creature
   Thrown: Can throw weapon to attack
+  Tracking: Can reroll the next round after a miss
   Trip: Can trip without free hand
+  Unarmed: Not technically a weapon, but listed here anyways
   Unwieldy: Penalty for attacking nearby
