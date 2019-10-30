@@ -1,0 +1,105 @@
+# Light Armor
+
+Armored Clothing:
+  type: Light
+  cost: 1500
+  ac: 1
+  max_agi: 4
+  weight: 1
+  special: []
+
+Chameleon Suit:
+  type: Light
+  cost: 3000
+  ac: 0
+  max_agi: 5
+  weight: 1
+  special: [Stealthy]
+
+Environment Gear:
+  type: Light
+  cost: 2500
+  ac: 1
+  max_agi: 3
+  weight: 1
+  special: [Insulated]
+
+Heavy Clothing:
+  type: Light
+  cost: 200
+  ac: 1
+  max_agi: 4
+  req_str: 0
+  weight: 1
+  special: []
+
+Padded Armor:
+  type: Light
+  cost: 1000
+  ac: 2
+  max_agi: 3
+  req_str: 0
+  weight: 1
+  special: []
+
+# Heavy Armor
+
+Laminate:
+  type: Heavy
+  cost: 1200
+  ac: 2
+  hp: 5 armor
+  max_agi: 3
+  req_str: 1
+  weight: 1
+  special: []
+
+Battle Armor:
+  type: Heavy
+  cost: 2000
+  ac: 3
+  hp: 10 armor
+  max_agi: 2
+  req_str: 2
+  weight: 1
+  special: []
+
+Heavy Battle Armor:
+  type: Heavy
+  cost: 2500
+  ac: 4
+  hp: 15 armor
+  max_agi: 1
+  req_str: 3
+  weight: 1
+  special: [Bulwark 2]
+
+Milspec:
+  type: Heavy
+  cost: 4000
+  ac: 5
+  hp: 20 armor
+  max_agi: 0
+  req_str: 4
+  weight: 1
+  special: [Bulwark 2]
+
+Dreadnought Armor:
+  type: Heavy
+  cost: 8000
+  ac: 5
+  hp: 25 armor
+  max_agi: 0
+  req_str: 5
+  weight: 1
+  special: [Bulwark 4]
+
+# Shields?
+
+Deflector Shield:
+  type: Shield
+  cost: 1
+  ac: 2
+  hp: 20 shield
+  weight: 1
+  special: []

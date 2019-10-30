@@ -78,13 +78,6 @@ Shortsword:
   weight: .75
   hands: 1
   special: [Agile, Finesse]
-Shuriken:
-  category: Melee Weapons
-  cost: .25
-  damage: 0
-  weight: .25
-  hands: 1
-  special: [Agile, Thrown 20]
 Spear:
   category: Melee Weapons
   cost: 1
