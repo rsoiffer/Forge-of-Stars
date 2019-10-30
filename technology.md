@@ -7,4 +7,4 @@ sidebar:
 
 Here are some important technologies in the setting.
 
-The [warp drive](the-warp-drive.html) enables interstellar travel.
+The {% ref warp drive %} enables interstellar travel.
