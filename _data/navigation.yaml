@@ -17,5 +17,7 @@ system:
 setting:
   - title: Factions
     url: /factions.html
+  - title: Thematic Conflicts
+    url: /thematic-conflicts.html
   - title: Technology
     url: /technology.html
