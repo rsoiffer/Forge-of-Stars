@@ -9,6 +9,9 @@
 .page {
   padding-right: 0;
 }
+.search__toggle {
+  color: $masthead-link-color
+}
 
 th {
   border-bottom: 1px solid mix(#000, $border-color, 25%)

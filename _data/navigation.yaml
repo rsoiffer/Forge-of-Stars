@@ -1,6 +1,8 @@
 main:
   - title: Game System
     url: /system.html
+  - title: Setting
+    url: /setting.html
 
 system:
   - title: Power Schools
@@ -11,3 +13,9 @@ system:
     url: /weapons.html
   - title: Armor
     url: /armor.html
+
+setting:
+  - title: Factions
+    url: /factions.html
+  - title: Technology
+    url: /technology.html
