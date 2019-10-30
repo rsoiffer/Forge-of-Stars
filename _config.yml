@@ -11,6 +11,8 @@ theme: minimal-mistakes-jekyll
 feed:
   path: ""
 
+search: true
+
 minimal_mistakes_skin: sunrise
 
 page_gen:
