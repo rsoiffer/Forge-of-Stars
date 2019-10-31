@@ -2,10 +2,10 @@
 layout: single
 title: Armor
 sidebar:
-  nav: system
+  nav: equipment
 ---
 
-<h2>Light Armor</h2>
+## Light Armor
 
 <table>
   <tr>
@@ -34,7 +34,7 @@ sidebar:
   {% endfor %}
 </table>
 
-<h2>Heavy Armor</h2>
+## Heavy Armor
 
 <table>
   <tr>

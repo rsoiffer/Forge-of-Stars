@@ -12,6 +12,12 @@
 .search__toggle {
   color: $masthead-link-color
 }
+.page__content p {
+  margin-bottom: .75em
+}
+.page__content h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em
+}
 
 th {
   border-bottom: 1px solid mix(#000, $border-color, 25%)

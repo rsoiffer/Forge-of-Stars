@@ -2,7 +2,7 @@
 layout: single
 title: Weapons
 sidebar:
-  nav: system
+  nav: equipment
 ---
 
 Now with {{ site.data.weapon_combinations | size }} unique weapons!
@@ -11,7 +11,7 @@ Now with {{ site.data.weapon_combinations | size }} unique weapons!
   {% assign weapons = site.data.weapon_combinations | where: "category", category[0] %}
   {% assign num_weapons = weapons | size %}
   {% if num_weapons > 0 %}
-    <h2>{{ category[0] }}</h2>
+    <h2 id = {{ category[0] | slugify }}>{{ category[0] }}</h2>
 
     <table>
       <tr>
@@ -30,8 +30,8 @@ Now with {{ site.data.weapon_combinations | size }} unique weapons!
   {% endif %}
 {% endfor %}
 
-<h2>Weapon Traits</h2>
+<h2 id = "weapon-traits">Weapon Traits</h2>
 {% for trait in site.data.weapons.other.traits %}
-  <h3>{{ trait[0] }}</h3>
+  <h3 id = {{ trait[0] | slugify }}>{{ trait[0] }}</h3>
   {{ trait[1] }}
 {% endfor %}

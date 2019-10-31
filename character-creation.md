@@ -11,23 +11,55 @@ As in other tabletop RPGs, before beginning character creation, you should talk 
 
 The first step in making any character is deciding what you generally want your character to be. Will you be a powerful mage, casting arcane spells that reshape reality? A kung-fu master who can somersault and jump between enemies? A hardened soldier with a variety of weapons, who can tough through any situation?
 
-In this step, you should develop these ideas more, working out the details of what you imagine your character will act and feel like. While you don’t have to write any of this down, you should keep it in mind as you create the rest of your character. The general theme you have in mind can guide you in choosing what specific powers your character will have, greatly speeding up character creation.
+In this step, you should develop these ideas more, working out the details of what you imagine your character will act and feel like. While you don't have to write any of this down, you should keep it in mind as you create the rest of your character. The general theme you have in mind can guide you in choosing what specific powers your character will have, greatly speeding up character creation.
 
 ## Step 2. Determine Attribute Scores
 
-The next step is to determine your character’s attributes. Forge of Stars uses 6 attributes: Strength, Agility, Precision, Intelligence, Wisdom, and Charisma. Your score in each attribute is a single number, which generally ranges from -1 to +5. The average value of an attribute for a normal human is +0.
+The next step is to determine your character's attributes. Characters in Forge of Stars have 6 attributes: Strength, Agility, Precision, Intelligence, Wisdom, and Charisma. Your score in each attribute is a single number, which generally ranges from -1 to +5. The average value of an attribute for a normal human is +0. See the table below for a description of each attribute.
 
 Your starting score in each attribute is a number between -1 and +3. You can choose any starting scores you want such that your scores sum to a total to 6. Write the final values of your attributes on your character sheet.
 
+### Attribute Descriptions
+<table>
+  <tr>
+    <th>Attribute</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Strength</td>
+    <td>How physically powerful you are. Good for feats of endurance, wrestling creatures, and attacking in melee.</td>
+  </tr>
+  <tr>
+    <td>Agility</td>
+    <td>How fast and nimble you are. Good for feats of acrobatics, dodging attacks, and being stealthy.</td>
+  </tr>
+  <tr>
+    <td>Precision</td>
+    <td>How well you can aim and react. Good for driving vehicles, firing guns, and reacting quickly to threats.</td>
+  </tr>
+  <tr>
+    <td>Intelligence</td>
+    <td>How book-smart you are. Good for recalling information, casting magic spells, and repairing machines.</td>
+  </tr>
+  <tr>
+    <td>Wisdom</td>
+    <td>How much common sense you have. Good for noticing things, resisting mental manipulation, and some mystical abilities.</td>
+  </tr>
+  <tr>
+    <td>Charisma</td>
+    <td>How much force of personality you have. Good for persuading, deceiving, or leading other people and spirits.</td>
+  </tr>
+</table>
+
 ## Step 3. Choose your Skills
 
-You now choose what skills your character is proficient in. Skills are divided into two broad categories: combat skills, which are always used during combat, and general skills, which can be used at any time (though usually outside of combat). See Section 2 for a full list of all skills and their purpose in the game.
+You now choose what skills your character is proficient in. Skills are divided into three broad categories. Combat skills, which are always used during combat, represent your skill with types of weapons or magic. General skills represent your ability to perform non-combat tasks of all kinds. Lore skills represent in-depth knowledge of particular subjects. See the {% ref skills %} page for a full list of all skills and their purpose in the game.
 
-Your character is proficient in 8 skills of your choice. Write these skills on your character sheet. While you can split these 8 skills between the categories however you want, it’s recommended that you choose proficiency in at least 2 combat skills and 2 general skills. 
+Your character is proficient in 4 combat skills, 4 general skills, and 2 + Intelligence lore skills. Write these skills on your character sheet.
 
 ## Step 4. Choose your Powers
 
-Powers are a general term for all the special abilities your character has. They cover everything from basic actions to powerful spells. Most of character customizability comes from picking your character’s powers.
+Powers are a general term for all the special abilities your character has. They cover everything from basic actions to powerful spells. Most of character customizability comes from picking your character's powers.
 
 ***Basic powers*** are shared across all characters. Your character can use all the powers listed in the Basic Powers part of Section 4.
 
@@ -37,7 +69,7 @@ All Learned powers are part of a power school, which is a group of many thematic
 
 Your character starts with 0 points in each power school. When you create your character, you split a number of points equal to your character level between the power schools. For example, if you have a level 5 character, you could choose to put 3 points in Telekinetic and 2 points in Duelist, or you could choose to put all 5 points in Battlesmith. The number of points you put into a power school is called your level in that school, and it determines how many powers you get from that school. Write your level in each power school on your character sheet.
 
-Your character knows a number of powers from each power school equal to your level in that school. Some Learned powers are limited by your character’s level and your level in the power’s school. All Learned powers are listed as Novice, Veteran, Master, or Epic. To learn a power, you must meet the requirements in the table below:
+Your character knows a number of powers from each power school equal to your level in that school. Some Learned powers are limited by your character's level and your level in the power's school. All Learned powers are listed as Novice, Veteran, Master, or Epic. To learn a power, you must meet the requirements in the table below:
 
 <table>
   <tr>
@@ -79,27 +111,35 @@ You learn one ribbon at every odd character level. This means that the total num
 
 ## Step 6. Choose your ASIs/Feats
 
-Your character becomes stronger in other ways than simply learning more powers. At every even level, you can choose to either get an Attribute Score Improvement (ASI) or a feat. This means that the total number of ASIs or feats you get is equal to half your character level, rounded down. This represents your character becoming stronger generally, in a way that isn’t tied to any specific power school.
+Your character becomes stronger in other ways than simply learning more powers. At every even level, you can choose to either get an Attribute Score Improvement (ASI) or a feat. This means that the total number of ASIs or feats you get is equal to half your character level, rounded down. This represents your character becoming stronger generally, in a way that isn't tied to any specific power school.
 
 When you get an ASI, you increase your score in an attribute by 1 point, to a maximum of 5. When you get a feat, you choose any one feat from the list of feats. See Section 2 for the full list of feats and their descriptions.
 
 ## Step 7. Compute Miscellaneous Stats
 
-You’re now almost finished making your character! The only difficult thing left to do is to write down a few numbers describing various aspects of your character.
-* Your character has a proficiency bonus (abbreviated as Prof), which you add as a bonus to skill rolls for skills you are proficient in. Just like in D&D 5e, your PROF equals (Level / 4) + 1, rounded up.
-* Your character has a number of hit points (abbreviated as HP), which measure how much damage you can take before falling unconscious. Your HP is equal to Strength + Prof + 5 * Level.
-* Your character has an armor class (abbreviated as AC), which measures how difficult you are to hit with physical attacks. Your AC is equal to 10 + Agility + Prof. Your AC can be increased by wearing armor.
-* Your character has an initiative score, which measures how quick you are to react to combat. Your initiative score is equal to Precision + Prof.
+You're now almost finished making your character! The only difficult thing left to do is to write down a few numbers describing various aspects of your character.
+
+***Level.*** Your character's level describes your overall strength. Most characters are between levels 1 and 20, but this isn't a hard limit. The GM determines what level your character is.
+
+***Prof.*** Your character has a proficiency bonus (abbreviated as Prof), which you add as a bonus to skill rolls for skills you are proficient in. Like D&D 5e, your proficiency bonus is equal to (Level / 4) + 1, rounded up.
+
+***HP.*** Your character has a number of hit points (abbreviated as HP), which measure how much damage you can take before falling unconscious. Your HP is equal to Strength + Prof + 5 * Level.
+
+***AC.*** Your character has an armor class (abbreviated as AC), which measures how difficult you are to hit with physical attacks. Your AC is equal to 10 + Agility + Prof, though it can be increased by wearing armor.
+
+***Initiative.*** Your character has an initiative score, which measures how quick you are to react to combat. Your initiative is equal to Precision + Prof.
+
+***Speed.*** How many feet you can move in a single action. Your speed is equal to 30 ft.
 
 ## Step 8. Buy Equipment
 
-Don’t forget to buy equipment to use in your adventures! You start with (2000 * your character level) credits. See Section 3 for a list of weapons and armor and their prices. If you want to buy standard adventuring gear, ask your GM if you can use gear tables from D&D 5e.
+Don't forget to buy equipment to use in your adventures! You start with (2000 * your character level) credits. See the {% ref weapons %} and {% ref armor %} pages for stats. More tables for standard adventuring gear, as well as strange high-tech gadgets, are on the way.
 
 [//]: # (If your party is using the Bonus Feat or Unique Abilities variant rules in Section 5, now is a good time to choose that feat or ability.)
 
 ## Step 9. Choose your Personality
 
-What your character will choose to do is as important as what your character has the power to do. You should write notes on your character sheet that give a general description of your character’s personality, preferably at least one sentence for each topic below. The better you act out your character’s personality, the more likely you are to get Inspiration (see Section 4).
+What your character will choose to do is as important as what your character has the power to do. You should write notes on your character sheet that give a general description of your character's personality, preferably at least one sentence for each topic below. The better you act out your character's personality, the more likely you are to get Inspiration (see Section 4).
 
 ***Personality Traits.*** These describe the obvious character traits that makes your character stand out from the average adventurer.
 
@@ -111,4 +151,4 @@ What your character will choose to do is as important as what your character has
 
 ## Step 10. Write your Backstory
 
-The final step in making a character is figuring out how you reached the start of the adventure. You should write down some basic notes about where your character was raised, any previous jobs you’ve held, and how you met the rest of the party. Your backstory is also the perfect place to introduce the NPC contacts that your character knows. The more detail you write, the better your GM will be able to merge this detail with the campaign setting.
+The final step in making a character is figuring out how you reached the start of the adventure. You should write down some basic notes about where your character was raised, any previous jobs you've held, and how you met the rest of the party. Your backstory is also the perfect place to introduce the NPC contacts that your character knows. The more detail you write, the better your GM will be able to merge this detail with the campaign setting.

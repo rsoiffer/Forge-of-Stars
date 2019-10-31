@@ -1,0 +1,89 @@
+Administer First Aid:
+  type: 2-Actions, At-Will
+  traits: [Manipulate]
+  tags:
+    requirements: You have healer's tools
+  effect: |
+    You perform first aid on an adjacent creature with the dying condition. Attempt a Medicine roll with DC 15.
+  success: The creature loses the dying condition (but remains downed)
+  critical-failure: The creature's dying condition increases by 1
+
+Crawl:
+  type: 1-Action, At-Will
+  traits: [Move]
+  tags:
+    requirements: You are prone and your speed is at least 10 feet
+  effect: |
+    You move 5 feet by crawling and continue to stay prone.
+
+Drop Prone:
+  type: 1-Action, At-Will
+  traits: [Move]
+  effect: |
+    You fall prone.
+
+Interact:
+  type: 1-Action, At-Will
+  traits: [Manipulate]
+  effect: |
+    You use your hand or hands to manipulate an object or the terrain. You can grab an unattended or stored object, open a door, or produce some similar effect. You might have to attempt a skill roll to determine if your Interact action was successful.
+
+Leap:
+  type: 1-Action, At-Will
+  traits: [Move]
+  effect: |
+    You take a careful, short jump. You can leap up to half your speed horizontally, or up to a quarter of your speed vertically. Jumping a greater distance requires using the Acrobatics skill.
+
+Release:
+  type: Free, At-Will
+  traits: [Manipulate]
+  effect: |
+    You release something you're holding in your hand or hands. This might mean dropping an item, removing one hand from your weapon while continuing to hold it in another hand, releasing a rope suspending a chandelier, or performing a similar action.
+
+Seek:
+  type: 1-Action, At-Will
+  traits: [Concentrate]
+  effect: |
+    You look for a dude (more TBD)
+
+Sense Motive:
+  type: 1-Action, At-Will
+  traits: [Concentrate]
+  effect: |
+    You tell whether a dude is lying (more TBD)
+
+Stand:
+  type: 1-Action, At-Will
+  traits: [Move]
+  effect: |
+    You stand up from prone.
+
+Step:
+  type: 1-Action, At-Will
+  traits: [Move]
+  tags:
+    requirements: Your speed is at least 10 feet
+  effect: |
+    You carefully move 5 feet. Unlike most types of movement, Step doesn't trigger reactions that are triggered by move actions or upon leaving or entering a square. You can't Step into difficult terrain.
+
+Stride:
+  type: 1-Action, At-Will
+  traits: [Move]
+  effect: |
+    You move a distance up to your speed.
+
+Strike:
+  type: 1-Action, At-Will
+  traits: [Attack]
+  effect: |
+    You attack with a weapon you're wielding, targeting one creature within your reach (for a melee attack) or within range (for a ranged attack). Make an attack roll for the weapon you're using, and compare the result to your target's AC to determine the effect. See [here](basic-rules.html#attacking) for more information.
+  critical-success: As success, but you deal double damage
+  success: You deal damage according to the weapon you're wielding
+
+Take Cover:
+  type: 1-Action, At-Will
+  traits: []
+  tags:
+    requirements: You are benefitting from cover or are prone
+  effect: |
+    If you are benefitting from [cover](combat-rules.html#taking-cover), the cover's bonus is doubled. Alternatively, if you are prone, you gain the benefits of standard cover against enemies at least 15 feet away from you. This lasts until you move from your current space, use an attack action, become [unconscious](conditions.html#unconscious), or end this effect as a free action.

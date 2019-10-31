@@ -21,19 +21,19 @@ Light Weapons:
 Heavy Weapons:
   attribute: Precision
   type: Combat
-  brief: "Heavy two-handed guns, such as rifles or grenade launchers"
-  description: ""
-
-Vehicle Weapons:
-  attribute: Precision
-  type: Combat
-  brief: "Ranged weapons mounted on vehicles"
+  brief: "Large two-handed guns, such as rifles or grenade launchers"
   description: ""
 
 Sorcery:
   attribute: Intelligence
   type: Combat
-  brief: "Casting spells I guess?"
+  brief: "Casting spells (?)"
+  description: ""
+
+Mysticism:
+  attribute: Wisdom
+  type: Combat
+  brief: "Freeform magic (?)"
   description: ""
 
 Conjuring:
@@ -42,19 +42,19 @@ Conjuring:
   brief: "Summoning, binding, and banishing spirits"
   description: ""
 
-Fortitude Save:
+Fortitude:
   attribute: Strength
   type: Combat
   brief: "Persevere through diseases, poison, or exhausting"
   description: ""
 
-Reflex Save:
+Reflex:
   attribute: Agility
   type: Combat
   brief: "Dodge out of the way of dangerous explosions or spells"
   description: ""
 
-Will Save:
+Will:
   attribute: Wisdom
   type: Combat
   brief: "Resist fear or mind control effects with your force of will"
@@ -104,22 +104,22 @@ Medicine:
   brief: "Patch up wounds and hlep people recover from diseases and poisons"
   description: ""
 
+Insight:
+  attribute: Wisdom
+  type: General
+  brief: "Determine the true intentions of a creature"
+  description: ""
+
 Nature:
   attribute: Wisdom
   type: General
-  brief: "Interact natural world, and train animals and magical beasts"
+  brief: "Grow plants, train animals, and predict an animal's behavior"
   description: ""
 
 Perception:
   attribute: Wisdom
   type: General
   brief: "Spot, hear, or otherwise detect the prescence of something"
-  description: ""
-
-Sense Motive:
-  attribute: Wisdom
-  type: General
-  brief: "Determine the true intentions of a creature"
   description: ""
 
 Survival:

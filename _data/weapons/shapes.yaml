@@ -148,7 +148,7 @@ Wrist Mount:
 
 Launcher:
   category: Heavy Weapons
-  cost: 4
+  cost: 2
   damage: 2
   range: 1
   weight: 4
@@ -166,7 +166,7 @@ Rifle:
   category: Heavy Weapons
   cost: 2
   damage: 2
-  range: 2
+  range: 3
   weight: 2
   hands: 2
   special: []
@@ -174,7 +174,7 @@ Sniper:
   category: Heavy Weapons
   cost: 3
   damage: 2
-  range: 3
+  range: 10
   weight: 3
   hands: 2
   special: [Unwieldy]
@@ -182,7 +182,7 @@ Shotgun:
   category: Heavy Weapons
   cost: 2
   damage: 4
-  range: .25
+  range: .5
   weight: 2
   hands: 2
   special: [Forceful]

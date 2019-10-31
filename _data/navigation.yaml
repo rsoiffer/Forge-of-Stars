@@ -1,6 +1,8 @@
 main:
   - title: Game System
     url: /system.html
+  - title: Equipment
+    url: /equipment.html
   - title: Setting
     url: /setting.html
 
@@ -13,6 +15,12 @@ system:
     url: /skills.html
   - title: Power Schools
     url: /schools.html
+  - title: Combat Rules
+    url: /combat-rules.html
+  - title: Conditions
+    url: /conditions.html
+
+equipment:
   - title: Weapons
     url: /weapons.html
   - title: Armor
