@@ -5,10 +5,14 @@ main:
     url: /setting.html
 
 system:
-  - title: Power Schools
-    url: /schools.html
+  - title: Basic Rules
+    url: /basic-rules.html
+  - title: Character Creation
+    url: /character-creation.html
   - title: Skills
     url: /skills.html
+  - title: Power Schools
+    url: /schools.html
   - title: Weapons
     url: /weapons.html
   - title: Armor
