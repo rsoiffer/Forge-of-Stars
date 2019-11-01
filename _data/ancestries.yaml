@@ -1,0 +1,81 @@
+Bear:
+  lore: |
+    Hyper-intelligent space bears! (same stats work for gorillas, dinosaurs, etc.)
+  effects: |
+    * Innate climb speed, bonus land speed
+    * Limited telepathy (range 30 feet)
+    * Your unarmed strikes deal 1d4 damage
+
+Droid:
+  lore: |
+    Robots!
+  effects: |
+    * Don't have to eat, drink, sleep, or breathe
+    * +2 to resist poison and mental effects
+    * Expertise in one general skill
+
+Dwarf:
+  lore: |
+    Short miner dudes!
+  effects: |
+    * Slow speed, but no penalties from armor
+    * +2 to resist poisons, spells, and combat maneuvers
+    * Darkvision (range 60 feet)
+    * Racial grudge - you choose which creature type
+
+Elcor:
+  lore: |
+    Elephant sloth things!
+  effects: |
+    * Slow speed, but no penalties from armor
+    * Special action to brace and become tankier
+    * Flat affect - hard to read their emotions
+    * Bonuses to common sense checks
+
+Goblin:
+  lore: |
+    PF2e crazy tinkers!
+  effects: |
+    * Especially fast
+    * +2 to Engineering, Stealth, Survival
+    * Temporarily repair an item
+
+Human:
+  lore: |
+    Generic normies
+  effects: |
+    * A bonus feat
+    * A bonus general skill
+    * A bonus lore skill
+
+Ork:
+  lore: |
+    Aggressive fungus dudes!
+  effects: |
+    * Drop to 1
+    * Ork dash
+    * Bonus lores/skills?
+
+Scion:
+  lore: |
+    Part-outsider people! (aasimar, tieflings, etc)
+  effects: |
+    * Resistance to two damage types
+    * +2 to two skills
+    * A bonus Conjurer ribbon
+
+Vesk:
+  lore: |
+    Honorable warrior lizardfolk!
+  effects: |
+    * When wearing armor, you gain a +1 bonus to AC
+    * You have a +2 bonus to saving throws against fear effects
+    * Your unarmed strikes deal 1d4 damage
+
+Vulcan:
+  lore: |
+    Logical space elves!
+  effects: |
+    * +4 to resist emotion effects
+    * Can trance instead of sleeping
+    * Mind meld - touch range telepathic links

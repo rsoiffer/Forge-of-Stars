@@ -8,14 +8,6 @@ Administer First Aid:
   success: The creature loses the dying condition (but remains downed)
   critical-failure: The creature's dying condition increases by 1
 
-Crawl:
-  type: 1-Action, At-Will
-  traits: [Move]
-  tags:
-    requirements: You are prone and your speed is at least 10 feet
-  effect: |
-    You move 5 feet by crawling and continue to stay prone.
-
 Drop Prone:
   type: 1-Action, At-Will
   traits: [Move]

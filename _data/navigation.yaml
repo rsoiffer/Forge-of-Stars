@@ -11,8 +11,12 @@ system:
     url: /basic-rules.html
   - title: Character Creation
     url: /character-creation.html
+  - title: Ancestries
+    url: /ancestries.html
   - title: Skills
     url: /skills.html
+  - title: Feats
+    url: /feats.html
   - title: Power Schools
     url: /schools.html
   - title: Combat Rules

@@ -1,5 +1,5 @@
 Blinded: |
-  You can't see. All normal terrain is difficult terrain to you. You can't detect anything using vision. You automatically critically fail Perception checks that require you to be able to see, and if vision is your only precise sense, you take a -4 status penalty to Perception checks and attack rolls.
+  You can't see. All normal terrain is difficult terrain to you. You can't detect anything using vision. You automatically critically fail Perception checks that require you to be able to see. If vision is your only precise sense, you're flat-footed, and you take a -4 penalty to Perception rolls and attack rolls.
 
 Downed: |
   You are severely injured and are barely able to move. You have the prone and slowed 2 conditions, and you cannot stand up. This condition ends if your HP goes above 0.
@@ -17,7 +17,7 @@ Immobilized: |
   You can't use any action with the move trait. If you're immobilized by something holding you in place and an external force would move you out of your space, the force must succeed at a check against the DC of the effect holding you.
 
 Prone: |
-  You're lying on the ground. You are flat-footed and take a -2 penalty to attack rolls. The only move actions you can use while you're prone are Crawl and Stand. Standing up ends the prone condition.
+  You're lying on the ground. You are flat-footed and take a -2 penalty to attack rolls. The only move actions you can use while you're prone are [Stand](basic-actions.html#stand) and [Stride](basic-actions.html#stride), and you can only move by crawling. Standing up ends the prone condition.
 
 Quickened: |
   You have more actions. You gain 1 additional action at the start of your turn each round.
