@@ -6,6 +6,10 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+hr {
+  margin: 0.5em 0;
+}
+
 .page {
   padding-right: 0;
 }
@@ -63,10 +67,12 @@ tr:nth-child(odd) {
   text-transform: uppercase;
 }
 
+p + .tags {
+  margin-top: -0.75em;
+}
+
 .tags {
-  border-bottom: 1px solid $border-color;
-  margin: 0 0 0.5em 0;
-  padding-bottom: 0.5em;
+  margin: 0;
 
   dt, dd {
     display: inline;

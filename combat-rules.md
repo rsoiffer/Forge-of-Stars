@@ -81,12 +81,16 @@ If you take a 5-minute rest, you recover the ability to use any Encounter powers
 When you take damage that brings your HP to 0, you gain the [dying 1](conditions.html#dying-x) condition. If this damage was from an enemy's critical hit or a critical failure on your save, you instead gain the [dying 2](conditions.html#dying-x) condition. While you have the dying condition, you are bleeding out, and you must make a death save at the start of each of your turns. Other creatures can use the [Administer First Aid](basic-actions.html#administer-first-aid) action to try to stabilize you.
 
 ### Death Save
+
 A death save is a Fortitude save against DC 10.
 
-**Critical Success:** Your dying condition decreases by 2
-
-**Success:** Your dying condition decreases by 1
-
-**Failure:** Your dying condition increases by 1
-
-**Critical Failure:** Your dying condition increases by 2
+<dl class="tags">
+  <dt>Critical Success</dt>
+  <dd>Your dying condition decreases by 2</dd>
+  <dt>Success</dt>
+  <dd>Your dying condition decreases by 1</dd>
+  <dt>Failure</dt>
+  <dd>Your dying condition increases by 1</dd>
+  <dt>Critical Failure</dt>
+  <dd>Your dying condition increases by 2</dd>
+</dl>
