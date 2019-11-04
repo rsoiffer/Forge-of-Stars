@@ -72,6 +72,14 @@ Strike:
   critical-success: As success, but you deal double damage
   success: You deal damage according to the weapon you're wielding
 
+Take Aim:
+  type: 1-Action, At-Will
+  traits: []
+  tags:
+    requirements: You are wielding a ranged weapon
+  effect: |
+    The [range penalty](combat-rules.html#range-penalty) you take for attacking targets beyond your first range increment decreases to -2 for each range increment after the first (instead of -5). This applies only to the first attack you make before the end of your turn.
+
 Take Cover:
   type: 1-Action, At-Will
   traits: []

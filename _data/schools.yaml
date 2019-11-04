@@ -17,7 +17,7 @@ Berserker:
     - Power Attack
 
 Cyborg:
-  brief: Metal > meat
+  brief: You replace your biological body parts with advanced metal cybernetics
   description: ""
   powers: []
 
@@ -27,7 +27,7 @@ Duelist:
   powers: []
 
 Monk:
-  brief: Like, weird stances and stuff?
+  brief: You master martial arts to punch and kick with supernatural speed and power
   description: ""
   powers: []
 
@@ -38,27 +38,27 @@ Assassin:
   powers: []
 
 Demolitionist:
-  brief: Kablooie!
+  brief: You destroy buildings and people alike with a variety of powerful explosives
   description: ""
   powers: []
 
 Juggernaut:
-  brief: I am heavy weapons guy, and this is my power school
+  brief: You mow down the opposition with heavy automatic guns
   description: ""
   powers: []
 
 Rogue:
-  brief: Never tell me the odds!
+  brief: You chance your way into victory, consistently getting lucky hits or dodges
   description: ""
   powers: []
 
 Sniper:
-  brief: Karko
+  brief: You fire with care and precision to take out enemies at incredible distances
   description: ""
   powers: []
 
 Battlesmith:
-  brief: I am Iron Man
+  brief: You wear a suit of advanced power armor that protects you from harm
   description: ""
   powers: []
 
@@ -75,7 +75,7 @@ Mastermind:
   powers: []
 
 Roboticist:
-  brief: Drones! Why did it have to be drones?
+  brief: You control numerous robotic drones, customizing them for any situation
   description: ""
   powers: []
 
@@ -98,7 +98,7 @@ Fundamentalist:
   powers: []
 
 Healer:
-  brief: Every party needs one
+  brief: You heal your allies and poison your enemies with body-affecting magic
   description: ""
   powers: []
 
@@ -137,7 +137,7 @@ Shapeshifter:
   powers: []
 
 Telekinetic:
-  brief: I challenge you to a force arm-wrestling contest!
+  brief: You move objects with your mind to protect yourself or hurl boulders at foes
   description: ""
   powers: []
 
@@ -159,7 +159,7 @@ Necromancer:
   powers: []
 
 Sage:
-  brief: As a wise man once said, I only know that I know nothing
+  brief: You employ intelligent spirits to gather information and perform tasks
   description: ""
   powers: []
 
