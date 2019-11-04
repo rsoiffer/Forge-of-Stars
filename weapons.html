@@ -29,12 +29,31 @@ Now with {{ site.data.weapon_combinations | size }} unique weapons!
             {% when "Damage" %}
               <td>
                 {% if weapon.damage %}
+                  <span class="damage-type" title="{{ weapon.damage_type }}">
+                  {% case weapon.damage_type %}
+                    {% when "Physical" %}
+                      ⚔️
+                    {% when "Electric" %}
+                      ⚡️
+                    {% when "Laser" %}
+                      <span class="laser">🔆</span>
+                    {% when "Explosive" %}
+                      💥
+                    {% when "Chemical" %}
+                      🧪
+                    {% when "Fire" %}
+                      🔥
+                    {% when "Sonic" %}
+                      🔊
+                    {% else %}
+                      {{ weapon.damage_type }}
+                  {% endcase %}
+                  </span>
                   {% if weapon.damage == 1 %}
                     {{ weapon.damage_mul }}
                   {% else %}
                     {{ weapon.damage_mul }}d{{ weapon.damage }}
                   {% endif %}
-                  {{ weapon.damage_type }}
                 {% endif %}
               </td>
             {% when "Range" %}
