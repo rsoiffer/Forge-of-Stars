@@ -87,19 +87,3 @@ p + .tags {
   width: 1.3em;
   margin-top: -0.2em;
 }
-
-.laser {
-  filter: hue-rotate(-50deg) brightness(1.2) saturate(4);
-}
-.fire {
-  filter: hue-rotate(-30deg) brightness(1.2) saturate(2);
-}
-.electric {
-  filter: hue-rotate(165deg) brightness(1.2);
-}
-img.emoji {
-  height: 1em;
-  width: 1em;
-  margin: 0 .05em 0 .1em;
-  vertical-align: -0.1em;
-}
