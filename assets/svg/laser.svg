@@ -24,7 +24,40 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs3727" />
+     id="defs3727">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter4716">
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood4706" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite4708" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="2"
+         result="blur"
+         id="feGaussianBlur4710" />
+      <feOffset
+         dx="0"
+         dy="0"
+         result="offset"
+         id="feOffset4712" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite4714" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -39,7 +72,7 @@
      id="namedview3725"
      showgrid="false"
      inkscape:zoom="22.444444"
-     inkscape:cx="5.5693069"
+     inkscape:cx="18.689196"
      inkscape:cy="18"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
@@ -48,6 +81,6 @@
   <path
      d="M20 6c0 1.104-.896 2-2 2s-2-.896-2-2V2c0-1.104.896-2 2-2s2 .896 2 2v4zm0 28c0 1.104-.896 2-2 2s-2-.896-2-2v-4c0-1.104.896-2 2-2s2 .896 2 2v4zM6 16c1.104 0 2 .896 2 2s-.896 2-2 2H2c-1.104 0-2-.896-2-2s.896-2 2-2h4zm28 0c1.104 0 2 .896 2 2s-.896 2-2 2h-4c-1.104 0-2-.896-2-2s.896-2 2-2h4zM8.101 25.071c.781-.78 2.047-.781 2.828 0 .781.78.781 2.048 0 2.828l-2.828 2.829c-.781.78-2.048.78-2.828 0-.781-.781-.781-2.048 0-2.828l2.828-2.829zM27.899 5.272c.781-.781 2.047-.782 2.828 0 .781.781.781 2.047 0 2.829l-2.828 2.828c-.781.781-2.048.781-2.828 0-.781-.781-.781-2.047 0-2.829l2.828-2.828zm-2.828 22.627c-.78-.781-.781-2.047 0-2.828.78-.781 2.048-.781 2.828 0l2.829 2.828c.78.781.78 2.048 0 2.828-.781.781-2.048.781-2.828 0l-2.829-2.828zM18 9c-4.971 0-9 4.029-9 9 0 4.97 4.029 9 9 9s9-4.029 9-9c0-4.97-4.029-9-9-9zm0 14c-2.761 0-5-2.238-5-5s2.239-5 5-5c2.762 0 5 2.239 5 5s-2.238 5-5 5zM5.272 8.101c-.781-.781-.782-2.047 0-2.828.781-.781 2.047-.781 2.829 0l2.828 2.828c.781.781.781 2.048 0 2.828-.781.781-2.047.781-2.829 0L5.272 8.101z"
      id="path3721"
-     style="fill:#ff1446;fill-opacity:1;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000000;stroke-opacity:1"
+     style="fill:#ff2956;fill-opacity:1;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:1;filter:url(#filter4716)"
      fill="#FFAC33" />
 </svg>
