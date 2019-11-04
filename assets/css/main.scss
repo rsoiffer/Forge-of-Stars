@@ -12,11 +12,18 @@
 .search__toggle {
   color: $masthead-link-color
 }
+.page__title {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 0.5em;
+}
 .page__content p {
   margin-bottom: .75em
 }
 .page__content h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5em
+}
+.page__content dd {
+  font-size: 1em;
 }
 
 th {
@@ -39,4 +46,33 @@ tr:nth-child(odd) {
   background-color: #e2cba4
   // background-color: #d0d4a7
   // background-color: mix(#000, $background-color, 5%)
+}
+
+.traits {
+  margin: 0;
+  padding-left: 0;
+}
+
+.trait {
+  display: inline;
+  background: rgb(95, 22, 22);
+  border: rgb(238, 194, 1) 3px solid;
+  color: #fff;
+  padding: 2px 10px;
+  font-size: 0.75em !important;
+  text-transform: uppercase;
+}
+
+.tags {
+  border-bottom: 1px solid $border-color;
+  margin: 0 0 0.5em 0;
+  padding-bottom: 0.5em;
+
+  dt, dd {
+    display: inline;
+  }
+  dd:after {
+    content: "";
+    display: block;
+  }
 }
