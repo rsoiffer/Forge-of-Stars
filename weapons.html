@@ -5,6 +5,8 @@ sidebar:
   nav: equipment
 ---
 
+<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+
 Now with {{ site.data.weapon_combinations | size }} unique weapons!
 
 {% for category in site.data.weapons.categories %}
@@ -34,7 +36,7 @@ Now with {{ site.data.weapon_combinations | size }} unique weapons!
                     {% when "Physical" %}
                       ⚔️
                     {% when "Electric" %}
-                      ⚡️
+                      <span class="electric">⚡️</span>
                     {% when "Laser" %}
                       <span class="laser">🔆</span>
                     {% when "Explosive" %}
@@ -42,7 +44,7 @@ Now with {{ site.data.weapon_combinations | size }} unique weapons!
                     {% when "Chemical" %}
                       🧪
                     {% when "Fire" %}
-                      🔥
+                      <span class="fire">🔥</span>
                     {% when "Sonic" %}
                       🔊
                     {% else %}
@@ -89,3 +91,7 @@ Now with {{ site.data.weapon_combinations | size }} unique weapons!
   <h3 id="{{ trait[0] | slugify }}">{{ trait[0] }}</h3>
   {{ trait[1] }}
 {% endfor %}
+
+<script>
+  twemoji.parse(document.body);
+</script>
