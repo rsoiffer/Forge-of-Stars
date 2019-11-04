@@ -34,7 +34,7 @@ Stun:
   special: []
   shapes: [Club, Fist, Glaive, Spear, Staff]
 Unarmed:
-  damage: 2
+  damage: 1
   damage_type: Physical
   special: []
   shapes: [Strike]

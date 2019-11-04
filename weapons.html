@@ -7,22 +7,56 @@ sidebar:
 
 Now with {{ site.data.weapon_combinations | size }} unique weapons!
 
-{% for category in site.data.weapons.other.categories %}
-  {% assign weapons = site.data.weapon_combinations | where: "category", category[0] %}
+{% for category in site.data.weapons.categories %}
+  {% assign weapons =
+      site.data.weapon_combinations | where: "category", category[0] %}
   {% assign num_weapons = weapons | size %}
   {% if num_weapons > 0 %}
     <h2 id = {{ category[0] | slugify }}>{{ category[0] }}</h2>
 
     <table>
       <tr>
-        {% for column in category[1] %}
+      {% for column in category[1] %}
         <th>{{ column }}</th>
-        {% endfor %}
+      {% endfor %}
       </tr>
       {% for weapon in weapons %}
-      <tr>
+        <tr>
         {% for column in category[1] %}
-        <td>{{ weapon[ column ] }}</td>
+          {% case column %}
+            {% when "Cost" %}
+              <td>{% if weapon.cost %} {{ weapon.cost }} cred {% endif %}</td>
+            {% when "Damage" %}
+              <td>
+                {% if weapon.damage %}
+                  {% if weapon.damage == 1 %}
+                    {{ weapon.damage_mul }}
+                  {% else %}
+                    {{ weapon.damage_mul }}d{{ weapon.damage }}
+                  {% endif %}
+                  {{ weapon.damage_type }}
+                {% endif %}
+              </td>
+            {% when "Range" %}
+              <td>{{ weapon.range }} ft</td>
+            {% when "Radius" %}
+              <td>{{ weapon.radius }} ft</td>
+            {% when "Weight" %}
+              <td>{% if weapon.weight %} {{ weapon.weight }} lb {% endif %}</td>
+            {% when "Special" %}
+              <td>
+                {% for trait in weapon.special %}
+                  <abbr
+                    title="{{ site.data.weapons.traits[trait.name] | escape }}"
+                  >{{ trait.name }}</abbr>
+                  {%- if trait.value %} {{ trait.value }} {%- endif %}
+                  {%- unless forloop.last -%} , {% endunless %}
+                {% endfor %}
+              </td>
+            {% else %}
+              {% assign property = column | downcase %}
+              <td>{{ weapon[property] }}</td>
+          {% endcase %}
         {% endfor %}
       </tr>
       {% endfor %}
@@ -31,7 +65,8 @@ Now with {{ site.data.weapon_combinations | size }} unique weapons!
 {% endfor %}
 
 <h2 id = "weapon-traits">Weapon Traits</h2>
-{% for trait in site.data.weapons.other.traits %}
-  <h3 id = {{ trait[0] | slugify }}>{{ trait[0] }}</h3>
+
+{% for trait in site.data.weapons.traits %}
+  <h3 id="{{ trait[0] | slugify }}">{{ trait[0] }}</h3>
   {{ trait[1] }}
 {% endfor %}

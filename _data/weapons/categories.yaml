@@ -1,0 +1,6 @@
+Brawling: [Name, Cost, Damage, Weight, Special]
+Melee Weapons: [Name, Cost, Damage, Weight, Hands, Special]
+Light Weapons: [Name, Cost, Damage, Range, Weight, Hands, Special]
+Heavy Weapons: [Name, Cost, Damage, Range, Weight, Hands, Special]
+Vehicle Weapons: [Name, Cost, Damage, Range, Weight, Special]
+Explosives: [Name, Cost, Damage, Radius, Weight, Special]
