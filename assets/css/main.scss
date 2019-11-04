@@ -83,11 +83,11 @@ p + .tags {
   }
 }
 
-.damage-type img {
-  height: 1.3em;
+.damage-type {
   width: 1.3em;
-  vertical-align: bottom;
+  margin-top: -0.2em;
 }
+
 .laser {
   filter: hue-rotate(-50deg) brightness(1.2) saturate(4);
 }

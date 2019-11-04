@@ -31,26 +31,29 @@ Now with {{ site.data.weapon_combinations | size }} unique weapons!
             {% when "Damage" %}
               <td>
                 {% if weapon.damage %}
-                  <span class="damage-type" title="{{ weapon.damage_type }}">
+                  <!--<span class="damage-type" title="{{ weapon.damage_type }}">-->
                   {% case weapon.damage_type %}
                     {% when "Physical" %}
                       ⚔️
-                    {% when "Electric" %}
+                    {%- when "Electric" %}
                       <span class="electric">⚡️</span>
-                    {% when "Laser" %}
-                      <img src="assets/svg/laser.svg">
-                    {% when "Explosive" %}
+                    {%- when "Laser" %}
+                      <!-- TOOD: Refactor this. --->
+                      <img title="{{ weapon.damage_type }}"
+                           class="damage-type"
+                           src="assets/svg/laser.svg">
+                    {%- when "Explosive" %}
                       💥
-                    {% when "Chemical" %}
+                    {%- when "Chemical" %}
                       🧪
-                    {% when "Fire" %}
+                    {%- when "Fire" %}
                       <span class="fire">🔥</span>
-                    {% when "Sonic" %}
+                    {%- when "Sonic" %}
                       🔊
-                    {% else %}
+                    {%- else %}
                       {{ weapon.damage_type }}
-                  {% endcase %}
-                  </span>
+                  {% endcase -%}
+                  <!--</span>-->
                   {% if weapon.damage == 1 %}
                     {{ weapon.damage_mul }}
                   {% else %}
