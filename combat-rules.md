@@ -15,9 +15,9 @@ Always calculate your MAP for the weapon you're using on the attack. For example
 
 ## Range Penalty
 
-Ranged and thrown weapons each have a listed range increment, and attacks with them grow less accurate against targets farther away. If the distance to your target is less than the listed range increment, you take no penalty to the attack roll. If you're attacking beyond that distance, you take a -2 penalty to the attack roll for each additional increment beyond the first. You can attempt to attack up to six range increments away.
+Ranged and thrown weapons each have a listed range increment, and attacks with them grow less accurate against targets farther away. If the distance to your target is less than the listed range increment, you take no penalty to the attack roll. If you're attacking beyond that distance, you take a -5 penalty to the attack roll for each additional increment beyond the first. The [Take Aim](basic-actions.html#take-aim) action reduces this penalty to -2 per range increment. You can attempt to attack up to six range increments away.
 
-For example, the range increment of a blaster rifle is 80 feet. If you're shooting at a target within 80 feet, you take no penalty. If your target is between 80 and 160 feet, you take a -2 penalty. If your target is 160 to 240 feet away, you take a -4 penalty, and so on, until you reach the last range increment: if your target is 400 to 480 feet away, you take a -10 penalty.
+For example, the range increment of a blaster rifle is 120 feet. If you're shooting at a target within 120 feet, you take no penalty. If your target is between 120 and 240 feet, you take a -5 penalty. If your target is 240 to 360 feet away, you take a -10 penalty, and so on, until you reach the last range increment: if your target is 600 to 720 feet away, you take a -25 penalty.
 
 ## Explosives
 
