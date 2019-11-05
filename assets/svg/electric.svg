@@ -20,12 +20,45 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs4872" />
+     id="defs4872">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter822">
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood812" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite814" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur816" />
+      <feOffset
+         dx="0"
+         dy="0"
+         result="offset"
+         id="feOffset818" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite820" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -35,19 +68,20 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="958"
+     inkscape:window-height="991"
      id="namedview4870"
      showgrid="false"
      inkscape:zoom="6.5555556"
-     inkscape:cx="18"
+     inkscape:cx="5.2384988"
      inkscape:cy="18"
-     inkscape:window-x="0"
+     inkscape:window-x="-8"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4868" />
   <path
      fill="#FFAC33"
      d="M32.938 15.651C32.792 15.26 32.418 15 32 15H19.925L26.89 1.458c.219-.426.106-.947-.271-1.243C26.437.071 26.218 0 26 0c-.233 0-.466.082-.653.243L18 6.588 3.347 19.243c-.316.273-.43.714-.284 1.105S3.582 21 4 21h12.075L9.11 34.542c-.219.426-.106.947.271 1.243.182.144.401.215.619.215.233 0 .466-.082.653-.243L18 29.412l14.653-12.655c.317-.273.43-.714.285-1.106z"
-     id="path4866" />
+     id="path4866"
+     style="fill:#33ffff;fill-opacity:1;stroke:#005050;stroke-opacity:1;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none" />
 </svg>
