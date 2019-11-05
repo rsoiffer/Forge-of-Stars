@@ -7,22 +7,32 @@ main:
     url: /setting.html
 
 system:
-  - title: Basic Rules
-    url: /basic-rules.html
-  - title: Character Creation
-    url: /character-creation.html
-  - title: Ancestries
-    url: /ancestries.html
-  - title: Skills
-    url: /skills.html
-  - title: Feats
-    url: /feats.html
-  - title: Power Schools
-    url: /schools.html
-  - title: Combat Rules
-    url: /combat-rules.html
-  - title: Conditions
-    url: /conditions.html
+  - title: Game Rules
+    children:
+      - title: Basic Rules
+        url: /basic-rules.html
+      - title: Combat Rules
+        url: /combat-rules.html
+
+  - title: Character Options
+    children:
+      - title: Character Creation
+        url: /character-creation.html
+      - title: Ancestries
+        url: /ancestries.html
+      - title: Skills
+        url: /skills.html
+      - title: Feats
+        url: /feats.html
+      - title: Power Schools
+        url: /power-schools.html
+
+  - title: Indices
+    children:
+      - title: All Powers
+        url: /all-powers.html
+      - title: Conditions
+        url: /conditions.html
 
 equipment:
   - title: Weapons

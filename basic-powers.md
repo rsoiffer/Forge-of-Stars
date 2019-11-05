@@ -1,11 +1,11 @@
 ---
 layout: single
-title: Basic Actions
+title: Basic Powers
 sidebar:
   nav: system
 ---
 
-{% for action in site.data.basic-actions %}
+{% for action in site.data.basic-powers %}
   
 ## {{ action[0] }}
 {{ action[1].type }}

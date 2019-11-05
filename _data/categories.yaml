@@ -3,11 +3,9 @@ Fighter:
   - Berserker
   - Cyborg
   - Duelist
-  - Monk
 
 Sharpshooter:
   - Assassin
-  - Demolitionist
   - Juggernaut
   - Rogue
   - Sniper
@@ -17,19 +15,16 @@ Expert:
   - Gadgeteer
   - Mastermind
   - Roboticist
-  - Warlord
 
 Sorcerer:
   - Blaster
   - Fundamentalist
   - Healer
-  - Illusionist
   - Psion
 
 Adept:
   - Champion
   - Diviner
-  - Occultist
   - Shapeshifter
   - Telekinetic
 
@@ -38,4 +33,3 @@ Conjurer:
   - Elementalist
   - Necromancer
   - Sage
-  - Technomancer

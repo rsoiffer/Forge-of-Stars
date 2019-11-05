@@ -13,9 +13,27 @@ hr {
 .page {
   padding-right: 0;
 }
+.page__footer {
+  height: 0;
+  font-size: 0; // Ugly hack to remove footer
+}
+
 .search__toggle {
   color: $masthead-link-color
 }
+.navicon {
+  color: $masthead-link-color;
+  background-color: $masthead-link-color;
+}
+.navicon::before {
+  color: $masthead-link-color;
+  background-color: $masthead-link-color;
+}
+.navicon::after {
+  color: $masthead-link-color;
+  background-color: $masthead-link-color;
+}
+
 .page__title {
   border-bottom: 1px solid $border-color;
   padding-bottom: 0.5em;
@@ -60,9 +78,9 @@ tr:nth-child(odd) {
 .trait {
   display: inline;
   background: rgb(95, 22, 22);
-  border: rgb(238, 194, 1) 3px solid;
+  border: rgb(206, 181, 102) 2px solid;
   color: #fff;
-  padding: 2px 10px;
+  padding: 1px 8px;
   font-size: 0.75em !important;
   text-transform: uppercase;
 }

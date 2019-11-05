@@ -1,0 +1,48 @@
+---
+layout: single
+title: All Powers
+sidebar:
+  nav: system
+---
+
+<h2>Basic Powers</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  {% assign powers = site.data.basic-powers %}
+  {% for power in powers %}
+    <tr>
+      <td>
+          <a href="basic-powers.html#{{ power[0] | slugify }}"">{{ power[0] }}</a>
+      </td>
+      <td>{{ power[1].type }}</td>
+      <td>{{ power[1].brief }}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+<h2>Learned Powers</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Tier</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  {% assign powers = site.data.powers %}
+  {% for power in powers %}
+    <tr>
+      <td>
+          <a href="{% link {{ power[0] | slugify }}.html %}">{{ power[0] }}</a>
+      </td>
+      <td>{{ power[1].tier }}</td>
+      <td>{{ power[1].type }}</td>
+      <td>{{ power[1].brief }}</td>
+    </tr>
+  {% endfor %}
+</table>

@@ -83,7 +83,7 @@ Your character knows a number of powers from each power school equal to your lev
   <tr>
     <td>Veteran</td>
     <td>5</td>
-    <td>3</td>
+    <td>2</td>
   </tr>
   <tr>
     <td>Master</td>
@@ -93,7 +93,7 @@ Your character knows a number of powers from each power school equal to your lev
   <tr>
     <td>Epic</td>
     <td>17</td>
-    <td>5</td>
+    <td>6</td>
   </tr>
 </table>
 

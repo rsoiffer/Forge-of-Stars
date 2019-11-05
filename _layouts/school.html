@@ -6,15 +6,23 @@ sidebar:
 
 {% assign school = page.data[1] %}
 
-{{ school.description }}
+<p>{{ school.description }}</p>
 
 <table>
-{% for power in school.powers %}
   <tr>
-    <td>
-      <a href="{% link {{ power | slugify }}.html %}">{{ power }}</a>
-    </td>
-    <td>{{ site.data.powers[power].type }}</td>
+    <th>Name</th>
+    <th>Tier</th>
+    <th>Type</th>
+    <th>Description</th>
   </tr>
-{% endfor %}
+  {% for power in school.powers %}
+    <tr>
+      <td>
+        <a href="{% link {{ power | slugify }}.html %}">{{ power }}</a>
+      </td>
+      <td>{{ site.data.powers[power].tier }}</td>
+      <td>{{ site.data.powers[power].type }}</td>
+      <td>{{ site.data.powers[power].brief }}</td>
+    </tr>
+  {% endfor %}
 </table>

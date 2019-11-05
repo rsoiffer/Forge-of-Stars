@@ -8,45 +8,43 @@ sidebar:
 Now with {{ site.data.weapon_combinations | size }} unique weapons!
 
 {% for category in site.data.weapons.categories %}
-  {% assign weapons =
-      site.data.weapon_combinations | where: "category", category[0] %}
-  {% assign num_weapons = weapons | size %}
-  {% if num_weapons > 0 %}
-    <h2 id = {{ category[0] | slugify }}>{{ category[0] }}</h2>
+  <h2 id = {{ category[0] | slugify }}>{{ category[0] }}</h2>
 
-    <table>
-      <tr>
+  {% assign weapons =
+    site.data.weapon_combinations | where: "category", category[0] %}
+  <table>
+    <tr>
       {% for column in category[1] %}
         <th>{{ column }}</th>
       {% endfor %}
-      </tr>
-      {% for weapon in weapons %}
-        <tr>
+    </tr>
+    {% for weapon in weapons %}
+      <tr>
         {% for column in category[1] %}
           {% case column %}
             {% when "Cost" %}
-              <td>{% if weapon.cost %} {{ weapon.cost }} cred {% endif %}</td>
+              <td>{% if weapon.cost %} {{ weapon.cost }} cred {%- endif %}</td>
             {% when "Damage" %}
               <td>
               {% if weapon.damage %}
                 <img title="{{ weapon.damage_type }}"
-                     class="damage-type"
-                     src="{% link
-                             assets/svg/{{ weapon.damage_type | downcase }}.svg
-                           %}">
+                      class="damage-type"
+                      src="{% link
+                              assets/svg/{{ weapon.damage_type | downcase }}.svg
+                            %}">
                 {% if weapon.damage == 1 %}
-                  {{ weapon.damage_mul }}
+                  {{ weapon.damage_mul -}}
                 {% else %}
-                  {{ weapon.damage_mul }}d{{ weapon.damage }}
-                {% endif %}
-              {% endif %}
+                  {{ weapon.damage_mul }}d{{- weapon.damage -}}
+                {%- endif -%}
+              {%- endif -%}
               </td>
             {% when "Range" %}
               <td>{{ weapon.range }} ft</td>
             {% when "Radius" %}
               <td>{{ weapon.radius }} ft</td>
             {% when "Weight" %}
-              <td>{% if weapon.weight %} {{ weapon.weight }} lb {% endif %}</td>
+              <td>{% if weapon.weight %} {{ weapon.weight }} lb {%- endif %}</td>
             {% when "Special" %}
               <td>
                 {% for trait in weapon.special %}
@@ -63,14 +61,13 @@ Now with {{ site.data.weapon_combinations | size }} unique weapons!
           {% endcase %}
         {% endfor %}
       </tr>
-      {% endfor %}
-    </table>
-  {% endif %}
+    {% endfor %}
+  </table>
 {% endfor %}
 
 <h2 id = "weapon-traits">Weapon Traits</h2>
 
-{% for trait in site.data.weapons.traits %}
-  <h3 id="{{ trait[0] | slugify }}">{{ trait[0] }}</h3>
-  {{ trait[1] }}
-{% endfor %}
+{%- for trait in site.data.weapons.traits -%}
+  <h3 id="{{ trait[0] | slugify }}">{{- trait[0] -}}</h3>
+  {{- trait[1] -}}
+{%- endfor -%}

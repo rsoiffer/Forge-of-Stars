@@ -1,3 +1,5 @@
+# Fighter
+
 Acrobat:
   brief:
     You dodge and weave across the battlefield, moving with incredible speed
@@ -26,10 +28,7 @@ Duelist:
   description: ""
   powers: []
 
-Monk:
-  brief: You master martial arts to punch and kick with supernatural speed and power
-  description: ""
-  powers: []
+# Sharpshooter
 
 Assassin:
   brief:
@@ -37,13 +36,8 @@ Assassin:
   description: ""
   powers: []
 
-Demolitionist:
-  brief: You destroy buildings and people alike with a variety of powerful explosives
-  description: ""
-  powers: []
-
 Juggernaut:
-  brief: You mow down the opposition with heavy automatic guns
+  brief: You mow down the opposition with heavy machine guns or explosives
   description: ""
   powers: []
 
@@ -56,6 +50,8 @@ Sniper:
   brief: You fire with care and precision to take out enemies at incredible distances
   description: ""
   powers: []
+
+# Expert
 
 Battlesmith:
   brief: You wear a suit of advanced power armor that protects you from harm
@@ -79,11 +75,7 @@ Roboticist:
   description: ""
   powers: []
 
-Warlord:
-  brief:
-    You apply strategy to combat, maneuvering allies and enemies into position
-  description: ""
-  powers: []
+# Sorcerer
 
 Blaster:
   brief: You blast enemies away with devastating evocations of elemental energy
@@ -102,17 +94,14 @@ Healer:
   description: ""
   powers: []
 
-Illusionist:
-  brief: You conjure illusions to deceive or confuse your opponents’ senses
-  description: ""
-  powers: []
-
 Psion:
   brief:
-    You specialize in mental magic that affects other creatures’ thoughts or
+    You specialize in mental magic that affects other creatures' thoughts or
     actions
   description: ""
   powers: []
+
+# Adept
 
 Champion:
   brief:
@@ -126,11 +115,6 @@ Diviner:
   description: ""
   powers: []
 
-Occultist:
-  brief: You curse enemies with strange and persistent afflictions or misfortune
-  description: ""
-  powers: []
-
 Shapeshifter:
   brief: You transform yourself or other creatures into animals or monsters
   description: ""
@@ -140,6 +124,8 @@ Telekinetic:
   brief: You move objects with your mind to protect yourself or hurl boulders at foes
   description: ""
   powers: []
+
+# Conjurer
 
 Druid:
   brief: You command the spirits of nature, manipulating wild animals and plants
@@ -160,10 +146,5 @@ Necromancer:
 
 Sage:
   brief: You employ intelligent spirits to gather information and perform tasks
-  description: ""
-  powers: []
-
-Technomancer:
-  brief: Praise the machine god! For the Omnissiah!
   description: ""
   powers: []
