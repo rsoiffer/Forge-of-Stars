@@ -4,7 +4,6 @@ Acrobat:
   brief:
     You dodge and weave across the battlefield, moving with incredible speed
   description: ""
-  powers: []
 
 Berserker:
   brief: You smash enemies with aggressive bursts of murderous rage
@@ -13,20 +12,14 @@ Berserker:
     part is optional, and doesn't signify gender or anything. Strong melee dudes
     are often found punching things or hitting things, especially when those
     things are enemies or are getting in the way.
-  powers:
-    - Rage
-    - Sudden Charge
-    - Power Attack
 
 Cyborg:
   brief: You replace your biological body parts with advanced metal cybernetics
   description: ""
-  powers: []
 
 Duelist:
   brief: You parry enemy attacks and respond with well-timed ripostes
   description: ""
-  powers: []
 
 # Sharpshooter
 
@@ -34,72 +27,60 @@ Assassin:
   brief:
     You stalk through the shadows, surprising enemies with deadly sneak attacks
   description: ""
-  powers: []
 
 Juggernaut:
   brief: You mow down the opposition with heavy machine guns or explosives
   description: ""
-  powers: []
 
 Rogue:
   brief: You chance your way into victory, consistently getting lucky hits or dodges
   description: ""
-  powers: []
 
 Sniper:
   brief: You fire with care and precision to take out enemies at incredible distances
   description: ""
-  powers: []
 
 # Expert
 
 Battlesmith:
   brief: You wear a suit of advanced power armor that protects you from harm
   description: ""
-  powers: []
 
 Gadgeteer:
   brief: You invent novel technological devices for a variety of purposes
   description: ""
-  powers: []
 
 Mastermind:
   brief:
     You support your party both in and out of battle, with a plan for every
     situation
   description: ""
-  powers: []
 
 Roboticist:
   brief: You control numerous robotic drones, customizing them for any situation
   description: ""
-  powers: []
 
 # Sorcerer
 
 Blaster:
   brief: You blast enemies away with devastating evocations of elemental energy
   description: ""
-  powers: []
 
 Fundamentalist:
   brief:
     You manipulate the fundamental laws of reality to control space, time, and
     magic
   description: ""
-  powers: []
 
 Healer:
   brief: You heal your allies and poison your enemies with body-affecting magic
   description: ""
-  powers: []
 
 Psion:
   brief:
     You specialize in mental magic that affects other creatures' thoughts or
     actions
   description: ""
-  powers: []
 
 # Adept
 
@@ -107,44 +88,36 @@ Champion:
   brief:
     You manifest your belief in a cause as divine blessings on the battlefield
   description: ""
-  powers: []
 
 Diviner:
   brief:
     You predict the future, see distant events, and track creatures with magic
   description: ""
-  powers: []
 
 Shapeshifter:
   brief: You transform yourself or other creatures into animals or monsters
   description: ""
-  powers: []
 
 Telekinetic:
   brief: You move objects with your mind to protect yourself or hurl boulders at foes
   description: ""
-  powers: []
 
 # Conjurer
 
 Druid:
   brief: You command the spirits of nature, manipulating wild animals and plants
   description: ""
-  powers: []
 
 Elementalist:
   brief: You harness elemental spirits to precisely control the natural world
   description: ""
-  powers: []
 
 Necromancer:
   brief:
     You channel necrotic energy to slay the living, then raise the spirits of
     the dead
   description: ""
-  powers: []
 
 Sage:
   brief: You employ intelligent spirits to gather information and perform tasks
   description: ""
-  powers: []

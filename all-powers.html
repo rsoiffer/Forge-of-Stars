@@ -13,8 +13,7 @@ sidebar:
     <th>Type</th>
     <th>Description</th>
   </tr>
-  {% assign powers = site.data.basic-powers %}
-  {% for power in powers %}
+  {% for power in site.data.basic-powers %}
     <tr>
       <td>
           <a href="basic-powers.html#{{ power[0] | slugify }}"">{{ power[0] }}</a>
@@ -30,16 +29,17 @@ sidebar:
 <table>
   <tr>
     <th>Name</th>
+    <th>School</th>
     <th>Tier</th>
     <th>Type</th>
     <th>Description</th>
   </tr>
-  {% assign powers = site.data.powers %}
-  {% for power in powers %}
+  {% for power in site.data.powers %}
     <tr>
       <td>
           <a href="{% link {{ power[0] | slugify }}.html %}">{{ power[0] }}</a>
       </td>
+      <td>{{ power[1].school }}</td>
       <td>{{ power[1].tier }}</td>
       <td>{{ power[1].type }}</td>
       <td>{{ power[1].brief }}</td>

@@ -1,5 +1,5 @@
 Administer First Aid:
-  type: 2-Actions, At-Will
+  type: 2-Action
   traits: [Manipulate]
   tags:
     requirements: You have healer's tools
@@ -9,49 +9,49 @@ Administer First Aid:
   critical-failure: The creature's dying condition increases by 1
 
 Drop Prone:
-  type: 1-Action, At-Will
+  type: 1-Action
   traits: [Move]
   effect: |
     You fall prone.
 
 Interact:
-  type: 1-Action, At-Will
+  type: 1-Action
   traits: [Manipulate]
   effect: |
     You use your hand or hands to manipulate an object or the terrain. You can grab an unattended or stored object, open a door, or produce some similar effect. You might have to attempt a skill roll to determine if your Interact action was successful.
 
 Leap:
-  type: 1-Action, At-Will
+  type: 1-Action
   traits: [Move]
   effect: |
     You take a careful, short jump. You can leap up to half your speed horizontally, or up to a quarter of your speed vertically. Jumping a greater distance requires using the Acrobatics skill.
 
 Release:
-  type: Free, At-Will
+  type: Free
   traits: [Manipulate]
   effect: |
     You release something you're holding in your hand or hands. This might mean dropping an item, removing one hand from your weapon while continuing to hold it in another hand, releasing a rope suspending a chandelier, or performing a similar action.
 
 Seek:
-  type: 1-Action, At-Will
+  type: 1-Action
   traits: [Concentrate]
   effect: |
     You look for a dude (more TBD)
 
 Sense Motive:
-  type: 1-Action, At-Will
+  type: 1-Action
   traits: [Concentrate]
   effect: |
     You tell whether a dude is lying (more TBD)
 
 Stand:
-  type: 1-Action, At-Will
+  type: 1-Action
   traits: [Move]
   effect: |
     You stand up from prone.
 
 Step:
-  type: 1-Action, At-Will
+  type: 1-Action
   traits: [Move]
   tags:
     requirements: Your speed is at least 10 feet
@@ -59,13 +59,13 @@ Step:
     You carefully move 5 feet. Unlike most types of movement, Step doesn't trigger reactions that are triggered by move actions or upon leaving or entering a square. You can't Step into difficult terrain.
 
 Stride:
-  type: 1-Action, At-Will
+  type: 1-Action
   traits: [Move]
   effect: |
     You move a distance up to your speed.
 
 Strike:
-  type: 1-Action, At-Will
+  type: 1-Action
   traits: [Attack]
   effect: |
     You attack with a weapon you're wielding, targeting one creature within your reach (for a melee attack) or within range (for a ranged attack). Make an attack roll for the weapon you're using, and compare the result to your target's AC to determine the effect. See [here](basic-rules.html#attacking) for more information.
@@ -73,7 +73,7 @@ Strike:
   success: You deal damage according to the weapon you're wielding
 
 Take Aim:
-  type: 1-Action, At-Will
+  type: 1-Action
   traits: []
   tags:
     requirements: You are wielding a ranged weapon
@@ -81,7 +81,7 @@ Take Aim:
     The [range penalty](combat-rules.html#range-penalty) you take for attacking targets beyond your first range increment decreases to -2 for each range increment after the first (instead of -5). This applies only to the first attack you make before the end of your turn.
 
 Take Cover:
-  type: 1-Action, At-Will
+  type: 1-Action
   traits: []
   tags:
     requirements: You are benefitting from cover or are prone

@@ -1,0 +1,38 @@
+---
+layout: single
+title: Power Counts
+sidebar:
+  nav: system
+---
+
+<p>Total powers: {{ site.data.powers | size }}</p>
+
+<h2>Powers by School</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>All Tiers</th>
+    <th>Novice</th>
+    <th>Veteran</th>
+    <th>Master</th>
+    <th>Epic</th>
+  </tr>
+  {% for school in site.data.schools %}
+    <tr>
+      <td>
+          <a href="{{ school[0] | slugify }}.html">{{ school[0] }}</a>
+      </td>
+      {% assign count = site.data.powers | where: "school", school[0] | size %}
+      <td>{{ count }}</td>
+      {% assign count = site.data.powers | where: "school", school[0] | where: "tier", "Novice" | size %}
+      <td>{{ count }}</td>
+      {% assign count = site.data.powers | where: "school", school[0] | where: "tier", "Veteran" | size %}
+      <td>{{ count }}</td>
+      {% assign count = site.data.powers | where: "school", school[0] | where: "tier", "Master" | size %}
+      <td>{{ count }}</td>
+      {% assign count = site.data.powers | where: "school", school[0] | where: "tier", "Epic" | size %}
+      <td>{{ count }}</td>
+    </tr>
+  {% endfor %}
+</table>

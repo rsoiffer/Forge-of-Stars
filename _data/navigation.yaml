@@ -31,6 +31,8 @@ system:
     children:
       - title: All Powers
         url: /all-powers.html
+      - title: Power Counts
+        url: /power-counts.html
       - title: Conditions
         url: /conditions.html
 

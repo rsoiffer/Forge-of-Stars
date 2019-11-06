@@ -24,4 +24,23 @@ sidebar:
 
 <hr>
 
-{{ power.effect }}
+<p>{{ power.effect }}</p>
+
+<dl class="tags">
+  {% if power.critical-success %}
+    <dt>Critical Success</dt>
+    <dd>{{ power.critical-success }}</dd>
+  {% endif %}
+  {% if power.success %}
+    <dt>Success</dt>
+    <dd>{{ power.success }}</dd>
+  {% endif %}
+  {% if power.failure %}
+    <dt>Failure</dt>
+    <dd>{{ power.failure }}</dd>
+  {% endif %}
+  {% if power.critical-failure %}
+    <dt>Critical Failure</dt>
+    <dd>{{ power.critical-failure }}</dd>
+  {% endif %}
+</dl>
