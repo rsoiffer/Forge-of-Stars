@@ -37,7 +37,7 @@ sidebar:
     <h2 id="{{ power2[0] | slugify }}">
       {{ power2[0] }}
       {% unless power.type == "Passive" %}
-        <img title="{{ power.type }}" class="damage-type"
+        <img title="{{ power.type }}" class="inline-icon"
           src="{% link assets/svg/{{ power.type | downcase }}.svg %}">
       {% endunless %}
       <span class="alignright">{{ power.tier }}</span>
