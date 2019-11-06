@@ -16,9 +16,12 @@ sidebar:
   {% for power in site.data.basic-powers %}
     <tr>
       <td>
-          <a href="basic-powers.html#{{ power[0] | slugify }}"">{{ power[0] }}</a>
+          <a href="{{ power[0] | slugify }}"">{{ power[0] }}</a>
       </td>
-      <td>{{ power[1].type }}</td>
+      <td>{% unless power[1].type == "Passive" %}
+          <img title="{{ power[1].type }}" class="inline-icon"
+            src="{% link assets/svg/{{ power[1].type | downcase }}.svg %}">
+        {% endunless %}</td>
       <td>{{ power[1].brief }}</td>
     </tr>
   {% endfor %}
@@ -41,7 +44,10 @@ sidebar:
       </td>
       <td>{{ power[1].school }}</td>
       <td>{{ power[1].tier }}</td>
-      <td>{{ power[1].type }}</td>
+      <td>{% unless power[1].type == "Passive" %}
+          <img title="{{ power[1].type }}" class="inline-icon"
+            src="{% link assets/svg/{{ power[1].type | downcase }}.svg %}">
+        {% endunless %}</td>
       <td>{{ power[1].brief }}</td>
     </tr>
   {% endfor %}

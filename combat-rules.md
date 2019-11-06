@@ -5,7 +5,7 @@ sidebar:
   nav: system
 ---
 
-Following are more advanced rules related to combat. See the {% ref Basic Powers %} page for a list of common actions you can take in combat.
+Following are more advanced rules related to combat. See the {% ref All Powers %} page for a list of common actions you can take in combat.
 
 ## Multiple Attack Penalty
 
@@ -15,7 +15,7 @@ Always calculate your MAP for the weapon you're using on the attack. For example
 
 ## Range Penalty
 
-Ranged and thrown weapons each have a listed range increment, and attacks with them grow less accurate against targets farther away. If the distance to your target is less than the listed range increment, you take no penalty to the attack roll. If you're attacking beyond that distance, you take a -5 penalty to the attack roll for each additional increment beyond the first. The [Take Aim](basic-powers.html#take-aim) action reduces this penalty to -2 per range increment. You can attempt to attack up to six range increments away.
+Ranged and thrown weapons each have a listed range increment, and attacks with them grow less accurate against targets farther away. If the distance to your target is less than the listed range increment, you take no penalty to the attack roll. If you're attacking beyond that distance, you take a -5 penalty to the attack roll for each additional increment beyond the first. The {% ref Take Aim %} action reduces this penalty to -2 per range increment. You can attempt to attack up to six range increments away.
 
 For example, the range increment of a blaster rifle is 120 feet. If you're shooting at a target within 120 feet, you take no penalty. If your target is between 120 and 240 feet, you take a -5 penalty. If your target is 240 to 360 feet away, you take a -10 penalty, and so on, until you reach the last range increment: if your target is 600 to 720 feet away, you take a -25 penalty.
 
@@ -25,7 +25,7 @@ Attacking with an area-effect explosive weapon works differently from normal att
 
 ## Taking Cover
 
-Having cover from enemy fire is extremely important in any gunfight. Whenever you're behind an object, you gain a bonus to AC, Reflex saves, and Stealth rolls against enemies on the other side of the cover. The size of the bonus depends on the quality of the cover, as shown in the table before. The [Take Cover](basic-powers.html#take-cover) action doubles this bonus.
+Having cover from enemy fire is extremely important in any gunfight. Whenever you're behind an object, you gain a bonus to AC, Reflex saves, and Stealth rolls against enemies on the other side of the cover. The size of the bonus depends on the quality of the cover, as shown in the table before. The {% ref Take Cover %} action doubles this bonus.
 
 <table>
   <tr>
@@ -78,7 +78,7 @@ If you take a 5-minute rest, you recover the ability to use any Encounter powers
 
 ## Dying
 
-When you take damage that brings your HP to 0, you gain the [dying 1](conditions.html#dying-x) condition. If this damage was from an enemy's critical hit or a critical failure on your save, you instead gain the [dying 2](conditions.html#dying-x) condition. While you have the dying condition, you are bleeding out, and you must make a death save at the start of each of your turns. Other creatures can use the [Administer First Aid](basic-powers.html#administer-first-aid) action to try to stabilize you.
+When you take damage that brings your HP to 0, you gain the [dying 1](conditions.html#dying-x) condition. If this damage was from an enemy's critical hit or a critical failure on your save, you instead gain the [dying 2](conditions.html#dying-x) condition. While you have the dying condition, you are bleeding out, and you must make a death save at the start of each of your turns. Other creatures can use the {% ref Administer First Aid %} action to try to stabilize you.
 
 ### Death Save
 

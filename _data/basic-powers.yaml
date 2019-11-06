@@ -74,7 +74,7 @@ Strike:
 
 Take Aim:
   type: 1-Action
-  traits: []
+  traits: [Concentrate]
   tags:
     requirements: You are wielding a ranged weapon
   effect: |

@@ -1,0 +1,77 @@
+Brutish Shove:
+  tier: Novice
+  type: 1-Action
+  traits: [Press]
+  tags:
+    requirements: You are wielding a two-handed melee weapon
+  effect: |
+    Throwing your weight behind your attack, you hit your opponent hard enough to make it stumble back. Make a Strike with a two-handed melee weapon. If you hit a target that is your size or smaller, that creature is flat-footed until the end of your current turn, and you can automatically apply the effects of the Shove action (including the critical success effect, if your Strike was a critical hit). If you move to follow the target, your movement doesn't trigger reactions.
+
+    This Strike has the following failure effect.
+  failure: The target becomes flat-footed until the end of your current turn
+
+Power Attack:
+  tier: Novice
+  type: 2-Action
+  traits: [Flourish]
+  effect:
+    You unleash a particularly powerful attack that clobbers your foe but
+    leaves you a bit unsteady. Make a melee Strike (which counts as two
+    attacks when calculating your MAP). If this Strike hits, you deal an extra
+    die of weapon damage.
+
+Rage:
+  tier: Novice
+  type: 1-Action
+  brief: You enter a furious rage, gaining offensive power at the cost of defense
+  traits: [Concentrate, Emotion, Encounter, Mental]
+  tags:
+    duration:
+      1 minute, until you can't sense any enemies, or until you fall unconscious
+  effect:
+    You tap into your inner fury and begin raging. You gain temporary HP equal
+    to Level + Strength. While raging, you deal 2 additional damage with melee
+    strikes, you take a -1 penalty to AC, and you can't use actions with <span
+    class="trait">Concentrate</span> unless they also have <span
+    class="trait">Rage</span>.
+
+Sudden Charge:
+  tier: Novice
+  type: 2-Action
+  traits: [Flourish, Open]
+  effect:
+    With a quick sprint, you dash up to your foe and swing. Stride twice. If
+    you end your movement within reach of at least one enemy, you can make a
+    melee Strike against that enemy.
+
+Swipe:
+  tier: Novice
+  type: 2-Action
+  traits: [Flourish]
+  effect:
+    You make a wide, arcing swing. Make a single melee Strike and compare the attack roll result to the ACs of up to two foes, each of whom must be within your melee reach and adjacent to the other. Roll damage only once and apply it to each creature you hit. A Swipe counts a two attacks for MAP. If you're using a weapon with the sweep trait, its modifier applies to all your Swipe attacks.
+
+Cleave:
+  tier: Veteran
+  type: Reaction
+  traits: [Rage]
+  tags:
+    trigger: Your melee Strike kills a creature or knocks it unconscious, and another foe is adjacent to that creature
+  effect:
+    You swing clear through one foe and into another. Make a melee Strike against the second foe.
+
+Giant's Stature:
+  tier: Veteran
+  type: 1-Action
+  traits: [Polymorph, Rage]
+  tags:
+    requirements: You are Medium size or smaller
+  effect:
+    You grow to incredible size. You become Large, increasing your reach by 5 feet and taking a -1 penalty to Agility until you stop raging. Your equipment grows with you.
+
+Savage Critical:
+  tier: Epic
+  type: Passive
+  traits: []
+  effect:
+    The wounds you inflict are greivous. When you Strike, you critically succeed if you roll a 19 on the die as long as that result is a success.

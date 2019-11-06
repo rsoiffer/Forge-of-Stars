@@ -1,10 +1,18 @@
 module ForgeOfStars
   class DataGenerator < Jekyll::Generator
     safe true
+    priority :high
 
     def generate(site)
       site.data["weapon_combinations"] =
         combine_weapons(join_weapon_shapes(site.data["weapons"]))
+
+      site.data["powers"] =
+        site.data["power_data"].flat_map do |name, school|
+          school.map do |name2, power|
+            {name2 => power.merge({"school" => name.capitalize()})}
+          end
+        end.reduce({}, :merge)
     end
 
     private

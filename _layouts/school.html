@@ -28,3 +28,59 @@ sidebar:
     {% endif %}
   {% endfor %}
 </table>
+
+
+{% for power2 in site.data.powers %}
+  {% if power2[1].school == page.data[0] %}
+
+    {% assign power = power2[1] %}
+    <h2 id="{{ power2[0] | slugify }}">
+      {{ power2[0] }}
+      {% unless power.type == "Passive" %}
+        <img title="{{ power.type }}" class="damage-type"
+          src="{% link assets/svg/{{ power.type | downcase }}.svg %}">
+      {% endunless %}
+      <span class="alignright">{{ power.tier }}</span>
+    </h2>
+
+    <ul class="traits">
+      {% for trait in power.traits %}
+        <li class="trait">{{ trait }}</li>
+      {% endfor %}
+    </ul>
+
+    {% if power.tags %}
+      <dl class="tags">
+        {% for tag in power.tags %}
+          <dt>{{ tag[0] | capitalize }}</dt>
+          <dd>{{ tag[1] }}</dd>
+        {% endfor %}
+      </dl>
+      <hr>
+    {% endif %}
+
+    {{ power.effect | markdownify }}
+
+    {% if power.critical-success or power.success or power.failure or power.critical-failure %}
+      <dl class="tags">
+        {% if power.critical-success %}
+          <dt>Critical Success</dt>
+          <dd>{{ power.critical-success }}</dd>
+        {% endif %}
+        {% if power.success %}
+          <dt>Success</dt>
+          <dd>{{ power.success }}</dd>
+        {% endif %}
+        {% if power.failure %}
+          <dt>Failure</dt>
+          <dd>{{ power.failure }}</dd>
+        {% endif %}
+        {% if power.critical-failure %}
+          <dt>Critical Failure</dt>
+          <dd>{{ power.critical-failure }}</dd>
+        {% endif %}
+      </dl>
+    {% endif %}
+
+  {% endif %}
+{% endfor %}

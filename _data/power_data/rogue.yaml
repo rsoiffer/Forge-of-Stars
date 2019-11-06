@@ -1,0 +1,69 @@
+Nimble Dodge:
+  tier: Novice
+  type: Reaction
+  traits: []
+  tags:
+    trigger: A creature targets you with an attack and you can see the attacker
+  effect:
+    You deftly dodge out of the way, gaining a +2 bonus to AC against the triggering attack.
+
+Quick Draw:
+  tier: Novice
+  type: 1-Action
+  traits: []
+  effect:
+    You draw your weapon and attack with the same motion. You Interact to draw a weapon, then Strike with that weapon.
+
+Sneak Attack:
+  tier: Novice
+  type: Passive
+  traits: []
+  effect: |
+    When your enemy can't properly defend itself, you take advantage to deal extra damage. If you Strike a creature that has the flat-footed condition, you deal an extra 1d6 precision damage. The weapon you Strike with must be a ranged weapon, or must have the agile or finesse trait.
+
+    As your level increases, so does the number of damage dice for your sneak attack. Increase the number of dice to 2d6 at 5th level, 3d6 at 11th level, and 4d6 at 17th level.
+
+Unbalancing Blow:
+  tier: Novice
+  type: Passive
+  traits: []
+  effect:
+    Interweaving your most powerful attacks in a graceful flow, you temporarily unbalance your foes. Whenever your Strike is a critical hit and deals damage, the target is flat-footed against your attacks until the end of your next turn.
+
+Nimble Roll:
+  tier: Veteran
+  type: Passive
+  traits: []
+  tags:
+    prerequisites: Nimble Dodge
+  effect: |
+    You throw yourself into a roll to escape imminent danger. You can use Nimble Dodge before attempting a Reflex save in addition to its original trigger. If you do, the circumstance bonus applies to your Reflex save against the triggering effect.
+
+    When you use Nimble Dodge and the triggering attack fails or criticalls fails, or when you succeed or critically succeed at the saving throw, you can also Stride up to 10 feet as part of the reaction. If you do, the reaction gains <span class="trait">Move</span>.
+
+Sly Striker:
+  tier: Veteran
+  type: Passive
+  traits: []
+  tags:
+    prerequisites: Sneak Attack
+  effect:
+    Your attacks deal more damage, even against creatures that aren't flat-footed. When you succeed or critically succeed at a Strike against a creature that isn't flat-footed, you also deal 1d6 precision damage. This applies only if you're using a weapon you could Sneak Attack with. This damage increases to 2d6 at 14th level.
+
+Defensive Roll:
+  tier: Master
+  type: Free
+  traits: [Encounter]
+  tags:
+    trigger: A physical attack would reduce you to 0 HP
+  effect:
+    Dropping into a roll to disperse the force of the blow, you can partially evade a lethal attack and stay conscious. You take half damage from the triggering attack.
+
+Impossible Striker:
+  tier: Epic
+  type: Passive
+  traits: []
+  tags:
+    prerequisites: Sly Striker
+  effect:
+    Your attacks are swift and deadly beyond explanation. Nothing can prevent you from making a sneak attack, even if your opponent can see every blow coming. Instead of dealing the damage from Sly Striker, you can deal your full Sneak Attack damage to a target even if the target isn't flat-footed.

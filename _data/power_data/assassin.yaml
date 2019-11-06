@@ -1,0 +1,37 @@
+Hunt Prey:
+  tier: Novice
+  type: 1-Action
+  traits: [Concentrate]
+  tags:
+    duration: 24 hours, or until you use this power again
+  effect:
+    You designate a single creature as your prey and focus your attacks against that creature. You must be able to see or hear the prey, or you must be tracking the prey during exploration. You gain a +2 bonus to Perception rolls or Survival rolls made to Seek or Track your prey. You also ignore the penalty for making ranged attacks within your second increment against the prey you're hunting.
+
+Camouflage:
+  tier: Veteran
+  type: Passive
+  traits: []
+  effect:
+    You alter your appearance to blend in to your surroundings. While outdoors, you can Sneak even if you're observed.
+
+Double Prey:
+  tier: Master
+  type: Passive
+  traits: []
+  tags:
+    requirements: Hunt Prey
+  effect:
+    You can focus on two foes at once, hunting both of them down. When you use the Hunt Prey power, you can pick two creatures as your prey.
+
+Master Strike:
+  tier: Epic
+  type: Free
+  traits: [Incapacitation]
+  tags:
+    trigger: Your Strike hits a flat-footed creature and deals damage
+  effect:
+    The target attempts a Fortitude save against a DC of 10 + Precision + Prof. It then becomes temporarily immune to your Master Strike for 1 day.
+  critical-success: The target is unaffected
+  success: The target takes a -2 penalty to Strength until the end of your next turn
+  failure: The target is paralyzed for 4 rounds
+  critical-failure: The target is paralyzed for 4 rounds, knocked unconscious for 2 hours, or killed (your choice)

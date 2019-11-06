@@ -28,7 +28,7 @@ Now with {{ site.data.weapon_combinations | size }} unique weapons!
               <td>
               {% if weapon.damage %}
                 <img title="{{ weapon.damage_type }}"
-                      class="damage-type"
+                      class="inline-icon"
                       src="{% link
                               assets/svg/{{ weapon.damage_type | downcase }}.svg
                             %}">

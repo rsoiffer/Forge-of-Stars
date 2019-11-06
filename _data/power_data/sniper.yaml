@@ -1,0 +1,20 @@
+Far Shot:
+  tier: Novice
+  type: Passive
+  traits: []
+  effect:
+    Your experience in the field has taught you how to focus your aim at a distance, increasing your accuracy. Double your weapons' range increments.
+
+Deadly Aim:
+  tier: Veteran
+  type: 1-Action
+  traits: [Open]
+  effect:
+    You aim for your prey's weak spots, making your shot more challenging but dealing more damage if you hit. Make a ranged Strike against your hunted prey at a -2 penalty. Your Strike's damage increases by 2 + Prof.
+
+Incredible Aim:
+  tier: Veteran
+  type: 2-Action
+  traits: [Concentrate]
+  effect:
+    By spending a moment to focus, you can ensure your attack strikes true. Make a ranged weapon Strike. On this Strike, you gain a +2 bonus to the attack roll and ignore the target's concealed condition.

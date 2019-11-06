@@ -1,0 +1,90 @@
+Crane Stance:
+  tier: Novice
+  type: 1-Action
+  traits: [Stance]
+  tags:
+    requirements: You are unarmored
+  effect:
+    You enter the stance of a crane, using flowing defensive motions. You gain a +1 bonus to AC, but the only Strikes you can make are crane wing attacks. These deal 1d6 bludgeoning damage, and have the agile, finnesse, and unarmed traits. You also gain a +5 bonus to skill rolls made to jump.
+
+Dragon Stance:
+  tier: Novice
+  type: 1-Action
+  traits: [Stance]
+  tags:
+    requirements: You are unarmored
+  effect:
+    You enter the stance of a dragon and make powerful strikes like a lashing dragon's tail. You can make dragon tail attacks that deal 1d10 bludgeoning damage. They have the backswing and unarmed traits. While in Dragon Stance, you can ignore the first square of difficult terrain while Striding.
+
+Flurry:
+  tier: Novice
+  type: 1-Action
+  traits: [Flourish]
+  effect:
+    Make two melee Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses. Apply your MAP to the Strikes normally.
+
+Incredible Movement:
+  tier: Novice
+  type: Passive
+  traits: []
+  effect:
+    You move like the wind. Whenever you're not wearing armor, you gain a bonus to your Speed equal to 5 feet * your Acrobat level.
+
+Reactive Pursuit:
+  tier: Novice
+  type: Reaction
+  traits: []
+  tags:
+    trigger: An adjacent foe moves away from you, and you can reach at least one space adjacent to the foe with a Stride action
+  effect:
+    You keep pace with a retreating foe. You Stride, but you must end your movement adjacent to the triggering enemy. Your move does not trigger reactions from the triggering enemy.
+
+Sleeper Hold:
+  tier: Veteran
+  type: 1-Action
+  traits: [Attack, Incapacitation]
+  tags:
+    requirements: You have a creature grabbed or restrained
+  effect:
+    You pinch crucial points of your target's nervous system, impeding its ability to function. Attempt a Wrestling check to Grapple the creature, with the following success and critical success effects instead of the usual effects.
+  critical-success: The target falls unconscious for 1 minute, though it remains standing and doesn't drop what it holds
+  success: The target takes a -1 penalty to Agility until the end of its next turn
+
+Wall Run:
+  tier: Veteran
+  type: 1-Action
+  traits: []
+  effect:
+    You defy gravity, traversing vertical planes as easily as the ground. Stride up to your Speed. You must start your movement on a horizontal surface. During this movement, you can run up vertical surfaces, like walls, at your full Speed. If you end the Stride off the ground, you fall after taking your next action or when your turn ends, whichever comes first. If you have Water Step or a similar ability, Wall Run lets you run along flimsy vertical surfaces, as well as vertical liquids, such as a waterfall.
+
+Water Step:
+  tier: Veteran
+  type: Passive
+  traits: []
+  effect:
+    You can Stride across liquid and surfaces that don't support your weight. This benefit only lasts during your movement. If you end your movement on a surface that can't support you, you fall in or it collapses as normal.
+
+Winding Flow:
+  tier: Veteran
+  type: 1-Action
+  traits: []
+  tags:
+    frequency: Once per round
+  effect:
+    "Any journey consists of more than simply reaching your destination. You use two of the following actions in any order: Stand, Step, and Stride. You can't use the same action twice."
+
+Enduring Quickness:
+  tier: Epic
+  type: Passive
+  traits: []
+  effect:
+    You move as fast and as high as the wind itself. You're permanently quickened. You can use your extra action only to Stride or Leap.
+
+Swift River:
+  tier: Epic
+  type: Free
+  traits: []
+  tags:
+    trigger: Your turn ends and you have a penalty to your Speed or are immobilized or slowed
+  effect:
+    You flow like water, avoiding all restraints. End one penalty to your speed, or end one immobilized or slowed condition affecting you.
