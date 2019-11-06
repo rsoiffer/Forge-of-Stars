@@ -6,11 +6,13 @@ sidebar:
 
 {% assign power = page.data[1] %}
 
-<ul class="traits">
-  {% for trait in power.traits %}
-    <li class="trait">{{ trait }}</li>
-  {% endfor %}
-</ul>
+{% if power.traits %}
+  <ul class="traits">
+    {% for trait in power.traits %}
+      <li class="trait">{{ trait }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
 
 <dl class="tags">
   <dt>Type</dt>

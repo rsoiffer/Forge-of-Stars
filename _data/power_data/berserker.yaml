@@ -10,6 +10,17 @@ Brutish Shove:
     This Strike has the following failure effect.
   failure: The target becomes flat-footed until the end of your current turn
 
+Mountain Stance:
+  tier: Novice
+  type: 1-Action
+  traits: [Stance]
+  tags:
+    requirements: You are unarmored and touching the ground
+  effect: |
+    You end the stance of an implacable mountain and strike with the weight of an avalanche. The only Strikes you can make are falling stone unarmed attacks. These deal 1d8 bludgeoning damage and have the forceful and unarmed traits.
+
+    While in Mountain Stance, you gain a +4 bonus to AC and a +2 bonus to any defenses against being Shoved or Tripped. However, you don't add your Agility to your AC, and your Speed is reduced by 5 feet.
+
 Power Attack:
   tier: Novice
   type: 2-Action
@@ -60,6 +71,14 @@ Cleave:
   effect:
     You swing clear through one foe and into another. Make a melee Strike against the second foe.
 
+Furious Focus:
+  tier: Veteran
+  type: Passive
+  tags:
+    prerequisites: Power Attack
+  effect:
+    You've learned to maintain your balance even when swinging furiously. When you make a Power Attack with a melee weapon you're wielding in two hands, it counts as one attack toward MAP instead of two.
+
 Giant's Stature:
   tier: Veteran
   type: 1-Action
@@ -72,6 +91,5 @@ Giant's Stature:
 Savage Critical:
   tier: Epic
   type: Passive
-  traits: []
   effect:
     The wounds you inflict are greivous. When you Strike, you critically succeed if you roll a 19 on the die as long as that result is a success.

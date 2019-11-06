@@ -23,9 +23,12 @@ Duelist:
 
 # Sharpshooter
 
-Assassin:
-  brief:
-    You stalk through the shadows, surprising enemies with deadly sneak attacks
+Demolitionist:
+  brief: You destroy buildings and people alike with a variety of powerful explosives
+  description: ""
+
+Hunter:
+  brief: You fire with care and precision to take out enemies at incredible distances
   description: ""
 
 Juggernaut:
@@ -34,10 +37,6 @@ Juggernaut:
 
 Rogue:
   brief: You chance your way into victory, consistently getting lucky hits or dodges
-  description: ""
-
-Sniper:
-  brief: You fire with care and precision to take out enemies at incredible distances
   description: ""
 
 # Expert

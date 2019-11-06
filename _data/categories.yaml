@@ -5,10 +5,10 @@ Fighter:
   - Duelist
 
 Sharpshooter:
-  - Assassin
+  - Demolitionist
+  - Hunter
   - Juggernaut
   - Rogue
-  - Sniper
 
 Expert:
   - Battlesmith

@@ -1,0 +1,29 @@
+Cyberblade Stance:
+  tier: Novice
+  type: 1-Action
+  traits: [Stance]
+  effect: |
+    You extend metal blades from your arms and can make cyberblade attacks. These deal 1d8 slashing damage, and have the agile, finesse, and unarmed traits. On a critical success with your cyberblade, if you deal damage, the target takes 1d4 persistent bleed damage.
+
+    As long as your Speed is at least 20 feet while in Cyberblade Stance, you can Step 10 feet.
+
+Cyberblade Slash:
+  tier: Veteran
+  type: 2-Action
+  tags:
+    prerequisites: Cyberblade Stance
+    requirements: You are in Cyberblade Stance
+  effect:
+    You make a fierce swipe with both hands. Make a cyberblade Strike. It deals 2d8 extra damage (3d8 if you're 14th level or higher), and you can push the target 5 feet away as if you had successfully Shoved them. If the attack is a critical success and deals damage, add your Strength to the persistent bleed damage from your cyberblade.
+
+Diamond Soul:
+  tier: Master
+  type: Passive
+  effect:
+    You have fortified your body and mind against eldritch effects. You gain a +1 bonus to saving throws against magic.
+
+Synaptic Booster:
+  tier: Epic
+  type: Passive
+  effect:
+    Your skill with weapons lets you attack swiftly at all times. You're permanently quickened. You can use your extra action only to Strike.

@@ -1,0 +1,58 @@
+Double Shot:
+  tier: Novice
+  type: 2-Action
+  traits: [Flourish]
+  tags:
+    requirements: You are wielding a ranged weapon without the reload trait
+  effect:
+    You shoot twice in blindingly fast succession. Make two Strikes, each against a separate target and with a -2 penalty. Both attacks count towards MAP, but the penalty doesn't increase until after you've made both of them.
+
+Point-Blank Shot:
+  tier: Novice
+  type: 1-Action
+  traits: [Open, Stance]
+  tags:
+    requirements: You are wielding a ranged weapon
+  effect:
+    You take aim to pick off nearby enemies quickly. When using a ranged weapon, you gain a +2 bonus to attacks against targets within 30 feet.
+
+Supressive Fire:
+  tier: Veteran
+  type: Passive
+  effect:
+    The overwhelming number of your attacks leaves an enemy flustered. If you critically hit a creature with a ranged weapon, or hit it at least twice on the same turn with a ranged weapon, it's flat-footed until the start of your next turn.
+
+Triple Shot:
+  tier: Veteran
+  type: Passive
+  tags:
+    prerequisites: Double Shot
+  effect:
+    You can quickly fire multiple shots with greater control. When you use Double Shot, you can make the attacks against the same target. You can add an additional action to Double Shot to make three ranged Strikes instead of two. If you do, the penalty is -4 instead of -2. All attacks count toward MAP, but the penalty doesn't increase until after you've made all of them.
+
+Greater Supressive Fire:
+  tier: Master
+  type: Passive
+  tags:
+    prerequisites: Supressive Fire
+  effect:
+    Even a single missile can throw off your enemy's balance, and more powerful attacks leave it flustered for longer. If you hit a creature with a ranged weapon, it's flat-footed until the start of your next turn. If you critically hit a creature or hit it twice on the same turn with a ranged weapon, it's flat-footed until the end of your next turn instead.
+
+Multishot Stance:
+  tier: Master
+  type: 1-Action
+  traits: [Stance]
+  tags:
+    prerequisites: Triple Shot
+    requirements: You are wielding a ranged weapon without the reload trait
+  effect:
+    You lock yourself in a stable position so you can fire swiftly and accurately. While you are in this stance, your penalty for Double Shot is reduced to -1, or -2 if you add the extra action to make three Strikes. If you move from your position, this stance ends.
+
+Impossible Volley:
+  tier: Epic
+  type: 3-Action
+  traits: [Flourish, Open]
+  tags:
+    requirements: You are wielding a ranged weapon without the reload trait
+  effect:
+    You fire a volley at all foes in an area. Make one Strike with a -2 penalty against each enemy within a 10-foot-radius burst. Roll the damage only once for all targets. Each attack counts towards MAP, but do not increase your penalty until you have made all your attacks.

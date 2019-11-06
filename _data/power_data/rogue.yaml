@@ -1,7 +1,6 @@
 Nimble Dodge:
   tier: Novice
   type: Reaction
-  traits: []
   tags:
     trigger: A creature targets you with an attack and you can see the attacker
   effect:
@@ -10,14 +9,12 @@ Nimble Dodge:
 Quick Draw:
   tier: Novice
   type: 1-Action
-  traits: []
   effect:
     You draw your weapon and attack with the same motion. You Interact to draw a weapon, then Strike with that weapon.
 
 Sneak Attack:
   tier: Novice
   type: Passive
-  traits: []
   effect: |
     When your enemy can't properly defend itself, you take advantage to deal extra damage. If you Strike a creature that has the flat-footed condition, you deal an extra 1d6 precision damage. The weapon you Strike with must be a ranged weapon, or must have the agile or finesse trait.
 
@@ -26,14 +23,12 @@ Sneak Attack:
 Unbalancing Blow:
   tier: Novice
   type: Passive
-  traits: []
   effect:
     Interweaving your most powerful attacks in a graceful flow, you temporarily unbalance your foes. Whenever your Strike is a critical hit and deals damage, the target is flat-footed against your attacks until the end of your next turn.
 
 Nimble Roll:
   tier: Veteran
   type: Passive
-  traits: []
   tags:
     prerequisites: Nimble Dodge
   effect: |
@@ -44,7 +39,6 @@ Nimble Roll:
 Sly Striker:
   tier: Veteran
   type: Passive
-  traits: []
   tags:
     prerequisites: Sneak Attack
   effect:
@@ -62,8 +56,20 @@ Defensive Roll:
 Impossible Striker:
   tier: Epic
   type: Passive
-  traits: []
   tags:
     prerequisites: Sly Striker
   effect:
     Your attacks are swift and deadly beyond explanation. Nothing can prevent you from making a sneak attack, even if your opponent can see every blow coming. Instead of dealing the damage from Sly Striker, you can deal your full Sneak Attack damage to a target even if the target isn't flat-footed.
+
+Master Strike:
+  tier: Epic
+  type: Free
+  traits: [Incapacitation]
+  tags:
+    trigger: Your Strike hits a flat-footed creature and deals damage
+  effect:
+    The target attempts a Fortitude save against a DC of 10 + Precision + Prof. It then becomes temporarily immune to your Master Strike for 1 day.
+  critical-success: The target is unaffected
+  success: The target takes a -2 penalty to Strength until the end of your next turn
+  failure: The target is paralyzed for 4 rounds
+  critical-failure: The target is paralyzed for 4 rounds, knocked unconscious for 2 hours, or killed (your choice)

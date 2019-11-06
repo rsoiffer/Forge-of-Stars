@@ -1,17 +1,34 @@
+Attack of Opportunity:
+  tier: Novice
+  type: Reaction
+  tags:
+    trigger: A creature within your reach uses a <span class="trait">Manipulate</span> action or a <span class="trait">Move</span> action, makes a ranged attack, or leaves a square during a <span class="trait">Move</span> action it's using
+  effect:
+    You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger is a <span class="trait">Manipulate</span> action, your disrupt that action. This Strike doesn't count toward MAP, and MAP doesn't apply to this Strike.
+
 Deflect Bullet:
   tier: Novice
   type: Reaction
-  traits: []
   tags:
     trigger: You are the target of a ranged attack
     requirements: You're aware of the attack, are not flat-footed against it, and are wielding a melee weapon or have a hand free
   effect:
     You gain a +4 bonus to AC against the triggering attack. If the attack misses, you have deflected it. You cannot use this power to deflect usually massive ranged projectiles (such as boulders or ballista bolts).
 
+Dragon Stance:
+  tier: Novice
+  type: 1-Action
+  traits: [Stance]
+  tags:
+    requirements: You are unarmored
+  effect: |
+    You enter the stance of a dragon and make powerful strikes like a lashing dragon's tail. You can make dragon tail attacks that deal 1d10 bludgeoning damage. They have the backswing and unarmed traits.
+    
+    While in Dragon Stance, you can ignore the first square of difficult terrain while Striding.
+
 Dueling Parry:
   tier: Novice
   type: 1-Action
-  traits: []
   tags:
     requirements: You are wielding a melee weapon
   effect:
@@ -20,7 +37,6 @@ Dueling Parry:
 Lunge:
   tier: Novice
   type: 1-Action
-  traits: []
   tags:
     requirements: You are wielding a melee weapon
   effect:
@@ -29,7 +45,6 @@ Lunge:
 Bullet Snatching:
   tier: Veteran
   type: Passive
-  traits: []
   tags:
     prerequisites: Deflect Bullet
   effect:
@@ -44,10 +59,19 @@ Disarming Stance:
   effect:
     You adopt a fencing stance that improves your control over your weapon. While you are in this stance, you gain a +1 bonus to Wrestling checks to Disarm and a +2 bonus to your Reflex DC when defending against checks to Disarm you.
 
+Disarming Twist:
+  tier: Veteran
+  type: 1-Action
+  traits: [Press]
+  tags:
+    requirements: You are wielding a melee weapon
+  effect:
+    After your initial attack redirects your foe's defenses, your follow-up wrests their weapon from their grasp. Make a melee Strike. In addition to its other effects, this Strike gains the success and critical succes effects of the Disarm action. The Strike also has the following failure effect.
+  failure: The target is flat-footed until the end of your current turn
+
 Dueling Riposte:
   tier: Veteran
   type: Reaction
-  traits: []
   tags:
     prerequisites: Dueling Parry
     trigger: A creature within your reach critically fails a Strike against you
@@ -58,7 +82,6 @@ Dueling Riposte:
 Guardian's Deflection:
   tier: Veteran
   type: Reaction
-  traits: []
   tags:
     trigger: An ally within your melee reach is hit by an attack and you can see the attacker
     requirements: You are wielding a melee weapon
@@ -78,7 +101,6 @@ Dueling Dance:
 Guiding Riposte:
   tier: Master
   type: Passive
-  traits: []
   tags:
     prerequisites: Dueling Riposte
   effect:
@@ -87,7 +109,6 @@ Guiding Riposte:
 Improved Dueling Riposte:
   tier: Master
   type: Passive
-  traits: []
   tags:
     prerequisites: Dueling Riposte
   effect:
@@ -96,6 +117,5 @@ Improved Dueling Riposte:
 Boundless Reprisals:
   tier: Epic
   type: Passive
-  traits: []
   effect:
     With a sixth sense for the flow of combat, you can quickly react to any situation as required. At the start of each enemy's turn, you gain a reaction you can use only during that turn.

@@ -43,11 +43,13 @@ sidebar:
       <span class="alignright">{{ power.tier }}</span>
     </h2>
 
-    <ul class="traits">
-      {% for trait in power.traits %}
-        <li class="trait">{{ trait }}</li>
-      {% endfor %}
-    </ul>
+    {% if power.traits %}
+      <ul class="traits">
+        {% for trait in power.traits %}
+          <li class="trait">{{ trait }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
 
     {% if power.tags %}
       <dl class="tags">

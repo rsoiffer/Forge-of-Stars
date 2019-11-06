@@ -1,0 +1,72 @@
+Far Shot:
+  tier: Novice
+  type: Passive
+  effect:
+    Your experience in the field has taught you how to focus your aim at a distance, increasing your accuracy. Double your weapons' range increments.
+
+Hunt Prey:
+  tier: Novice
+  type: 1-Action
+  traits: [Concentrate]
+  tags:
+    duration: 24 hours, or until you use this power again
+  effect:
+    You designate a single creature as your prey and focus your attacks against that creature. You must be able to see or hear the prey, or you must be tracking the prey during exploration. You gain a +2 bonus to Perception rolls or Survival rolls made to Seek or Track your prey. You also ignore the penalty for making ranged attacks within your second increment against the prey you're hunting. The first time you hit your hunted prey in a round, you also deal 1d8 additional precision damage.
+
+Hunter's Aim:
+  tier: Novice
+  type: 2-Action
+  traits: [Concentrate]
+  effect:
+    By spending a moment to focus, you can ensure your attack strikes true. Make a ranged weapon Strike. On this Strike, you gain a +2 bonus to the attack roll and ignore the target's concealed condition.
+
+Camouflage:
+  tier: Veteran
+  type: Passive
+  effect:
+    You alter your appearance to blend in to your surroundings. While outdoors, you can Sneak even if you're observed.
+
+Deadly Aim:
+  tier: Veteran
+  type: 1-Action
+  traits: [Open]
+  effect:
+    You aim for your prey's weak spots, making your shot more challenging but dealing more damage if you hit. Make a ranged Strike against your hunted prey at a -2 penalty. Your Strike's damage increases by 2 + Prof.
+
+Debilitating Shot:
+  tier: Veteran
+  type: 2-Action
+  traits: [Flourish]
+  effect:
+    Aiming for a weak point, you impede your foe with a precise shot. Make a ranged weapon Strike. If it hits and deals damage, the target is slowed 1 until the end of its next turn.
+
+Incredible Ricochet:
+  tier: Veteran
+  type: 2-Action
+  traits: [Concentrate, Press]
+  effect:
+    After your first shot singles out your opponent's position, you direct another that ricochets around obstacles and strikes unerringly. Make a ranged weapon Strike. You ignore the target's concealed condition and all cover.
+
+Double Prey:
+  tier: Master
+  type: Passive
+  tags:
+    prerequisites: Hunt Prey
+  effect:
+    You can focus on two foes at once, hunting both of them down. When you use the Hunt Prey power, you can pick two creatures as your prey.
+
+Legendary Shot:
+  tier: Epic
+  type: Passive
+  tags:
+    prerequisites: Far Shot, Hunt Prey
+  effect:
+    Your focus on your hunted prey, perceiving angles, air resistance, and every variable that would affect your ranged attack. You can ignore the penalty for attacking up to five range increments away when attacking your hunted prey.
+
+Shadow Hunter:
+  tier: Epic
+  type: Passive
+  tags:
+    prerequisites: Camouflage
+  effect:
+    You blend in to your surroundings so well that others have trouble telling you apart from the terrain. While outdoors, you're always concealed from all foes if you choose to be.

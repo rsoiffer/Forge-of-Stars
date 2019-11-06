@@ -4,19 +4,18 @@ Crane Stance:
   traits: [Stance]
   tags:
     requirements: You are unarmored
-  effect:
-    You enter the stance of a crane, using flowing defensive motions. You gain a +1 bonus to AC, but the only Strikes you can make are crane wing attacks. These deal 1d6 bludgeoning damage, and have the agile, finnesse, and unarmed traits. You also gain a +5 bonus to skill rolls made to jump.
+  effect: |
+    You enter the stance of a crane, using flowing defensive motions. You gain a +1 bonus to AC, but the only Strikes you can make are crane wing attacks. These deal 1d6 bludgeoning damage, and have the agile, finnesse, and unarmed traits.
+    
+    While in Crane Stance, you gain a +5 bonus to skill rolls made to jump.
 
-Dragon Stance:
+Fantastic Leap:
   tier: Novice
-  type: 1-Action
-  traits: [Stance]
-  tags:
-    requirements: You are unarmored
+  type: 2-Action
   effect:
-    You enter the stance of a dragon and make powerful strikes like a lashing dragon's tail. You can make dragon tail attacks that deal 1d10 bludgeoning damage. They have the backswing and unarmed traits. While in Dragon Stance, you can ignore the first square of difficult terrain while Striding.
+    You launch yourself through the air at a foe. Make a Leap or attempt a High Jump or Long Jump. At the end of your jump, you can make a melee Strike, even if you're in mid-air. You fall to the ground after the Strike. If the distance of your fall is no more than the height of your jump, you take no damage and land upright.
 
-Flurry:
+Flurry of Blows:
   tier: Novice
   type: 1-Action
   traits: [Flourish]
@@ -26,18 +25,32 @@ Flurry:
 Incredible Movement:
   tier: Novice
   type: Passive
-  traits: []
   effect:
     You move like the wind. Whenever you're not wearing armor, you gain a bonus to your Speed equal to 5 feet * your Acrobat level.
 
 Reactive Pursuit:
   tier: Novice
   type: Reaction
-  traits: []
   tags:
     trigger: An adjacent foe moves away from you, and you can reach at least one space adjacent to the foe with a Stride action
   effect:
     You keep pace with a retreating foe. You Stride, but you must end your movement adjacent to the triggering enemy. Your move does not trigger reactions from the triggering enemy.
+
+Stunning Fist:
+  tier: Novice
+  type: Free
+  traits: [Incapacitation]
+  tags:
+    prerequisites: Flurry of Blows
+    trigger: You target the same creature with two Strikes from your Flurry of Blows, and at least one of the Strikes hits and deals damage.
+  effect:
+    The focused power of your flurry threatens to overwhelm your opponent. Your target must succeed at a Fortitude save against a DC of 10 + Strength + Prof of be stunned 1 (or stunned 3 on a critical failure).
+
+Agile Grace:
+  tier: Veteran
+  type: Passive
+  effect:
+    Your graceful moves with agile weapons are beyond compare. Your multiple attack penalty with agile weapons becomes -3 for each attack action you've used so far this turn (rather than -4).
 
 Sleeper Hold:
   tier: Veteran
@@ -53,37 +66,39 @@ Sleeper Hold:
 Wall Run:
   tier: Veteran
   type: 1-Action
-  traits: []
   effect:
     You defy gravity, traversing vertical planes as easily as the ground. Stride up to your Speed. You must start your movement on a horizontal surface. During this movement, you can run up vertical surfaces, like walls, at your full Speed. If you end the Stride off the ground, you fall after taking your next action or when your turn ends, whichever comes first. If you have Water Step or a similar ability, Wall Run lets you run along flimsy vertical surfaces, as well as vertical liquids, such as a waterfall.
 
 Water Step:
   tier: Veteran
   type: Passive
-  traits: []
   effect:
     You can Stride across liquid and surfaces that don't support your weight. This benefit only lasts during your movement. If you end your movement on a surface that can't support you, you fall in or it collapses as normal.
 
 Winding Flow:
   tier: Veteran
   type: 1-Action
-  traits: []
   tags:
     frequency: Once per round
   effect:
     "Any journey consists of more than simply reaching your destination. You use two of the following actions in any order: Stand, Step, and Stride. You can't use the same action twice."
 
+Whirlwind Strike:
+  tier: Master
+  type: 3-Action
+  traits: [Flourish, Open]
+  effect:
+    You attack all nearby adversaries. Make a melee Strike against each enemy within your melee reach. Each attack counts towards your MAP, but do not increase your penalty until you have made all your attacks.
+
 Enduring Quickness:
   tier: Epic
   type: Passive
-  traits: []
   effect:
     You move as fast and as high as the wind itself. You're permanently quickened. You can use your extra action only to Stride or Leap.
 
 Swift River:
   tier: Epic
   type: Free
-  traits: []
   tags:
     trigger: Your turn ends and you have a penalty to your Speed or are immobilized or slowed
   effect:
