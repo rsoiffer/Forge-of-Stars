@@ -1,0 +1,111 @@
+Acid Arrow:
+  tier: Novice
+  type: 2-Action
+  traits: [Acid, Attack, Somatic, Verbal]
+  tags:
+    cost: 2 Mana
+    range: 120 feet
+  effect: |
+    You conjure an arrow of acid that continues corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus 1d6 persistent acid damage. On a critical hit, double the initial damage, but not the persistent damage.
+
+    Heightened (+2 Mana)
+    : The intial damage increases by 2d8, and the persistant acid damage increases by 1d6
+
+Powerbolt:
+  tier: Novice
+  type: 2-Action
+  traits: [Attack, Somatic, Verbal]
+  tags:
+    range: 60 feet
+  effect:
+    You fire a bolt of damaging magical energies that impacts with violent force. Make a spell attack. If you hit, you deal 1d6 + Intelligence damage, or twice as much damage on a critical hit. The damage increases by 1d6 for every Blaster power you know other than this one.
+
+Sound Burst:
+  tier: Novice
+  type: 2-Action
+  traits: [Somatic, Sonic, Verbal]
+  tags:
+    cost: 2 Mana
+    range: 30 feet
+    area: 10-foot burst
+    save: Fortitude
+  effect: |
+    A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save.
+
+    Heightened (+1 Mana)
+    : The damage increases by 1d10
+  critical-success: The creature is unaffected
+  success: The creature takes half damage
+  failure: The creature takes full damage and is deafened for 1 round
+  critical-failure: The creature takes double damage and is deafened and slowed 1 for 1 minute
+
+Spell Shaper:
+  tier: Veteran
+  type: Passive
+  effect:
+    When you use a Blaster <span class="trait">attack</span> power with a range of at least 30 feet, you can decrease the range to Touch to get a +2 bonus to the attack roll.
+
+Cone of Cold:
+  tier: Veteran
+  type: 2-Action
+  traits: [Cold, Somatic, Verbal]
+  tags:
+    cost: 5 Mana
+    area: 60-foot cone
+    save: Reflex
+  effect: |
+    Icy cold rushes forth from your hands. You deal 12d6 cold damage to creatures in the area.
+
+    Heightened (+1 Mana)
+    : The damage increases by 2d6
+
+Fireball:
+  tier: Veteran
+  type: 2-Action
+  traits: [Fire, Somatic, Verbal]
+  tags:
+    cost: 3 Mana
+    range: 500 feet
+    area: 20-foot burst
+    save: Reflex
+  effect: |
+    A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.
+
+    Heightened (+1 Mana)
+    : The damage increases by 2d6
+
+Lightning Bolt:
+  tier: Veteran
+  type: 2-Action
+  traits: [Electricity, Somatic, Verbal]
+  tags:
+    cost: 3 Mana
+    area: 120-foot line
+    save: Reflex
+  effect: |
+    A bolt of lightning strikes outward from your hand, dealing 4d12 electricity damage.
+
+    Heightened (+1 Mana)
+    : The damage increases by 1d12
+
+Disintegrate:
+  tier: Master
+  type: 2-Action
+  traits: [Attack, Somatic, Verbal]
+  tags:
+    cost: 6 Mana
+    range: 120 feet
+  effect:
+    You fire a green ray at your target. Make a spell attack. If you hit, you deal 12d10 damage, or twice as much on a critical hit. A creature reduced to 0 HP is reduced to fine powder. An object you hit is destroyed if it would fit within a 10-foot cube, regardless of its HP, unless it's an artifact or similarly hard to destroy.
+
+Implosion:
+  tier: Epic
+  type: 2-Action
+  traits: [Somatic, Verbal]
+  tags:
+    cost: 9 Mana
+    range: 30 feet
+    save: Fortitude
+    duration: Sustained, up to 1 minute
+  effect:
+    You crush the target by causing it to collapse in on itself, dealing 75 damage. Each time you Sustain the spell, you must choose a new target to be subject to the same effect. You can't target the same creature twice during a single casting of this spell, you can't Sustain this spell multiple times per turn, and you can't target a creature that lacks a solid form.
