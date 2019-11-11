@@ -9,7 +9,7 @@ Following are more advanced rules related to combat. See the {% ref All Powers %
 
 ## Multiple Attack Penalty
 
-The more attacks you make beyond your first in a single turn, the less accurate you become, represented by the multiple attack penalty (MAP). Whenever you make an attack during your turn, you take a -5 penalty to your attack roll for each attack action you've used so far this turn. Some weapons and abilities reduce MAPs, such as [agile](weapons.html#agile) weapons, which reduce the penalty to -4 per attack.
+The more attacks you make beyond your first in a single turn, the less accurate you become, represented by the multiple attack penalty (MAP). Whenever you make an attack during your turn, you take a -5 penalty to your attack roll for each <span class="trait">attack</span> power you've used so far this turn. Some weapons and abilities reduce MAPs, such as [agile](weapons.html#agile) weapons, which reduce the penalty to -4 per attack.
 
 Always calculate your MAP for the weapon you're using on the attack. For example, imagine you're wielding a chain flail in one hand and a bolter pistol (which has the agile trait) in the other. The first Strike you make during your turn has no penalty, no matter what weapon you are using. The second Strike will take a -5 penalty if you use the chain flail or a -4 penalty if you use the bolter pistol. The third Strike will take a -10 penalty if you use the chain flail or a -8 penalty if you use the bolter pistol, no matter what weapon you used for your previous Strikes.
 

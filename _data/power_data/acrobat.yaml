@@ -50,7 +50,7 @@ Agile Grace:
   tier: Veteran
   type: Passive
   effect:
-    Your graceful moves with agile weapons are beyond compare. Your multiple attack penalty with agile weapons becomes -3 for each attack action you've used so far this turn (rather than -4).
+    Your graceful moves with agile weapons are beyond compare. Your multiple attack penalty with agile weapons becomes -3 for each <span class="trait">attack</span> action you've used so far this turn (rather than -4).
 
 Sleeper Hold:
   tier: Veteran
