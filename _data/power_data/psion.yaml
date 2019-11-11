@@ -24,7 +24,7 @@ Command:
     save: Will
     duration: Until the end of the target's next turn
   effect: |
-    You should a command that's hard to ignore. You can command the target to approach you, run away (as if it had the fleeing condition), release what it's holding, drop prone, or stand in place. It can't Delay or take any reactions until it has obeyed your command. The effects depend on the target's Will save.
+    You shout a command that's hard to ignore. You can command the target to approach you, run away (as if it had the fleeing condition), release what it's holding, drop prone, or stand in place. It can't Delay or take any reactions until it has obeyed your command. The effects depend on the target's Will save.
 
     Heightened (total 5 Mana)
     : You can target up to 10 creatures
@@ -45,7 +45,7 @@ Phantom Pain:
     Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.
   critical-success: The target is unaffected
   success: The target takes full initial damage but no persistent damage, and the spell ends immediately
-  failure: The target takes full initial and persistant damage, and the target is sickened 1
+  failure: The target takes full initial and persistent damage, and the target is sickened 1
   critical-failure: As failure, but the target is sickened 2
 
 Confusion:
@@ -63,8 +63,8 @@ Confusion:
     : You can target up to 10 creatures
   critical-success: The target is unaffected
   success: The target babbles incoherently and is stunned 1
-  failure: The target is confused for 1 minute, and can attempt a new a new at the end of each of its turn to end the confusion
-  critical-failure: The target is confused for 1 minute, with no save to end early
+  failure: The target is confused for 1 minute, and can attempt a new save at the end of each of its turns to end the confusion
+  critical-failure: The target is confused for 1 minute, with no save to end the effect early
 
 Mind Reading:
   tier: Veteran
@@ -76,7 +76,7 @@ Mind Reading:
     save: Will
     duration: 1 round, or sustained up to 1 minute
   effect:
-    With a cursory mental touch, you attempt to readh the target's mind. It must attempt a Will save. The target then becomes temporarily immune to your Mind Reading power for 1 hour.
+    With a cursory mental touch, you attempt to read the target's mind. It must attempt a Will save. The target then becomes temporarily immune to your Mind Reading power for 1 hour.
   critical-success: The target perceives vague surface thoughts from you
   success: You find out whether the target's Intelligence is higher than, equal to, or lower than yours
   failure: You perceive vague surface thoughts from the target, and you find out whether its Intelligence is higher than, equal to, or lower than yours

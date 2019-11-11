@@ -25,7 +25,7 @@ Illusory Disguise:
   tags:
     cost: 1 Mana
   effect: |
-    You create an illusion that cuases you to appear as another creature of the same body shape, and with roughly similar height and weight as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, but held items are unaffected, and any worn item you remove returns to its true appearance.
+    You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height and weight as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, but held items are unaffected, and any worn item you remove returns to its true appearance.
 
     Heightened (total 2 Mana)
     : The spell also disguises your voice and scent, and it gains the <span class="trait">auditory</span> trait
@@ -57,7 +57,7 @@ Misty Step:
     cost: 2 Mana
     range: 30 feet
   effect:
-    You disappear in a swirl of mist, reappearing in a different location. You and any items you're wearing or holding teleport to clear space within range you can see.
+    You disappear in a swirl of mist, reappearing in a different location. You and any items you're wearing or holding teleport to a clear space within range you can see.
 
 Dimension Door:
   tier: Veteran
@@ -67,7 +67,7 @@ Dimension Door:
     cost: 4 Mana
     range: 120 feet
   effect: |
-    Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If you attempt to bring another creature with you, the power fails.
+    Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing or holding from your current space to a clear space within range you can see. If you attempt to bring another creature with you, the power fails.
 
     Heightened (total 5 Mana)
     : The range increases to 1 mile, and you don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you
@@ -81,13 +81,13 @@ Greater Metamagic:
     You can modify your spells in a broad variety of ways. Your Metamagic power gains the following options.
 
     Conservation
-    : If you spend at least 1 Mana on this spell, you reduce the cost of one spell you cast next turn by 1 Mana
+    : If you spend at least 1 Mana on the spell, one spell you cast next turn costs 1 Mana less
 
     Overwhelming
     : The spell ignores any resistances to acid, cold, electricity, fire, or sonic damage
 
     Quickened
-    : The spell takes 2 fewer actions to cast, but the strain of doing so means you can't use Metamagic again until you take a long rest
+    : The spell takes 2 fewer actions to cast, but the strain involved means you can't use Metamagic again until you take a long rest
 
 Resilient Sphere:
   tier: Veteran
