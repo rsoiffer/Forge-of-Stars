@@ -1,20 +1,36 @@
 Acid Arrow:
   tier: Novice
   type: 2-Action
-  traits: [Acid, Attack, Somatic, Verbal]
+  traits: [Acid, Attack, Spell]
   tags:
     cost: 2 Mana
     range: 120 feet
   effect: |
     You conjure an arrow of acid that continues corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus 1d6 persistent acid damage. On a critical hit, double the initial damage, but not the persistent damage.
 
-    Heightened (+2 Mana)
+    Heightened (per +2 Mana)
     : The intial damage increases by 2d8, and the persistant acid damage increases by 1d6
+
+Dangerous Sorcery:
+  tier: Novice
+  type: Passive
+  effect:
+    Your arcane knowledge grants you great destructive power. When you cast a spell, if the spell deals damage and doesn't have a duration, you gain a bonus to that spell's damage equal to your Blaster level.
+
+Magic Missile:
+  tier: Novice
+  type: 1-Action
+  traits: [Attack, Force, Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+  effect:
+    You fire an unerring dart of force from your fingertips. It automatically hits and deals 1d4+1 force damage to the target.
 
 Powerbolt:
   tier: Novice
   type: 2-Action
-  traits: [Attack, Somatic, Verbal]
+  traits: [Attack, Spell]
   tags:
     range: 60 feet
   effect:
@@ -23,7 +39,7 @@ Powerbolt:
 Sound Burst:
   tier: Novice
   type: 2-Action
-  traits: [Somatic, Sonic, Verbal]
+  traits: [Spell, Sonic]
   tags:
     cost: 2 Mana
     range: 30 feet
@@ -32,7 +48,7 @@ Sound Burst:
   effect: |
     A cacophonous noise blasts out, dealing 2d10 sonic damage. Each creature must attempt a Fortitude save.
 
-    Heightened (+1 Mana)
+    Heightened (per +1 Mana)
     : The damage increases by 1d10
   critical-success: The creature is unaffected
   success: The creature takes half damage
@@ -48,7 +64,7 @@ Spell Shaper:
 Cone of Cold:
   tier: Veteran
   type: 2-Action
-  traits: [Cold, Somatic, Verbal]
+  traits: [Cold, Spell]
   tags:
     cost: 5 Mana
     area: 60-foot cone
@@ -56,13 +72,13 @@ Cone of Cold:
   effect: |
     Icy cold rushes forth from your hands. You deal 12d6 cold damage to creatures in the area.
 
-    Heightened (+1 Mana)
+    Heightened (per +1 Mana)
     : The damage increases by 2d6
 
 Fireball:
   tier: Veteran
   type: 2-Action
-  traits: [Fire, Somatic, Verbal]
+  traits: [Fire, Spell]
   tags:
     cost: 3 Mana
     range: 500 feet
@@ -71,13 +87,13 @@ Fireball:
   effect: |
     A roaring blast of fire appears at a spot you designate, dealing 6d6 fire damage.
 
-    Heightened (+1 Mana)
+    Heightened (per +1 Mana)
     : The damage increases by 2d6
 
 Lightning Bolt:
   tier: Veteran
   type: 2-Action
-  traits: [Electricity, Somatic, Verbal]
+  traits: [Electricity, Spell]
   tags:
     cost: 3 Mana
     area: 120-foot line
@@ -85,23 +101,50 @@ Lightning Bolt:
   effect: |
     A bolt of lightning strikes outward from your hand, dealing 4d12 electricity damage.
 
-    Heightened (+1 Mana)
+    Heightened (per +1 Mana)
+    : The damage increases by 1d12
+
+Chain Lightning:
+  tier: Master
+  type: 2-Action
+  traits: [Electricity, Spell]
+  tags:
+    cost: 6 Mana
+    range: 30 feet
+    save: Reflex
+  effect: |
+    You discharge a powerful bolt of lightning at the target, dealing 8d12 electricity damage. The target must attempt a Reflex save. The electricity arcs to another creature within 30 feet of the first target, jumps to another creature within 30 feet of that target, and so on. You can end the chain at any point. You can't target the same creature more than once, and you must be able to see all targets. Roll the damage only once, and apply it to each target. The chain ends if any target critical succeeds at its save.
+
+    Heightened (per +1 Mana)
     : The damage increases by 1d12
 
 Disintegrate:
   tier: Master
   type: 2-Action
-  traits: [Attack, Somatic, Verbal]
+  traits: [Attack, Spell]
   tags:
     cost: 6 Mana
     range: 120 feet
   effect:
     You fire a green ray at your target. Make a spell attack. If you hit, you deal 12d10 damage, or twice as much on a critical hit. A creature reduced to 0 HP is reduced to fine powder. An object you hit is destroyed if it would fit within a 10-foot cube, regardless of its HP, unless it's an artifact or similarly hard to destroy.
 
+Polar Ray:
+  tier: Master
+  type: 2-Action
+  traits: [Attack, Cold, Spell]
+  tags:
+    cost: 8 Mana
+    range: 120 feet
+  effect: |
+    You fire a blue-white ray of freezing air and swirling sleet from your finger that can chill your target to the bones. You must succeed at a spell attack roll to affect the target, which then takes 10d8 damage and is drained 2.
+
+    Heightened (per +1 Mana)
+    : The damage increases by 2d8
+
 Implosion:
   tier: Epic
   type: 2-Action
-  traits: [Somatic, Verbal]
+  traits: [Spell]
   tags:
     cost: 9 Mana
     range: 30 feet
@@ -109,3 +152,17 @@ Implosion:
     duration: Sustained, up to 1 minute
   effect:
     You crush the target by causing it to collapse in on itself, dealing 75 damage. Each time you Sustain the spell, you must choose a new target to be subject to the same effect. You can't target the same creature twice during a single casting of this spell, you can't Sustain this spell multiple times per turn, and you can't target a creature that lacks a solid form.
+
+Meteor Swarm:
+  tier: Epic
+  type: 2-Action
+  traits: [Spell]
+  tags: 
+    cost: 9 Mana
+    range: 500 feet
+    save: Reflex
+  effect: |
+    You call down four meteors that explode in fiery blasts. Each meteor deals 6d10 bludgeoning damage to all creatures in a 10-foot burst, then explodes, dealing 14d6 fire damage to all creatures in a 40-foot burst. A creature hit by multiple meteors takes damage only once.
+
+    Heightened (per +1 Mana)
+    : The bludgeoning damage increases by 1d10, and the fire damage increases by 2d6

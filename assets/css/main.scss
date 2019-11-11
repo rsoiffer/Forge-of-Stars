@@ -81,16 +81,18 @@ tr:nth-child(odd) {
   text-transform: uppercase;
 }
 
-.tags {
+.page__content dl {
   margin: 0;
-
-  dt, dd {
-    display: inline;
-  }
-  dd:after {
-    content: "";
-    display: block;
-  }
+}
+.page__content dl + dl {
+  margin-top: 0.25em;
+}
+.page__content dt, dd {
+  display: inline;
+}
+dd:after {
+  content: "";
+  display: block;
 }
 
 h1, h2 + .tags {

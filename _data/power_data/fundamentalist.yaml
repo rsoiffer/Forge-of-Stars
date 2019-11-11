@@ -1,0 +1,155 @@
+Counterspell:
+  tier: Novice
+  type: Reaction
+  tags:
+    trigger: A creature you can see within 60 feet casts a spell
+    cost: The amount of Mana the other caster expends
+  effect:
+    The other spell has no effect.
+
+Dispel Magic:
+  tier: Novice
+  type: 2-Action
+  traits: [Spell]
+  tags:
+    cost: 2 Mana
+    range: 120 feet
+    target: One spell effect
+  effect:
+    You unravel the magic behind a spell or effect. Make a Sorcery roll against the Sorcery DC of the creature that cast the spell. If you succeed, the target spell immediately ends.
+
+Illusory Disguise:
+  tier: Novice
+  type: 2-Action
+  traits: [Spell, Visual]
+  tags:
+    cost: 1 Mana
+  effect: |
+    You create an illusion that cuases you to appear as another creature of the same body shape, and with roughly similar height and weight as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, but held items are unaffected, and any worn item you remove returns to its true appearance.
+
+    Heightened (total 2 Mana)
+    : The spell also disguises your voice and scent, and it gains the <span class="trait">auditory</span> trait
+    
+    Heightened (total 3 Mana)
+    : You can appear as any creature of the same size, even a specific individual as long as you've seen them before
+
+Metamagic:
+  tier: Novice
+  type: 1-Action
+  traits: [Concentrate, Manipulate]
+  effect: |
+    You manipulate the energy of your spell, enhancing its effect. If the next action you use it to cast a spell, you modify the spell in one of the following ways.
+
+    Reach
+    : Increase the spell's range by 30 feet
+
+    Silent
+    : The spell doesn't require verbal components
+    
+    Widen
+    : If the spell's area is a burst, increase its radius by 5 feet, or if the spell's area is a line or cone, increase its length by 10 feet
+
+Misty Step:
+  tier: Novice
+  type: 1-Action
+  traits: [Spell, Teleportation]
+  tags:
+    cost: 2 Mana
+    range: 30 feet
+  effect:
+    You disappear in a swirl of mist, reappearing in a different location. You and any items you're wearing or holding teleport to clear space within range you can see.
+
+Dimension Door:
+  tier: Veteran
+  type: 2-Action
+  traits: [Spell, Teleportation]
+  tags:
+    cost: 4 Mana
+    range: 120 feet
+  effect: |
+    Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If you attempt to bring another creature with you, the power fails.
+
+    Heightened (total 5 Mana)
+    : The range increases to 1 mile, and you don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you
+
+Greater Metamagic:
+  tier: Veteran
+  type: Passive
+  tags:
+    prerequisites: Metamagic
+  effect: |
+    You can modify your spells in a broad variety of ways. Your Metamagic power gains the following options.
+
+    Conservation
+    : If you spend at least 1 Mana on this spell, you reduce the cost of one spell you cast next turn by 1 Mana
+
+    Overwhelming
+    : The spell ignores any resistances to acid, cold, electricity, fire, or sonic damage
+
+    Quickened
+    : The spell takes 2 fewer actions to cast, but the strain of doing so means you can't use Metamagic again until you take a long rest
+
+Resilient Sphere:
+  tier: Veteran
+  type: 2-Action
+  traits: [Force, Spell]
+  tags:
+    cost: 4 Mana
+    range: 30 feet
+    duration: 1 minute
+  effect:
+    You create an immobile sphere of force to either trap or protect the target, blocking anything that would pass through the sphere. The sphere has AC 5, Hardness 10, and 40 HP. It's immune to critical hits and precision damage. If the target is unwilling, it can make a Reflex save, with the following effect.
+  critical-success: The target disrupts the sphere's integrity, causing it to collapse entirely
+  success: The sphere functions normally but has only 10 HP instead of 40
+  failure: The sphere has its normal effect
+
+Project Image:
+  tier: Master
+  type: 2-Action
+  traits: [Mental, Spell]
+  tags:
+    cost: 7 Mana
+    range: 30 feet
+    duration: Sustained up to 1 minute
+  effect: |
+    You project an illusory image of yourself. You must stay within range of the image, and if at any point you can't see the image, the spell ends. Whenever you cast a spell, you can cause the spell effect to originate from either yourself or the image. Because the image is an illusion, it isn't a creature and can't benefit from spells. The image has the same AC and saves as you. If it is hit by an attack or fails a save, the spell ends.
+
+    Heightened (total 9 Mana)
+    : The maximum duration you can Sustan the spell increases to 10 minutes
+
+Redirect Gravity:
+  tier: Master
+  type: 3-Action
+  traits: [Spell]
+  tags:
+    cost: 7 Mana
+    range: 120 feet
+    area: 30-foot burst
+    duration: 1 minute
+  effect:
+    You change the direction of gravity in the area. Creatures and objects that aren't secured to the ground immediately fall towards the new direction you designate as down. Rules for falling and fall damage apply as normal. A creature partially inside the area is caught between normal and redirected gravity, and is pulled in both directions at once.
+
+Reflect Spell:
+  tier: Master
+  type: Passive
+  tags:
+    prerequisites: Counterspell
+  effect:
+    When you use Counterspell to counteract a spell that affects targeted creatures or an area, you can turn that spell's effect back on its caster. When reflected, the spell affects only the original caster, even if it's area spell or it would normally affect more than one creature. The original caster can attempt a save and use other defenses against the reflected spell as normal.
+
+Metamagic Mastery:
+  tier: Epic
+  type: Passive
+  tags:
+    prerequisites: Metamagic
+  effect:
+    Altering your spells doesn't take any longer than casting them normally. You can use Metamagic as a Free power.
+
+Time Stop:
+  tier: Epic
+  type: 3-Action
+  traits: [Spell]
+  tags:
+    cost: 10 Mana
+  effect:
+    You temporarily stop time for everything but yourself, allowing you to use several actions in what appears to others to be no time at all. Immediately after using this power, you take 3 turns. Rounds only pass for you, effects specifically targeting or affecting you, and effects you create during the stoppage. All other creatures and objects are invulnerable and can't be targeted or affected by anything. Once you have finished your turns, time begins to flow again for the rest of the world.

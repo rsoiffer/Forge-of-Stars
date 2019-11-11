@@ -1,0 +1,83 @@
+Charming Words:
+  tier: Novice
+  type: 1-Action
+  traits: [Auditory, Incapacitation, Linguistic, Mental, Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    save: Will
+    duration: Until the start of your next turn
+  effect:
+    You whisper enchanting words to deflect your foe's ire. The target must attempt a Will save.
+  critical-success: The target is unaffected
+  success: The target takes a -1 penalty to attack rolls and damage rolls against you
+  failure: The target can't use hostile actions against you
+  critical-failure: The target is stunned 1 and can't use hostile actions against you
+
+Command:
+  tier: Novice
+  type: 2-Action
+  traits: [Auditory, Linguistic, Mental, Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    save: Will
+    duration: Until the end of the target's next turn
+  effect: |
+    You should a command that's hard to ignore. You can command the target to approach you, run away (as if it had the fleeing condition), release what it's holding, drop prone, or stand in place. It can't Delay or take any reactions until it has obeyed your command. The effects depend on the target's Will save.
+
+    Heightened (total 5 Mana)
+    : You can target up to 10 creatures
+  success: The creature is unaffected
+  failure: For the first action on its next turn, the creature must use a single action to do as you command
+  critical-failure: The target must use all its actions on its next turn to obey your command
+
+Phantom Pain:
+  tier: Novice
+  type: 2-Action
+  traits: [Mental, Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    save: Will
+    duration: 1 minute
+  effect:
+    Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.
+  critical-success: The target is unaffected
+  success: The target takes full initial damage but no persistent damage, and the spell ends immediately
+  failure: The target takes full initial and persistant damage, and the target is sickened 1
+  critical-failure: As failure, but the target is sickened 2
+
+Confusion:
+  tier: Veteran
+  type: 2-Action
+  traits: [Emotion, Mental, Spell]
+  tags:
+    cost: 4 Mana
+    range: 30 feet
+    save: Will
+  effect: |
+    You befuddle your target with strange impulses, causing it to act randomly. The effects are determined by the target's Will save. You can Dismiss the spell.
+
+    Heightened (total 8 Mana)
+    : You can target up to 10 creatures
+  critical-success: The target is unaffected
+  success: The target babbles incoherently and is stunned 1
+  failure: The target is confused for 1 minute, and can attempt a new a new at the end of each of its turn to end the confusion
+  critical-failure: The target is confused for 1 minute, with no save to end early
+
+Mind Reading:
+  tier: Veteran
+  type: 2-Action
+  traits: [Detection, Mental, Spell]
+  tags:
+    cost: 3 Mana
+    range: 30 feet
+    save: Will
+    duration: 1 round, or sustained up to 1 minute
+  effect:
+    With a cursory mental touch, you attempt to readh the target's mind. It must attempt a Will save. The target then becomes temporarily immune to your Mind Reading power for 1 hour.
+  critical-success: The target perceives vague surface thoughts from you
+  success: You find out whether the target's Intelligence is higher than, equal to, or lower than yours
+  failure: You perceive vague surface thoughts from the target, and you find out whether its Intelligence is higher than, equal to, or lower than yours
+  critical-failure: As failure, and for the duration of the spell, you can Sustain to detect the target's surface throughts again
