@@ -57,7 +57,7 @@ Disarming Stance:
   tags:
     requirements: You are wielding a melee weapon
   effect:
-    You adopt a fencing stance that improves your control over your weapon. While you are in this stance, you gain a +1 bonus to Wrestling checks to Disarm and a +2 bonus to your Reflex DC when defending against checks to Disarm you.
+    You adopt a fencing stance that improves your control over your weapon. While you are in this stance, you gain a +1 bonus to rolls to Disarm and a +2 bonus to your Reflex DC when defending against attempts to Disarm you.
 
 Disarming Twist:
   tier: Veteran

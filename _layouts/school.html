@@ -13,17 +13,20 @@ sidebar:
     <th>Name</th>
     <th>Tier</th>
     <th>Type</th>
-    <th>Description</th>
   </tr>
   {% for power in site.data.powers %}
     {% if power[1].school == page.data[0] %}
       <tr>
         <td>
-          <a href="{% link {{ power[0] | slugify }}.html %}">{{ power[0] }}</a>
+          <a href="{{page.data[0] | slugify}}.html#{{ power[0] | slugify }}">{{ power[0] }}</a>
         </td>
         <td>{{ power[1].tier }}</td>
-        <td>{{ power[1].type }}</td>
-        <td>{{ power[1].brief }}</td>
+        <td>
+          {% unless power[1].type == "Passive" %}
+            <img title="{{ power[1].type }}" class="inline-icon"
+              src="{% link assets/svg/{{ power[1].type | downcase }}.svg %}">
+          {% endunless %}
+        </td>
       </tr>
     {% endif %}
   {% endfor %}

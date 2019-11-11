@@ -16,9 +16,7 @@ sidebar:
 {% for skill in site.data.skills %}
   {% if skill[1].type == "Combat" %}
     <tr>
-      <td>
-        <a href="{% link {{ skill[0] | slugify }}.html %}">{{ skill[0] }}</a>
-      </td>
+      <td>{{ skill[0] }}</td>
       <td>{{ skill[1].attribute }}</td>
       <td>{{ skill[1].brief }}</td>
     </tr>
@@ -37,9 +35,7 @@ sidebar:
 {% for skill in site.data.skills %}
   {% if skill[1].type == "General" %}
     <tr>
-      <td>
-        <a href="{% link {{ skill[0] | slugify }}.html %}">{{ skill[0] }}</a>
-      </td>
+      <td>{{ skill[0] }}</td>
       <td>{{ skill[1].attribute }}</td>
       <td>{{ skill[1].brief }}</td>
     </tr>

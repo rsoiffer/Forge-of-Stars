@@ -1,0 +1,88 @@
+---
+layout: single
+title: Basic Powers
+sidebar:
+  nav: system
+---
+
+{% assign school = page.data[1] %}
+
+<p>{{ school.description }}</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  {% for power in site.data.basic-powers %}
+    <tr>
+      <td>
+        <a href="basic-powers.html#{{ power[0] | slugify }}">{{ power[0] }}</a>
+      </td>
+      <td>
+        {% unless power[1].type == "Passive" %}
+          <img title="{{ power[1].type }}" class="inline-icon"
+            src="{% link assets/svg/{{ power[1].type | downcase }}.svg %}">
+        {% endunless %}
+      </td>
+      <td>{{ power[1].brief }}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+
+{% for power2 in site.data.basic-powers %}
+
+  {% assign power = power2[1] %}
+  <h2 id="{{ power2[0] | slugify }}">
+    {{ power2[0] }}
+    {% unless power.type == "Passive" %}
+      <img title="{{ power.type }}" class="inline-icon"
+        src="{% link assets/svg/{{ power.type | downcase }}.svg %}">
+    {% endunless %}
+    <span class="alignright">{{ power.tier }}</span>
+  </h2>
+
+  {% if power.traits %}
+    <ul class="traits">
+      {% for trait in power.traits %}
+        <li class="trait">{{ trait }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if power.tags %}
+    <dl class="tags">
+      {% for tag in power.tags %}
+        <dt>{{ tag[0] | capitalize }}</dt>
+        <dd>{{ tag[1] }}</dd>
+      {% endfor %}
+    </dl>
+    <hr>
+  {% endif %}
+
+  {{ power.effect | markdownify }}
+
+  {% if power.critical-success or power.success or power.failure or power.critical-failure %}
+    <dl class="tags">
+      {% if power.critical-success %}
+        <dt>Critical Success</dt>
+        <dd>{{ power.critical-success }}</dd>
+      {% endif %}
+      {% if power.success %}
+        <dt>Success</dt>
+        <dd>{{ power.success }}</dd>
+      {% endif %}
+      {% if power.failure %}
+        <dt>Failure</dt>
+        <dd>{{ power.failure }}</dd>
+      {% endif %}
+      {% if power.critical-failure %}
+        <dt>Critical Failure</dt>
+        <dd>{{ power.critical-failure }}</dd>
+      {% endif %}
+    </dl>
+  {% endif %}
+
+{% endfor %}

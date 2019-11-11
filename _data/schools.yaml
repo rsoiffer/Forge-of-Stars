@@ -65,12 +65,6 @@ Blaster:
   brief: You blast enemies away with devastating evocations of elemental energy
   description: ""
 
-Fundamentalist:
-  brief:
-    You manipulate the fundamental laws of reality to control space, time, and
-    magic
-  description: ""
-
 Healer:
   brief: You heal your allies and poison your enemies with body-affecting magic
   description: ""
@@ -79,6 +73,12 @@ Psion:
   brief:
     You specialize in mental magic that affects other creatures' thoughts or
     actions
+  description: ""
+
+Wizard:
+  brief:
+    You manipulate the fundamental laws of reality to control space, time, and
+    magic
   description: ""
 
 # Adept

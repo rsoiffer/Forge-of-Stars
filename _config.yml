@@ -20,18 +20,6 @@ page_gen:
     name: 0
     template: school
     dir: ""
-  - data: basic-powers
-    name: 0
-    template: power
-    dir: ""
-  - data: powers
-    name: 0
-    template: power
-    dir: ""
-  - data: skills
-    name: 0
-    template: skill
-    dir: ""
 
 exclude:
   - .deploydest

@@ -16,7 +16,7 @@ Dispel Magic:
     range: 120 feet
     target: One spell effect
   effect:
-    You unravel the magic behind a spell or effect. Make a Sorcery roll against the Sorcery DC of the creature that cast the spell. If you succeed, the target spell immediately ends.
+    You unravel the magic behind the target spell. Make a Sorcery roll against the Spell DC of the creature that cast the spell. If you succeed, the target spell immediately ends.
 
 Illusory Disguise:
   tier: Novice

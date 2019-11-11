@@ -15,41 +15,9 @@ In this step, you should develop these ideas more, working out the details of wh
 
 ## Step 2. Determine Attribute Scores
 
-The next step is to determine your character's attributes. Characters in Forge of Stars have 6 attributes: Strength, Agility, Precision, Intelligence, Wisdom, and Charisma. Your score in each attribute is a single number, which generally ranges from -1 to +5. The average value of an attribute for a normal human is +0. See the table below for a description of each attribute.
+The next step is to determine your character's attributes. Characters in Forge of Stars have 6 attributes: Strength, Agility, Precision, Intelligence, Wisdom, and Charisma. Your score in each attribute is a single number, which generally ranges from -1 to +5. The average value of an attribute for a normal human is +0. See the {% ref Attributes %} page for a description of each attribute.
 
 Your starting score in each attribute is a number between -1 and +3. You can choose any starting scores you want such that your scores sum to a total to 6. Write the final values of your attributes on your character sheet.
-
-### Attribute Descriptions
-<table>
-  <tr>
-    <th>Attribute</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>Strength</td>
-    <td>How physically powerful you are. Good for feats of endurance, wrestling creatures, and attacking in melee.</td>
-  </tr>
-  <tr>
-    <td>Agility</td>
-    <td>How fast and nimble you are. Good for feats of acrobatics, dodging attacks, and being stealthy.</td>
-  </tr>
-  <tr>
-    <td>Precision</td>
-    <td>How well you can aim and react. Good for driving vehicles, firing guns, and reacting quickly to threats.</td>
-  </tr>
-  <tr>
-    <td>Intelligence</td>
-    <td>How book-smart you are. Good for recalling information, casting magic spells, and repairing machines.</td>
-  </tr>
-  <tr>
-    <td>Wisdom</td>
-    <td>How much common sense you have. Good for noticing things, resisting mental manipulation, and some mystical abilities.</td>
-  </tr>
-  <tr>
-    <td>Charisma</td>
-    <td>How much force of personality you have. Good for persuading, deceiving, or leading other people and spirits.</td>
-  </tr>
-</table>
 
 ## Step 3. Choose your Skills
 
@@ -121,23 +89,25 @@ You're now almost finished making your character! The only difficult thing left 
 
 ***Prof.*** Your character has a proficiency bonus (abbreviated as Prof), which you add as a bonus to skill rolls for skills you are proficient in. Like D&D 5e, your proficiency bonus is equal to (Level / 4) + 1, rounded up.
 
-***HP.*** Your character has a number of hit points (abbreviated as HP), which measure how much damage you can take before falling unconscious. Your HP is equal to Strength + Prof + 5 * Level.
+***HP.*** Your hit points (abbreviated as HP) measure how much damage you can take before falling unconscious. Your HP is equal to Strength + Prof + 5 * Level.
 
-***AC.*** Your character has an armor class (abbreviated as AC), which measures how difficult you are to hit with physical attacks. Your AC is equal to 10 + Agility + Prof, though it can be increased by wearing armor.
+***AC.*** Your armor class (abbreviated as AC) measures how difficult you are to hit with physical attacks. Your AC is equal to 10 + Agility + Prof, though it can be increased by wearing armor.
 
-***Initiative.*** Your character has an initiative score, which measures how quick you are to react to combat. Your initiative is equal to Precision + Prof.
+***Initiative.*** Your Initiative measures how quick you are to react to combat. Your Initiative is equal to Precision + Prof.
 
-***Speed.*** How many feet you can move in a single action. Your speed is equal to 30 ft.
+***Speed.*** Your Speed measures how many feet you can move in a single action. Your Speed is equal to 30 ft.
+
+***Mana.*** Your Mana measures how many spells you can cast before running out of energy. Your Mana is equal to Wisdom + Prof + 2 * (your total level in all magic schools).
+
+***Spell DC.*** Your spell difficulty class (abbreviated as Spell DC) measures how difficult your spells are to resist. Your Spell DC is equal to 10 + Prof + one of Intelligence, Wisdom, or Charisma (whichever is highest).
 
 ## Step 8. Buy Equipment
 
 Don't forget to buy equipment to use in your adventures! You start with (2000 * your character level) credits. See the {% ref weapons %} and {% ref armor %} pages for stats. More tables for standard adventuring gear, as well as strange high-tech gadgets, are on the way.
 
-[//]: # (If your party is using the Bonus Feat or Unique Abilities variant rules in Section 5, now is a good time to choose that feat or ability.)
-
 ## Step 9. Choose your Personality
 
-What your character will choose to do is as important as what your character has the power to do. You should write notes on your character sheet that give a general description of your character's personality, preferably at least one sentence for each topic below. The better you act out your character's personality, the more likely you are to get Inspiration (see Section 4).
+What your character will choose to do is as important as what your character has the power to do. You should write notes on your character sheet that give a general description of your character's personality, preferably at least one sentence for each topic below. The better you act out your character's personality, the more likely you are to get [Inspiration](basic-rules.html#inspiration).
 
 ***Personality Traits.*** These describe the obvious character traits that makes your character stand out from the average adventurer.
 

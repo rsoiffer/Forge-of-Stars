@@ -27,13 +27,7 @@ Heavy Weapons:
 Sorcery:
   attribute: Intelligence
   type: Combat
-  brief: "Casting spells (?)"
-  description: ""
-
-Mysticism:
-  attribute: Wisdom
-  type: Combat
-  brief: "Freeform magic (?)"
+  brief: "Wielding arcane magic and casting spells"
   description: ""
 
 Conjuring:

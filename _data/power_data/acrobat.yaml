@@ -59,7 +59,7 @@ Sleeper Hold:
   tags:
     requirements: You have a creature grabbed or restrained
   effect:
-    You pinch crucial points of your target's nervous system, impeding its ability to function. Attempt a Wrestling check to Grapple the creature, with the following success and critical success effects instead of the usual effects.
+    You pinch crucial points of your target's nervous system, impeding its ability to function. Attempt to Grapple the creature, with the following success and critical success effects instead of the usual effects.
   critical-success: The target falls unconscious for 1 minute, though it remains standing and doesn't drop what it holds
   success: The target takes a -1 penalty to Agility until the end of its next turn
 

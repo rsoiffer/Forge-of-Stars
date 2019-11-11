@@ -11,18 +11,16 @@ sidebar:
   <tr>
     <th>Name</th>
     <th>Type</th>
-    <th>Description</th>
   </tr>
   {% for power in site.data.basic-powers %}
     <tr>
       <td>
-          <a href="{{ power[0] | slugify }}"">{{ power[0] }}</a>
+          <a href="basic-powers.html#{{ power[0] | slugify }}"">{{ power[0] }}</a>
       </td>
       <td>{% unless power[1].type == "Passive" %}
           <img title="{{ power[1].type }}" class="inline-icon"
             src="{% link assets/svg/{{ power[1].type | downcase }}.svg %}">
         {% endunless %}</td>
-      <td>{{ power[1].brief }}</td>
     </tr>
   {% endfor %}
 </table>
@@ -35,20 +33,18 @@ sidebar:
     <th>School</th>
     <th>Tier</th>
     <th>Type</th>
-    <th>Description</th>
   </tr>
   {% for power in site.data.powers %}
     <tr>
       <td>
-          <a href="{% link {{ power[0] | slugify }}.html %}">{{ power[0] }}</a>
+          <a href="{{ power[1].school | slugify }}.html#{{ power[0] | slugify }}">{{ power[0] }}</a>
       </td>
-      <td>{{ power[1].school }}</td>
+      <td><a href="{{ power[1].school | slugify }}.html">{{ power[1].school }}</td>
       <td>{{ power[1].tier }}</td>
       <td>{% unless power[1].type == "Passive" %}
           <img title="{{ power[1].type }}" class="inline-icon"
             src="{% link assets/svg/{{ power[1].type | downcase }}.svg %}">
         {% endunless %}</td>
-      <td>{{ power[1].brief }}</td>
     </tr>
   {% endfor %}
 </table>

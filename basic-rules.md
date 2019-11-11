@@ -9,7 +9,7 @@ Following are some common rules for the game.
 
 ## Skill Rolls
 
-Whenever you want to accomplish a task that has a possibility of failing, such as jumping across a large gap or attacking an enemy, the GM will ask you to make a **skill roll**. For example, you might make a Stealth roll to hide from sight, a Engineering roll to repair a spaceship, or a Survival roll to forage for food in the wild. If no [skill](skills.html) fits the action you want to take, the GM might ask you to make a roll for an [attribute](basic-rules.html#step-2-determine-attribute-scores) instead. For example, you might make a Strength roll to hold a door closed or an Intelligence roll to solve a logic puzzle. The GM also sets a **Difficulty Class** (DC) for the task. Some sample DCs are given in the Sample Difficulties table below.
+Whenever you want to accomplish a task that has a possibility of failing, such as jumping across a large gap or attacking an enemy, the GM will ask you to make a **skill roll**. For example, you might make a Stealth roll to hide from sight, a Engineering roll to repair a spaceship, or a Survival roll to forage for food in the wild. If no [skill](skills.html) fits the action you want to take, the GM might ask you to make a roll for an [attribute](attributes.html) instead. For example, you might make a Strength roll to hold a door closed or an Intelligence roll to solve a logic puzzle. The GM also sets a **Difficulty Class** (DC) for the task. Some sample DCs are given in the Sample Difficulties table below.
 
 How good you are at a task is described by your **bonus** to that roll. For skill rolls, your bonus is your score in the associated attribute, plus your [Prof](character-creation.html#step-7-compute-miscellaneous-stats) if you're proficient in that skill. A few rolls, such as [Initiative](character-creation.html#step-7-compute-miscellaneous-stats) rolls, are not associated with skills or attributes, but give another stat to use as your bonus instead. Some items or abilities may add additional bonuses or penalties to this value.
 
@@ -56,9 +56,9 @@ When you make a skill roll, roll a d20 and add your bonus, and record the result
 
 ## Turns in Combat
 
-Characters take turns during combat, as who acts first can be very important. When a fight breaks out, everyone involved rolls a d20 and adds their [initiative](character-creation.html#step-7-compute-miscellaneous-stats) score. The character with the highest initative result takes their turn first, then the character with the second-highest initative result, and so on. Once all characters have taken their turns, the round ends, and the process repeats.
+Characters take turns during combat, as who acts first can be very important. When a fight breaks out, everyone involved rolls a d20 and adds their [Initiative](character-creation.html#step-7-compute-miscellaneous-stats) score. The character with the highest initative result takes their turn first, then the character with the second-highest initative result, and so on. Once all characters have taken their turns, the round ends, and the process repeats.
 
-On your turn, you can take 3 actions. An action is a single thing your character does, such as [moving a distance](basic-actions.html#stride), [opening a door](basic-actions.html#interact), or [making a single attack](basic-actions.html#strike). In addition, you can take 1 reaction per round, either on your turn or another character's turn. You get your reaction back at the start of your turn. 
+On your turn, you can take 3 actions. An action is a single thing your character does, such as [moving a distance](basic-powers.html#stride), [opening a door](basic-powers.html#interact), or [making a single attack](basic-powers.html#strike). In addition, you can take 1 reaction per round, either on your turn or another character's turn. You get your reaction back at the start of your turn. 
 
 Using a special ability usually requires using one or more actions, or one reaction, indicated in its description. Some abilities might let you do multiple things in 1 action, or others might require you use multiple actions in exchange for a stronger effect. 
 

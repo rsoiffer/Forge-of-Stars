@@ -78,7 +78,7 @@ If you take a 5-minute rest, you recover the ability to use any Encounter powers
 
 ## Dying
 
-When you take damage that brings your HP to 0, you gain the [dying 1](conditions.html#dying-x) condition. If this damage was from an enemy's critical hit or a critical failure on your save, you instead gain the [dying 2](conditions.html#dying-x) condition. While you have the dying condition, you are bleeding out, and you must make a death save at the start of each of your turns. Other creatures can use the {% ref Administer First Aid %} action to try to stabilize you.
+When you take damage that brings your HP to 0, you gain the [dying 1](conditions.html#dying-x) condition. If this damage was from an enemy's critical hit or a critical failure on your save, you instead gain the [dying 2](conditions.html#dying-x) condition. While you have the dying condition, you are bleeding out, and you must make a death save at the start of each of your turns. Other creatures can use the [Administer First Aid](basic-powers.html#administer-first-aid) power to try to stabilize you.
 
 ### Death Save
 
