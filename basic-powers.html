@@ -13,7 +13,6 @@ sidebar:
   <tr>
     <th>Name</th>
     <th>Type</th>
-    <th>Description</th>
   </tr>
   {% for power in site.data.basic-powers %}
     <tr>
@@ -26,7 +25,6 @@ sidebar:
             src="{% link assets/svg/{{ power[1].type | downcase }}.svg %}">
         {% endunless %}
       </td>
-      <td>{{ power[1].brief }}</td>
     </tr>
   {% endfor %}
 </table>

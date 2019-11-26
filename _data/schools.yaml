@@ -21,28 +21,32 @@ Duelist:
   brief: You parry enemy attacks and respond with well-timed ripostes
   description: ""
 
-# Sharpshooter
+# Ranger
 
-Demolitionist:
-  brief: You destroy buildings and people alike with a variety of powerful explosives
+Heavy:
+  brief: You mow down the opposition with heavy machine guns or explosives
   description: ""
 
 Hunter:
   brief: You fire with care and precision to take out enemies at incredible distances
   description: ""
 
-Juggernaut:
-  brief: You mow down the opposition with heavy machine guns or explosives
-  description: ""
-
 Rogue:
   brief: You chance your way into victory, consistently getting lucky hits or dodges
+  description: ""
+
+Warblade:
+  brief: You develop a unique fighting style full of flashy weapon maneuvers
   description: ""
 
 # Expert
 
 Battlesmith:
   brief: You wear a suit of advanced power armor that protects you from harm
+  description: ""
+
+Envoy:
+  brief: You negotiate with enemise
   description: ""
 
 Gadgeteer:
@@ -55,18 +59,14 @@ Mastermind:
     situation
   description: ""
 
-Roboticist:
-  brief: You control numerous robotic drones, customizing them for any situation
-  description: ""
-
-# Sorcerer
+# Mage
 
 Blaster:
   brief: You blast enemies away with devastating evocations of elemental energy
   description: ""
 
-Healer:
-  brief: You heal your allies and poison your enemies with body-affecting magic
+Illusionist:
+  brief: You conjure illusions to deceive or confuse your opponents' senses
   description: ""
 
 Psion:
@@ -75,7 +75,7 @@ Psion:
     actions
   description: ""
 
-Wizard:
+Sorcerer:
   brief:
     You manipulate the fundamental laws of reality to control space, time, and
     magic
@@ -83,7 +83,7 @@ Wizard:
 
 # Adept
 
-Champion:
+Crusader:
   brief:
     You manifest your belief in a cause as divine blessings on the battlefield
   description: ""

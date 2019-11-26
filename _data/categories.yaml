@@ -4,26 +4,26 @@ Fighter:
   - Cyborg
   - Duelist
 
-Sharpshooter:
-  - Demolitionist
+Ranger:
+  - Heavy
   - Hunter
-  - Juggernaut
   - Rogue
+  - Warblade
 
 Expert:
   - Battlesmith
+  - Envoy
   - Gadgeteer
   - Mastermind
-  - Roboticist
 
-Sorcerer:
+Mage:
   - Blaster
-  - Healer
+  - Illusionist
   - Psion
-  - Wizard
+  - Sorcerer
 
 Adept:
-  - Champion
+  - Crusader
   - Diviner
   - Shapeshifter
   - Telekinetic
