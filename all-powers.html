@@ -17,10 +17,11 @@ sidebar:
       <td>
           <a href="basic-powers.html#{{ power[0] | slugify }}"">{{ power[0] }}</a>
       </td>
-      <td>{% unless power[1].type == "Passive" %}
-          <img title="{{ power[1].type }}" class="inline-icon"
-            src="{% link assets/svg/{{ power[1].type | downcase }}.svg %}">
-        {% endunless %}</td>
+      <td>
+        {% unless power[1].type == "Passive" %}
+          {% icon {{ power[1].type }} %}
+        {% endunless %}
+      </td>
     </tr>
   {% endfor %}
 </table>
@@ -41,10 +42,11 @@ sidebar:
       </td>
       <td><a href="{{ power[1].school | slugify }}.html">{{ power[1].school }}</td>
       <td>{{ power[1].tier }}</td>
-      <td>{% unless power[1].type == "Passive" %}
-          <img title="{{ power[1].type }}" class="inline-icon"
-            src="{% link assets/svg/{{ power[1].type | downcase }}.svg %}">
-        {% endunless %}</td>
+      <td>
+        {% unless power[1].type == "Passive" %}
+          {% icon {{ power[1].type }} %}
+        {% endunless %}
+      </td>
     </tr>
   {% endfor %}
 </table>

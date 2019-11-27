@@ -42,9 +42,7 @@ Rage:
   effect:
     You tap into your inner fury and begin raging. You gain temporary HP equal
     to Level + Strength. While raging, you deal 2 additional damage with melee
-    strikes, you take a -1 penalty to AC, and you can't use actions with <span
-    class="trait">Concentrate</span> unless they also have <span
-    class="trait">Rage</span>.
+    strikes, you take a -1 penalty to AC, and you can't use actions with {% trait Concentrate %} unless they also have {% trait Rage %}.
 
 Sudden Charge:
   tier: Novice

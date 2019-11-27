@@ -23,8 +23,7 @@ sidebar:
         <td>{{ power[1].tier }}</td>
         <td>
           {% unless power[1].type == "Passive" %}
-            <img title="{{ power[1].type }}" class="inline-icon"
-              src="{% link assets/svg/{{ power[1].type | downcase }}.svg %}">
+            {% icon {{ power[1].type }} %}
           {% endunless %}
         </td>
       </tr>
@@ -40,8 +39,7 @@ sidebar:
     <h2 id="{{ power2[0] | slugify }}">
       {{ power2[0] }}
       {% unless power.type == "Passive" %}
-        <img title="{{ power.type }}" class="inline-icon"
-          src="{% link assets/svg/{{ power.type | downcase }}.svg %}">
+        {% icon {{ power.type }} %}
       {% endunless %}
       <span class="alignright">{{ power.tier }}</span>
     </h2>
@@ -49,7 +47,7 @@ sidebar:
     {% if power.traits %}
       <ul class="traits">
         {% for trait in power.traits %}
-          <li class="trait">{{ trait }}</li>
+          {% trait {{ trait }} %}
         {% endfor %}
       </ul>
     {% endif %}
@@ -64,7 +62,7 @@ sidebar:
       <hr>
     {% endif %}
 
-    {{ power.effect | markdownify }}
+    {{ power.effect | liquify | markdownify }}
 
     {% if power.critical-success or power.success or power.failure or power.critical-failure %}
       <dl class="tags">

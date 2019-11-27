@@ -13,6 +13,8 @@ system:
         url: /basic-rules.html
       - title: Combat Rules
         url: /combat-rules.html
+      - title: Spell Rules
+        url: /spell-rules.html
 
   - title: Character Options
     children:
@@ -35,6 +37,8 @@ system:
         url: /power-counts.html
       - title: Conditions
         url: /conditions.html
+      - title: Traits
+        url: /traits.html
 
 equipment:
   - title: Weapons

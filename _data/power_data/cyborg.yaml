@@ -1,3 +1,9 @@
+Bone Augmentation:
+  tier: Novice
+  type: Passive
+  effect:
+    By heavily reinforcing the structure of your bones, you become more resistant to damage. You gain a bonus to your maximum HP equal to Prof + 2 * your Cyborg level.
+
 Cyberblade Stance:
   tier: Novice
   type: 1-Action
@@ -6,6 +12,22 @@ Cyberblade Stance:
     You extend metal blades from your arms and can make cyberblade attacks. These deal 1d8 slashing damage, and have the agile, finesse, and unarmed traits. On a critical success with your cyberblade, if you deal damage, the target takes 1d4 persistent bleed damage.
 
     As long as your Speed is at least 20 feet while in Cyberblade Stance, you can Step 10 feet.
+
+Cybereyes:
+  tier: Novice
+  type: Passive
+  effect: |
+    You replace your eyes with enhanced cybernetic equivalents. You have darkvision out to 60 feet, and you are immune to the dazzled and blinded conditions.
+
+    In addition, you can see into the infrared spectrum, allowed you to see the heat given off by objects. You can tell an object's approximate temperature just by looking at it. You can see warm objects, such as creatures or large machines, even if the object is invisible or there isn't any light.
+
+Skimmer Discs:
+  tier: Novice
+  type: Passive
+  effect: |
+    You gain a fly speed equal to your land speed plus 10 feet. You can only fly up to 10 feet above a solid surface that can support your weight; if you go above this limit you fall at the end of your movement.
+
+    As an {% icon Free %} {% trait Encounter %} power, you can increase this speed by 30 feet for 1 round.
 
 Cyberblade Slash:
   tier: Veteran
@@ -16,11 +38,35 @@ Cyberblade Slash:
   effect:
     You make a fierce swipe with both hands. Make a cyberblade Strike. It deals 2d8 extra damage (3d8 if you're 14th level or higher), and you can push the target 5 feet away as if you had successfully Shoved them. If the attack is a critical success and deals damage, add your Strength to the persistent bleed damage from your cyberblade.
 
+Radar:
+  tier: Veteran
+  type: Passive
+  tags:
+    prerequisites: Cybereyes
+  effect:
+    You can sense objects through low-frequency radar waves as well as through visible light. You have radar vision out to range of 120 feet. Your radar vision can detect invisible objects, doesn't require light, can see around corners, and can penetrate through up to 5 feet of solid stone or 1 foot of metal.
+
+Thrusters:
+  tier: Veteran
+  type: Free
+  traits: [Daily]
+  tags:
+    prerequisites: Skimmer Discs
+    duration: 10 minutes
+  effect:
+    You activate high-powered thrusters within your Skimmer Discs. For the duration, you can fly more than 10 feet above a solid surface.
+
 Diamond Soul:
   tier: Master
   type: Passive
   effect:
     You have fortified your body and mind against eldritch effects. You gain a +1 bonus to saving throws against magic.
+
+Orthoskin:
+  tier: Master
+  type: Passive
+  effect:
+    You replace your skin with an advanced artificial lattice that dissipates the force of incoming blows. You gain a +1 bonus to AC.
 
 Synaptic Booster:
   tier: Epic

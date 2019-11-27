@@ -1,0 +1,95 @@
+Divine Grace:
+  tier: Novice
+  type: Reaction
+  tags:
+    trigger: You attempt a save against a spell, before you roll
+  effect:
+    You call upon your diety's grace, gaining a +2 circumstance bonus to the save.
+
+Glimpse of Redemption:
+  tier: Novice
+  type: Reaction
+  tags:
+    trigger: An enemy damages your ally, and both are within 15 feet of you
+  effect: |
+    Your foe hesitates under the weight of sin as visions of redemption play in their mind's eye. The foe must choose one of the following options:
+    * The ally is unharmed by the triggering damage
+    * The triggering damage is reduced by Prof + 2 * your Crusader level. After the damaging effect is applied, the enemy becomes enfeebled 2 until the end of its next turn.
+
+Lay on Hands:
+  tier: Novice
+  type: 1-Action
+  traits: [Healing, Positive, Spell]
+  tags:
+    cost: 1 Mana
+    range: Touch
+  effect: |
+    Your hands become infused with positive energy, healing a living creature with a touch. You heal your target 6 HP, and they gain a +2 bonus to AC for 1 round. If you target an undead, they instead take 1d6 radiant damage and must attempt a Fortitude save; if they fail, they also take a -2 penalty to AC for 1 round.
+
+    If you spend a second action when using this ability, you also remove one {% trait Fear %} or {% trait Paralysis %} effect on the target, in addition to the other benefits.
+
+    Heightened (per +1 Mana)
+    : The amount of healing increases by 6, and the damage to an undead target increases by 1d6
+
+Slayer's Oath:
+  tier: Novice
+  type: Passive
+  effect: |
+    You've sworn to slay a specific type of creature or monster, such as dragons, undead, or evil humanoids. Whenever you hit your sworn foe with a weapon attack, the attack deals an extra Prof damage.
+
+    Whenever you encounter your sworn foe, you must attempt to kill it if you have a reasonable chance of success. If you fail to do so, you lose the benefit of this power until you have sufficiently atoned for your actions (as determined by the GM).
+
+Litany against Wrath:
+  tier: Veteran
+  type: 1-Action
+  traits: [Spell]
+  tags:
+    cost: 3 Mana
+    range: 30 feet
+    save: Will
+    duration: 1 round
+  effect: |
+    You rail against the sin of wrath, punishing the target for attacking good creatures. The target must attempt a Will save. A particularly wrathful creature, such as a Sith Lord or an Angry Marine, has a -10 penalty to its saving throw. The target then becomes temporarily immune to this power for 1 minute.
+
+    Heightened (per +1 Mana)
+    : The damage increases by 1d6
+  critical-success: The target is unaffected
+  success: The first time the target uses a power that deals damage to at least one creature, the target takes 3d6 radiant damage
+  failure: Each time the target uses a power that deals damage to at least one good creature, the target takes 3d6 radiant damage
+  critical-failure: As failure, and the target is enfeebled 2
+
+Persistent Smite:
+  tier: Veteran
+  type: Free
+  tags:
+    trigger: Your Strike hits a creature
+  effect:
+    You surround evil targets in a punishing halo. Your target takes persistent radiant damage equal to your Charisma modifier.
+
+Smite Evil:
+  tier: Veteran
+  type: 1-Action
+  tags:
+    duration: Until the start of your next turn
+  effect: |
+    Your weapons become powerful tools against evildoers. Select one foe you can see. Your Strikes against that foe deal an extra 2 + Prof damage.
+
+    Whenever the foe attacks one of your allies, the duration extends to the end of that foe's next turn.
+
+Aura of Protection:
+  tier: Master
+  type: Passive
+  effect:
+    You and all allies within 15 feet gain a +2 bonus to saves.
+
+Blade of Justice:
+  tier: Master
+  type: 2-Action
+  effect:
+    You call upon divine power and make a weapon or unarmed Strike against a foe you have witnessed harming an ally or innocent. The Strike deals two extra weapon damage dice, and you can convert all the physical damage from the attack into radiant damage.
+
+Celestial Form:
+  tier: Epic
+  type: Passive
+  effect:
+    You take on a celestial countenance; for example, as an angel with a halo and feathery wings. You gain a fly speed equal to your Speed. You gain darkvision and the celestial trait.

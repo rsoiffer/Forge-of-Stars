@@ -39,7 +39,7 @@ hr {
   padding-bottom: 0.5em;
 }
 .page__content p {
-  margin-bottom: .25em
+  margin-bottom: .5em
 }
 .page__content h2 {
   padding-bottom: .25em
@@ -93,6 +93,14 @@ tr:nth-child(odd) {
 dd:after {
   content: "";
   display: block;
+}
+
+ul li, ol li {
+  margin-bottom: 0
+}
+ul {
+  margin-block-start: 0;
+  margin-block-end: .5em;
 }
 
 h1, h2 + .tags {

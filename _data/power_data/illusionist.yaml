@@ -1,0 +1,141 @@
+Color Spray:
+  tier: Novice
+  type: 2-Action
+  traits: [Incapacitation, Spell, Visual]
+  tags:
+    cost: 1 Mana
+    area: 15-foot cone
+    save: Will
+    duration: 1 or more rounds
+  effect:
+    Swirling colors affect viewers based on their Will saves.
+  critical-success: The creature is unaffected
+  success: The creature is dazzeled for 1 round
+  failure: The creature is stunned 1, blinded for 1 round, and dazzled for 1 minute
+  critical-failure: The creature is stunned for 1 round and blinded for 1 minute
+
+Illusory Disguise:
+  tier: Novice
+  type: 2-Action
+  traits: [Spell, Visual]
+  tags:
+    cost: 1 Mana
+    duration: 1 hour
+  effect: |
+    You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height and weight as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, but held items are unaffected, and any worn item you remove returns to its true appearance.
+
+    Heightened (total 2 Mana)
+    : The spell also disguises your voice and scent, and it gains the {% trait Auditory %} trait
+    
+    Heightened (total 3 Mana)
+    : You can appear as any creature of the same size, even a specific individual as long as you've seen them before
+
+    Heightened (total 6 Mana)
+    : You can target up to 10 creatures within 30 feet
+
+Illusory Object:
+  tier: Novice
+  type: 2-Action
+  traits: [Visual, Spell]
+  tags:
+    cost: 1 Mana
+    range: 500 feet
+    area: 20-foot burst
+    duration: 10 minutes
+  effect: |
+    You create an illusory visual image of a stationary object. The entire image must fit within the spell's area. The object appears to animate naturally, but it doesn't make sounds or generate smells. Any creature that touches the image or uses the Seek action to examine it can attempt to disbelieve your illusion.
+
+    Heightened (total 2 Mana)
+    : Your image makes appropriate sounds, generates normal smells, and feels right to the touch. The spell gains the {% trait Auditory %} trait. The duration increases to 1 hour.
+
+    Heightened (total 5 Mana)
+    : The duration is unlimited.
+
+Invisibility:
+  tier: Novice
+  type: 2-Action
+  traits: [Spell]
+  tags:
+    cost: 2 Mana
+    range: Touch
+    duration: 10 minutes
+  effect: |
+    Cloaked in illusion, the target becomes invisible. This makes it hidden from all creatures that rely on sight. If the target uses a hostile action, the spell ends after that action is completed.
+
+    Heightened (total 4 Mana)
+    : The spell lasts 1 minute, but it doesn't end if the target uses a hostile action
+
+Phantom Pain:
+  tier: Novice
+  type: 2-Action
+  traits: [Mental, Spell]
+  tags:
+    cost: 1 Mana
+    range: 30 feet
+    save: Will
+    duration: 1 minute
+  effect:
+    Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.
+  critical-success: The target is unaffected
+  success: The target takes full initial damage but no persistent damage, and the spell ends immediately
+  failure: The target takes full initial and persistent damage, and the target is sickened 1
+  critical-failure: As failure, but the target is sickened 2
+
+Illusory Scene:
+  tier: Veteran
+  type: Passive
+  tags:
+    prerequisites: Illusory Object
+  effect:
+    Your Illusory Object power can form a scene that includes up to 10 moving creatures or objects. You can have each part of the scene follow a repeating program up to 1 minute long. A creature that interacts with one part of your image only disbelieves that portion.
+
+Phantasmal Killer:
+  tier: Veteran
+  type: 2-Action
+  traits: [Death, Emotion, Fear, Mental, Spell]
+  tags:
+    cost: 4 Mana
+    range: 120 feet
+    save: Will
+  effect: |
+    You create a phantasmal image of the most fearsome creature imaginable to the target. Only the spell's target can see the killer, though you can see the vague shape of the illusion as it races forth to attack. The effect of the killer is based on the outcome of the target's Will save.
+
+    Heightened (per +1 Mana)
+    : The damage increases by 1d6 on a success, by 2d6 on a failure, and by 3d6 on a critical failure
+  critical-success: The target is unaffected
+  success: The target takes 4d6 mental damage and is frightened 1
+  failure: The target takes 8d6 mental damage and is frightened 2
+  critical-failure: The target is so afraid it might die. It must attempt a Fortitude save (with the Incapacitation trait); if the target fails, it dies. On a successful Fortitude save, the target takes 12d6 mental damage, is fleeing until the end of its next turn, and is frightened 4.
+
+Shadow Siphon:
+  tier: Veteran
+  type: Reaction
+  traits: [Shadow, Spell]
+  tags:
+    cost: 5 Mana
+    range: 60 feet
+    trigger: A spell or magical effect within range deals damage
+  effect:
+    Exchanging material energy with shadows, you transform the triggering spell into a partially illusory version of itself. Any creatures that would be damaged by the spell instead take only half as much damage, but the spell otherwise works as normal.
+
+Project Image:
+  tier: Master
+  type: 2-Action
+  traits: [Mental, Spell]
+  tags:
+    cost: 7 Mana
+    range: 30 feet
+    duration: Sustained up to 1 minute
+  effect: |
+    You project an illusory image of yourself. You must stay within range of the image, and if at any point you can't see the image, the spell ends. Whenever you cast a spell, you can cause the spell effect to originate from either yourself or the image. Because the image is an illusion, it isn't a creature and can't benefit from spells. The image has the same AC and saves as you. If it is hit by an attack or fails a save, the spell ends.
+
+    Heightened (total 9 Mana)
+    : The maximum duration you can Sustan the spell increases to 10 minutes
+
+Weird:
+  tier: Epic
+  type: Passive
+  tags:
+    prerequisites: Phantasmal Killer
+  effect:
+    When you spend at least 8 Mana on Phantasmal Killer, the spell targets any number of creatures within range.

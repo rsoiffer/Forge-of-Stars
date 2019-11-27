@@ -9,7 +9,7 @@ Following are more advanced rules related to combat. See the {% ref All Powers %
 
 ## Multiple Attack Penalty
 
-The more attacks you make beyond your first in a single turn, the less accurate you become, represented by the multiple attack penalty (MAP). Whenever you make an attack during your turn, you take a -5 penalty to your attack roll for each <span class="trait">attack</span> power you've used so far this turn. Some weapons and abilities reduce MAPs, such as [agile](weapons.html#agile) weapons, which reduce the penalty to -4 per attack.
+The more attacks you make beyond your first in a single turn, the less accurate you become, represented by the multiple attack penalty (MAP). Whenever you make an attack during your turn, you take a -5 penalty to your attack roll for each {% trait Attack %} power you've used so far this turn. Some weapons and abilities reduce MAPs, such as [agile](weapons.html#agile) weapons, which reduce the penalty to -4 per attack.
 
 Always calculate your MAP for the weapon you're using on the attack. For example, imagine you're wielding a chain flail in one hand and a bolter pistol (which has the agile trait) in the other. The first Strike you make during your turn has no penalty, no matter what weapon you are using. The second Strike will take a -5 penalty if you use the chain flail or a -4 penalty if you use the bolter pistol. The third Strike will take a -10 penalty if you use the chain flail or a -8 penalty if you use the bolter pistol, no matter what weapon you used for your previous Strikes.
 
@@ -74,7 +74,7 @@ Some effects can give you shield HP. When you take damage, subtract the damage f
 
 The best way to recover from difficult combats is to spend some time resting. The benefits you gain from a rest depend on the length of the rest. You can perform light activity during a rest, such as standing guard, setting up camp, or eating a meal.
 
-If you take a 5-minute rest, you recover the ability to use any Encounter powers you have expended. If you take a 1-hour rest, you heal HP equal to half of your maximum HP (this effect can only occur once per day). If you take an 8-hour rest, during which you get at least 5 hours of sleep, you heal to full HP, and you recover the ability to use any Daily powers you have expended.
+If you take a 5-minute rest, you recover the ability to use any Encounter powers you have expended, and your recover all of your Mana. If you take a 1-hour rest, you heal HP equal to half of your maximum HP (this effect can only occur once per day). If you take an 8-hour rest, during which you get at least 5 hours of sleep, you heal to full HP, and you recover the ability to use any Daily powers you have expended.
 
 ## Dying
 
@@ -84,13 +84,14 @@ When you take damage that brings your HP to 0, you gain the [dying 1](conditions
 
 A death save is a Fortitude save against DC 10.
 
-<dl class="tags">
-  <dt>Critical Success</dt>
-  <dd>Your dying condition decreases by 2</dd>
-  <dt>Success</dt>
-  <dd>Your dying condition decreases by 1</dd>
-  <dt>Failure</dt>
-  <dd>Your dying condition increases by 1</dd>
-  <dt>Critical Failure</dt>
-  <dd>Your dying condition increases by 2</dd>
-</dl>
+Critical Success
+: Your dying condition decreases by 2
+
+Success
+: Your dying condition decreases by 1
+
+Failure
+: Your dying condition increases by 1
+
+Critical Failure
+: Your dying condition increases by 2

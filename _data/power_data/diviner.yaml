@@ -1,0 +1,78 @@
+Augury:
+  tier: Novice
+  type: 3-Action
+  traits: [Prediction]
+  effect: |
+    You gain a vague glimpse of the future. When you cast this spell, ask about the results of a particular course of action. The spell can predict results up to 30 minutes into the future and reveals the GM's best guess among the following outcomes:
+
+    * Weal
+      : The results will be good
+    * Woe
+      : The results will be bad
+    * Weal and Woe
+      : The results will be a mix of good and bad
+    * Nothing
+      : There won't be particularly good or bad results
+    
+    The GM secretly rolls a d4. On a 1, the result is always "nothing". If anyone casts Augury again to ask about the same topic, the GM uses the secret roll result from the first casting, though if circumstances change, it's possible to get a different result.
+
+Guidance:
+  tier: Novice
+  type: 1-Action
+  tags:
+    range: 30 feet
+    duration: Until the start of your next turn
+  effect:
+    You see briefly into the future, granting the target a +1 bonus to one skill roll they attempt before the duration ends. The target chooses which roll to use the bonus on before rolling, after which the spell ends. The target is then temporarily immune for 1 hour.
+
+True Strike:
+  tier: Novice
+  type: 1-Action
+  traits: [Fortune]
+  tags:
+    duration: Until the end of your turn
+  effect:
+    A glimpse into the future ensures your next blow strikes true. The next time you make an attack, roll the attack twice and use the better result. The attack ignores any penalties to the roll.
+
+Portent:
+  tier: Novice
+  type: Passive
+  effect: |
+    Glimpses of the future begin to press in on your awareness. When you finish an 8-hour rest, roll two d20s and record the numbers rolled. You can replace any skill roll made by you or a creature you can see with one of these foretelling rolls. You must choose to do so before the roll.
+
+    Each foretelling roll can be used only once. When you finish an 8-hour rest, you lose any unused foretelling rolls.
+
+Greater Portent:
+  tier: Master
+  type: Passive
+  tags:
+    prerequisites: Portent
+  effect:
+    The visions in your dreams intensify and paint a more accurate picture in your mind of what is to come. You roll four d20s for your Portent feature, rather than two.
+
+True Seeing:
+  tier: Master
+  type: 2-Action
+  traits: [Revelation, Spell]
+  tags:
+    duration: 10 minutes
+  effect:
+    You see things within 60 feet as they actually are. Within that range, you automatically disbelieve all illusions, see invisible creatures, and see the true forms of all polymorphed creatures.
+
+Foresight:
+  tier: Epic
+  type: 2-Action
+  traits: [Mental, Prediction, Spell]
+  tags:
+    cost: 9 Mana
+    duration: 1 hour
+  effect: |
+    You gain a sixth sense that warns you of danger that might befall you. You gain a +2 bonus to Initiative rolls and you aren't flat-footed against hidden creatures or when flanked. In addition, you gain the following power.
+
+    ### Foresight {% icon Reaction %}
+    ---
+    Trigger
+    : You defend against a hostile creature or other danger
+
+    ---
+    If the hostile creature or danger forces you to roll dice, you roll twice and uses the higher result, and this power gains the {% trait Fortune %} trait. But if the hostile creature or danger is rolling against you, that hostile creature or danger rolls twice and uses the lower result, and this power gains the {% trait Misfortune %} trait.

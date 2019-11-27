@@ -59,7 +59,7 @@ Spell Shaper:
   tier: Veteran
   type: Passive
   effect:
-    When you use a Blaster <span class="trait">attack</span> power with a range of at least 30 feet, you can decrease the range to Touch to get a +2 bonus to the attack roll.
+    When you use a Blaster {% trait Attack %} power with a range of at least 30 feet, you can decrease the range to Touch to get a +2 bonus to the attack roll.
 
 Cone of Cold:
   tier: Veteran

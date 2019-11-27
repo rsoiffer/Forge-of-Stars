@@ -97,7 +97,7 @@ You're now almost finished making your character! The only difficult thing left 
 
 ***Speed.*** Your Speed measures how many feet you can move in a single action. Your Speed is equal to 30 ft.
 
-***Mana.*** Your Mana measures how many spells you can cast before running out of energy. Your Mana is equal to Wisdom + Prof + 2 * (your total level in all magic schools).
+***Mana.*** Your Mana measures how many spells you can cast before running out of energy. Your Mana is equal to Wisdom + Prof.
 
 ***Spell DC.*** Your spell difficulty class (abbreviated as Spell DC) measures how difficult your spells are to resist. Your Spell DC is equal to 10 + Prof + one of Intelligence, Wisdom, or Charisma (whichever is highest).
 

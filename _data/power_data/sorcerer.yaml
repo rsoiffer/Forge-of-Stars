@@ -18,27 +18,12 @@ Dispel Magic:
   effect:
     You unravel the magic behind the target spell. Make a Sorcery roll against the Spell DC of the creature that cast the spell. If you succeed, the target spell immediately ends.
 
-Illusory Disguise:
-  tier: Novice
-  type: 2-Action
-  traits: [Spell, Visual]
-  tags:
-    cost: 1 Mana
-  effect: |
-    You create an illusion that causes you to appear as another creature of the same body shape, and with roughly similar height and weight as yourself. The disguise is typically good enough to hide your identity, but not to impersonate a specific individual. The spell doesn't change your voice, scent, or mannerisms. You can change the appearance of your clothing and worn items, but held items are unaffected, and any worn item you remove returns to its true appearance.
-
-    Heightened (total 2 Mana)
-    : The spell also disguises your voice and scent, and it gains the <span class="trait">auditory</span> trait
-    
-    Heightened (total 3 Mana)
-    : You can appear as any creature of the same size, even a specific individual as long as you've seen them before
-
 Metamagic:
   tier: Novice
   type: 1-Action
   traits: [Concentrate, Manipulate]
   effect: |
-    You manipulate the energy of your spell, enhancing its effect. If the next action you use it to cast a spell, you modify the spell in one of the following ways.
+    You manipulate the energy of your spell, enhancing its effect. If the next action you use is to cast a spell, you modify the spell in one of the following ways.
 
     Reach
     : Increase the spell's range by 30 feet
@@ -102,20 +87,6 @@ Resilient Sphere:
   critical-success: The target disrupts the sphere's integrity, causing it to collapse entirely
   success: The sphere functions normally but has only 10 HP instead of 40
   failure: The sphere has its normal effect
-
-Project Image:
-  tier: Master
-  type: 2-Action
-  traits: [Mental, Spell]
-  tags:
-    cost: 7 Mana
-    range: 30 feet
-    duration: Sustained up to 1 minute
-  effect: |
-    You project an illusory image of yourself. You must stay within range of the image, and if at any point you can't see the image, the spell ends. Whenever you cast a spell, you can cause the spell effect to originate from either yourself or the image. Because the image is an illusion, it isn't a creature and can't benefit from spells. The image has the same AC and saves as you. If it is hit by an attack or fails a save, the spell ends.
-
-    Heightened (total 9 Mana)
-    : The maximum duration you can Sustan the spell increases to 10 minutes
 
 Redirect Gravity:
   tier: Master
