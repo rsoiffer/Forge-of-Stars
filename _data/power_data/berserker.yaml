@@ -39,10 +39,11 @@ Rage:
   tags:
     duration:
       1 minute, until you can't sense any enemies, or until you fall unconscious
-  effect:
-    You tap into your inner fury and begin raging. You gain temporary HP equal
-    to Level + Strength. While raging, you deal 2 additional damage with melee
-    strikes, you take a -1 penalty to AC, and you can't use actions with {% trait Concentrate %} unless they also have {% trait Rage %}.
+  effect: |
+    You tap into your inner fury and begin raging. You gain temporary HP equal to Level + Strength. While raging, you gain the following benefits:
+    * You deal 2 additional damage with melee or thrown weapon Strikes. This additional damage is halved if your weapon or unarmed attack is agile.
+    * You take a -1 penalty to AC
+    * You can't use actions with {% trait Concentrate %} unless they also have {% trait Rage %}
 
 Sudden Charge:
   tier: Novice
@@ -69,6 +70,16 @@ Cleave:
   effect:
     You swing clear through one foe and into another. Make a melee Strike against the second foe.
 
+Come and Get Me:
+  tier: Veteran
+  type: 1-Action
+  traits: [Concentrate, Rage]
+  tags:
+    prerequisites: Rage
+    requirements: You are raging
+  effect:
+    You open yourself to attacks so you can respond in turn. Until your rage ends, you are flat-footed, and damage rolls against you gain a +2 bonus. If a creature hits you, that creature is flat-footed to you until the end of your next turn. If you hit it before the end of your next turn, you gain temporary HP equal to your Constitution, or double that on a critical hit, which last until the end of your rage.
+
 Furious Focus:
   tier: Veteran
   type: Passive
@@ -85,6 +96,29 @@ Giant's Stature:
     requirements: You are Medium size or smaller
   effect:
     You grow to incredible size. You become Large, increasing your reach by 5 feet and taking a -1 penalty to Agility until you stop raging. Your equipment grows with you.
+
+Awesome Blow:
+  tier: Master
+  type: 1-Action
+  traits: [Concentrate, Rage]
+  tags:
+    requirements: Your last action was a successful Strike
+  effect:
+    The weight of your swing drives your enemy back. Attempt an Athletics roll against your target's Fortitude DC.
+  critical-success: You gain the critical success effect of a Shove, then the critical success effect of a Trip against the target
+  success: You gain the success effect of a Shove, then the success effect of a Trip against the target
+  failure: You gain the success effect of a Shove against the target
+
+Vengeful Strike:
+  tier: Master
+  type: Reaction
+  traits: [Rage]
+  tags:
+    prerequisites: Come and Get Me
+    trigger: A creature within your reach succeeds or critically succeeds at an attack against you
+    requirements: You're under the effect of Come and Get Me
+  effect:
+    When struck by an enemy, you respond in turn. Make a melee Strike against the triggering creature. This Strike doesn't count toward MAP, and MAP doesn't apply to this Strike.
 
 Savage Critical:
   tier: Epic

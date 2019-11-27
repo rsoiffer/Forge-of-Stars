@@ -1,0 +1,76 @@
+Dirge of Doom:
+  tier: Novice
+  type: 1-Action
+  traits: [Composition, Emotion, Fear, Mental]
+  tags:
+    area: 30-foot emanation
+    duration: 1 round
+  effect:
+    Foes within the area are frightened 1. They can't reduce their frightened value below 1 while they remain in the area.
+
+Dispiriting Taunt:
+  tier: Novice
+  type: 1-Action
+  traits: [Auditory, Emotion, Fear, Linguistic, Mental]
+  tags:
+    range: 60 feet
+    duration: 1 round
+  effect:
+    Make an Intimidate roll against the target's Will DC.
+  critical-success: As success, and the target is stunned 1
+  success: The target has a -2 penalty to all skill rolls
+  failure: The target has a -2 penalty to attack rolls
+
+Inspire Courage:
+  tier: Novice
+  type: 1-Action
+  traits: [Composition, Emotion, Mental]
+  tags:
+    area: 60-foot emanation
+    duration: 1 round
+  effect: |
+    You inspire your allies with words or tunes of encouragement. You and all allies in the area gain one of the following benefits:
+    * +1 bonus to attack rolls, damage rolls, and saves against {% trait Fear %} effects
+    * +1 bonus to AC and saving throws, as well as resistance to physical damage equal to your Envoy level
+    * +10-foot bonus to Speed
+
+Inspire Heroics:
+  tier: Veteran
+  type: Passive
+  tags:
+    prerequisites: Inspire Courage
+  effect:
+    The bonuses granted by Inspire Courage are doubled.
+
+Unity:
+  tier: Veteran
+  type: Reaction
+  traits: [Fortune]
+  tags:
+    trigger: You and 1 or more allies within range are targeted by a spell or ability that allows a saving throw
+    range: 30 feet
+    targets: Each ally targeted by the triggering spell
+  effect:
+    You put up a united defense. Each ally can use your saving throw modifier instead of its own against the triggering spell. Each ally decides individually which modifier to use.
+
+Soothing Ballad:
+  tier: Master
+  type: 2-Action
+  traits: [Composition, Emotion, Healing, Mental]
+  tags:
+    range: 30 feet
+    targets: You and up to 9 allies
+  effect: |
+    You draw upon your muse to soothe your allies. Choose one of the following three effects:
+    * Dispel all {% trait Fear %} effects on the targets
+    * Dispel all {% trait Paralysis %} effects on the targets
+    * Restore 7d8 HP to the targets
+
+Fatal Performance:
+  tier: Epic
+  type: 1-Action
+  traits: [Composition, Death, Emotion, Encounter, Mental]
+  tags:
+    range: 30 feet
+  effect: |
+    Your performance is so perfect that the target may die of joy or sorrow. The target takes 50 damage. If this brings it to 0 HP, it dies instantly.

@@ -42,6 +42,26 @@ Portent:
 
     Each foretelling roll can be used only once. When you finish an 8-hour rest, you lose any unused foretelling rolls.
 
+Clairvoyance:
+  tier: Veteran
+  type: 2-Action
+  traits: [Scrying, Spell]
+  tags:
+    cost: 4 Mana
+    range: 500 feet
+    duration: 10 minutes
+  effect:
+    You create an invisible floating eye at a location within range (even if it's outside of your line of sight). The eye can't move, but you can see in all directions from that point as if using your normal visual senses.
+
+Read Omens:
+  tier: Veteran
+  type: 3-Action
+  traits: [Prediction, Spell]
+  tags:
+    cost: 4 Mana
+  effect:
+    You peek into the future. Choose a particular goal, event, or activity that will occur within 1 week. You learn a cryptic clue or piece of advice that could help with the chosen event, often in the form of a rhyme or omen.
+
 Greater Portent:
   tier: Master
   type: Passive

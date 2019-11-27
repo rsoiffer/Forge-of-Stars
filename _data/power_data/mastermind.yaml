@@ -1,0 +1,15 @@
+Order:
+  tier: Novice
+  type: 1-Action
+  traits: [Auditory]
+  tags:
+    range: 30 feet
+  effect:
+    You shout a brief order that spurs your ally into action. The target immediately uses a {% icon 1-Action %} power. If you use an extra action to activate this power, the target can use a {% icon 2-Action %} power instead. The target is then temporarily immune to this power for 1 minute.
+
+White Raven Tactics:
+  tier: Veteran
+  type: 1-Action
+  traits: [Auditory, Daily]
+  effect:
+    Choose an ally within 30 feet. That ally immediately takes an extra turn.
