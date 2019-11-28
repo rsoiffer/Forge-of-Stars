@@ -84,10 +84,6 @@ The three skills {% ref Fortitude %}, {% ref Reflex %}, and {% ref Will %} repre
 
 **Critical Failure:** You take double the listed damage from the effect
 
-## Inspiration
-
-The GM is encouraged to reward players for good roleplaying with a mechanic called inspiration. Whenever the GM thinks a player did something cool or immersive, the GM should give that player a point of inspiration. A player can spend a point of inspiration to reroll any skill roll that any character makes.
-
 ## Gaining Levels
 
 In Forge of Stars, characters level up whenever the GM feels that it is appropriate to do so. This should generally occur once for every 5 - 10 hours of real-life game time. To ensure balanced gameplay, all characters in the party should be the same level.

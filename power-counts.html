@@ -18,21 +18,22 @@ sidebar:
     <th>Master</th>
     <th>Epic</th>
   </tr>
+  <tr>
+    <td><b>All</b></td>
+    <td>{{ site.data.powers | size }}</td>
+    <td>{{ site.data.powers | where: "tier", "Novice" | size }}</td>
+    <td>{{ site.data.powers | where: "tier", "Veteran" | size }}</td>
+    <td>{{ site.data.powers | where: "tier", "Master" | size }}</td>
+    <td>{{ site.data.powers | where: "tier", "Epic" | size }}</td>
+  </tr>
   {% for school in site.data.schools %}
     <tr>
-      <td>
-          <a href="{{ school[0] | slugify }}.html">{{ school[0] }}</a>
-      </td>
-      {% assign count = site.data.powers | where: "school", school[0] | size %}
-      <td>{{ count }}</td>
-      {% assign count = site.data.powers | where: "school", school[0] | where: "tier", "Novice" | size %}
-      <td>{{ count }}</td>
-      {% assign count = site.data.powers | where: "school", school[0] | where: "tier", "Veteran" | size %}
-      <td>{{ count }}</td>
-      {% assign count = site.data.powers | where: "school", school[0] | where: "tier", "Master" | size %}
-      <td>{{ count }}</td>
-      {% assign count = site.data.powers | where: "school", school[0] | where: "tier", "Epic" | size %}
-      <td>{{ count }}</td>
+      <td><a href="{{ school[0] | slugify }}.html">{{ school[0] }}</a></td>
+      <td>{{ site.data.powers | where: "school", school[0] | size }}</td>
+      <td>{{ site.data.powers | where: "school", school[0] | where: "tier", "Novice" | size }}</td>
+      <td>{{ site.data.powers | where: "school", school[0] | where: "tier", "Veteran" | size }}</td>
+      <td>{{ site.data.powers | where: "school", school[0] | where: "tier", "Master" | size }}</td>
+      <td>{{ site.data.powers | where: "school", school[0] | where: "tier", "Epic" | size }}</td>
     </tr>
   {% endfor %}
 </table>

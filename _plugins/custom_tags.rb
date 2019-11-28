@@ -41,6 +41,9 @@ module CustomTags
     def render(context)
       @context = context
       @my_text = Liquid::Template.parse(@text).render(@context)
+      if !@context.registers[:site].data["traits"].key?(@my_text)
+        print("Warning: unknown trait \"#{@my_text}\"\n")
+      end
       url = relative_url("traits.html##{Jekyll::Utils.slugify(@my_text)}")
       "<a href=\"#{url}\"><span class=\"trait\">#{@my_text}</span></a>"
     end
@@ -64,7 +67,7 @@ module CustomFilters
         slug_text = Jekyll::Utils.slugify(text)
 
         search = ->(map_name) {
-          @context.registers[:site].data[map_name].any? {
+          @context.registers[:site].data[map_name].find {
             |k, v| Jekyll::Utils.slugify(k) == slug_text
           }
         }
@@ -97,4 +100,3 @@ module CustomFilters
 end
 
 Liquid::Template.register_filter(CustomFilters::ProcessFilter)
-# Liquid::Template.register_filter(CustomFilters::ProcessInlineFilter)

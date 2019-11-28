@@ -54,14 +54,6 @@ Having cover from enemy fire is extremely important in any gunfight. Whenever yo
 
 If you start combat with a creature that isn't prepared for an imminent attack, that creature is surprised. A surprised creature cannot use actions during the first round of combat. Creatures that are surprised, that can't see you, or that otherwise aren't expecting you to attack are [flat-footed](conditions.html#flat-footed) against you.
 
-## Movement Details
-
-If you’re climbing, swimming, or crawling, you move at half speed. Climbing a vertical surface or swimming in rough water usually requires an Athletics roll.
-
-Some terrain, like dense thorn bushes, uneven rocks, or slippery ice, is very difficult to move through. You move at half speed while in difficult terrain.
-
-When you fall 10 or more feet, you take 1d6 damage for each 10 feet you fall, up to a cap of 50d6 damage. The number of dice is reduced by half if you fall onto a soft surface, such as a pile of hay or a pool of water. You land prone if you take any damage from a fall.
-
 ## Health
 
 Your HP can never go above your maximum HP, and your HP can never go below 0. While your HP is exactly 0, you have the [downed](conditions.html#downed) condition.
@@ -69,12 +61,6 @@ Your HP can never go above your maximum HP, and your HP can never go below 0. Wh
 Some effects can give you temporary HP. When you take damage, subtract the damage from your temporary HP first, then subtract any remaining damage from your HP. Multiple sources of temporary HP **do not** stack, you only keep the highest.
 
 Some effects can give you shield HP. When you take damage, subtract the damage from your shield HP first, then subtract any remaining damage from your HP or temporary HP. Multiple sources of shield HP **do** stack. Some effects that give you shield HP also replace your AC with the shield's AC.
-
-## Resting
-
-The best way to recover from difficult combats is to spend some time resting. The benefits you gain from a rest depend on the length of the rest. You can perform light activity during a rest, such as standing guard, setting up camp, or eating a meal.
-
-If you take a 5-minute rest, you recover the ability to use any Encounter powers you have expended, and your recover all of your Mana. If you take a 1-hour rest, you heal HP equal to half of your maximum HP (this effect can only occur once per day). If you take an 8-hour rest, during which you get at least 5 hours of sleep, you heal to full HP, and you recover the ability to use any Daily powers you have expended.
 
 ## Dying
 

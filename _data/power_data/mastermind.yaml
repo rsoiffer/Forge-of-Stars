@@ -1,7 +1,7 @@
 Order:
   tier: Novice
   type: 1-Action
-  traits: [Auditory]
+  traits: [Auditory, Linguistic]
   tags:
     range: 30 feet
   effect:
@@ -10,6 +10,6 @@ Order:
 White Raven Tactics:
   tier: Veteran
   type: 1-Action
-  traits: [Auditory, Daily]
+  traits: [Auditory, Daily, Linguistic]
   effect:
     Choose an ally within 30 feet. That ally immediately takes an extra turn.

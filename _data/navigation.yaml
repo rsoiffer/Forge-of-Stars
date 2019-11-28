@@ -11,6 +11,8 @@ system:
     children:
       - title: Basic Rules
         url: /basic-rules.html
+      - title: Adventuring Rules
+        url: /adventuring-rules.html
       - title: Combat Rules
         url: /combat-rules.html
       - title: Spell Rules

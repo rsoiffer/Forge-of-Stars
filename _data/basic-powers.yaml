@@ -8,6 +8,23 @@ Administer First Aid:
   success: The creature loses the {dying} condition (but remains {downed})
   critical-failure: The creature's {dying} condition increases by 1
 
+Aid:
+  type: 1-Action
+  effect:
+    You try to help your ally with a task. The task but be something you could reasonably help with, must involve a skill roll, and must be completed before the start of your next turn. You must explain to the GM exactly how you're trying to help, and they determine whether you can Aid your ally. Attempt a skill roll (of a type decided by the GM) against DC 20.
+  critical-success: You grant your ally a bonus to the roll equal to your Prof
+  success: You grant your ally a +1 bonus to the roll
+  critical-failure: Your ally takes a -1 penalty to the roll
+
+Delay:
+  type: Free
+  tags:
+    trigger: Your turn begins
+  effect: |
+    You wait for the right moment to act. The rest of your turn doesn't happen yet. Instead, you're removed from the initiative order. You can return to the initative order as a {% icon Free %} power at the end of any other creature's turn. This permanently changes your initiative to the new position.
+
+    When you Delay, any persistent damage or other negative effects that normally occur during your turn occur immediately. Essentially, you can't Delay to avoid negative consequences or to extend beneficial effects that would end on your turn.
+
 Disarm:
   type: 1-Action
   traits: [Attack]
@@ -29,7 +46,7 @@ Escape:
   type: 1-Action
   traits: [Attack]
   effect:
-    You attempt to escape from being {grabbed}, {immobilized}, or {restrained}. Choose one effect imposing any of these conditions on you. Attempt a {Acrobatics}, {Athletics}, or {Brawling} roll against the DC of the effect (such as the {Athletics} DC of a creature grabbing you, or the Spell DC of a spell effect).
+    You attempt to escape from being {grabbed}, {immobilized}, or {restrained}. Choose one effect imposing any of these conditions on you. Attempt a {Acrobatics}, {Athletics}, or {Brawling} roll against the DC of the effect (such as the {Brawling} DC of a creature grabbing you, or the Spell DC of a spell effect).
   critical-success: As success, and you can then {Stride} up to 5 feet
   success: You get free and remove the {grabbed}, {immobilized}, and {restrained} conditions imposed by your chosen target
   critical-failure: You don't get free, and you can't attempt to Escape again this turn
@@ -38,7 +55,7 @@ Force Open:
   type: 1-Action
   traits: [Attack]
   effect:
-    You attempt to forcefully open a door, window, container, or heavy gate. Make an Athletics roll against the DC of the object.
+    You attempt to forcefully open a door, window, container, or heavy gate. Make an {Athletics} roll against the DC of the object.
   critical-success: You open the barrier and can avoid damaging it in the process
   success: You break the barrier open
   critical-failure: Your attempt jams the barrier shut, imposing a -2 penalty on future attempts to Force Open the barrier
@@ -67,6 +84,22 @@ Leap:
   effect:
     You take a careful, short jump. You can leap up to half your Speed horizontally, or up to a quarter of your Speed vertically. Jumping a greater distance requires using the {Acrobatics} skill.
 
+Point Out:
+  type: 1-Action
+  traits: [Auditory, Manipulate, Visual]
+  tags:
+    requirements: A creature you can see is hidden to one or more of your allies
+  effect:
+    You indicate a creature that you can see to one or more allies, gesturing in a direction and describing the distance verbally. The target is no longer hidden to your allies.
+
+Ready:
+  type: 2-Action
+  traits: [Concentrate]
+  effect: |
+    You prepare to use an action that will occur outside your turn. Choose a single {% icon 1-Action %} power you can use, and designate a trigger. If the trigger occurs before the start of your turn, you can use the chosen power as a reaction.
+
+    If you have MAP and your readied action is an {% trait Attack %}, your readied action takes the MAP you had at the end of your turn.
+
 Release:
   type: Free
   traits: [Manipulate]
@@ -75,15 +108,11 @@ Release:
 
 Seek:
   type: 1-Action
-  traits: [Concentrate]
+  traits: [Concentrate, Secret]
   effect:
-    You look for a dude (more TBD)
-
-Sense Motive:
-  type: 1-Action
-  traits: [Concentrate]
-  effect:
-    You tell whether a dude is lying (more TBD)
+    You scan an area for signs of creatures or objects. If precision is necessary, select a 15-foot burst within line of sight. The GM attemps a single secret Perception roll for you can compares the result to the Stealth DCs of any hidden creatures or objects in the area.
+  success:
+    You observe the creature or object, making it no longer hidden to you
 
 Shove:
   type: 1-Action
@@ -149,10 +178,18 @@ Take Cover:
   effect:
     If you are benefitting from [cover](combat-rules.html#taking-cover), the cover's bonus is doubled. Alternatively, if you are {prone}, you gain the benefits of standard cover against enemies at least 15 feet away from you. This lasts until you move from your current space, use an {% trait Attack %} power, become {unconscious}, or end this effect as a {% icon Free %} power.
 
+Talk:
+  type: Free
+  traits: [Auditory, Linguistic]
+  effect: |
+    You speak a single sentence or so. Since Talk is a {% icon Free %} power, you can Talk as much as you want during combat, whether on your or another creature's turn. If players try to misuse this by speaking for several minutes during a combat round, the GM should give Talk the following optional property:
+
+    Frequency
+    : Once per round
+
 Trip:
   type: 1-Action
   traits: [Attack]
-  tags:
   tags:
     requirements: You have at least one free hand, and your target is not more than one size larger than you
   effect:
