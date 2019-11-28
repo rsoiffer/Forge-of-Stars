@@ -24,3 +24,5 @@ page_gen:
 exclude:
   - .deploydest
   - deploy.rb
+
+markdown: LinkerProcessor

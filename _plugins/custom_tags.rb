@@ -45,7 +45,7 @@ module CustomTags
         print("Warning: unknown trait \"#{@my_text}\"\n")
       end
       url = relative_url("traits.html##{Jekyll::Utils.slugify(@my_text)}")
-      "<a href=\"#{url}\"><span class=\"trait\">#{@my_text}</span></a>"
+      "<span class=\"trait\"><a href=\"#{url}\">#{@my_text}</a></span>"
     end
   end
 
@@ -62,29 +62,9 @@ module CustomFilters
     def process(input)
       input = Liquid::Template.parse(input).render(@context)
 
-      input = input.gsub(/{[^{}]*}/) { |s|
-        text = s[1..-2].strip
-        slug_text = Jekyll::Utils.slugify(text)
-
-        search = ->(map_name) {
-          @context.registers[:site].data[map_name].find {
-            |k, v| Jekyll::Utils.slugify(k) == slug_text
-          }
-        }
-
-        if search["skills"]
-          "[#{text}](skills.html)"
-        elsif search["conditions"]
-          "[#{text}](conditions.html##{slug_text})"
-        elsif search["basic-powers"]
-          "[#{text}](basic-powers.html##{slug_text})"
-        else
-          print("Warning: could not resolve link to text \"#{text}\"\n")
-          "***#{text}***"
-        end
-      }
-
-      converter = @context.registers[:site].find_converter_instance(::Jekyll::Converters::Markdown)
+      # converter = @context.registers[:site].find_converter_instance(::Jekyll::Converters::Markdown)
+      # converter = Jekyll::Converters::Markdown::KramdownParser.new(@context.registers[:site].config)
+      converter = Jekyll::Converters::Markdown::LinkerProcessor.new(@context.registers[:site].config)
       input = converter.convert(input)
 
       input
@@ -97,6 +77,42 @@ module CustomFilters
     end
   end
 
+end
+
+class Jekyll::Converters::Markdown::LinkerProcessor
+  def initialize(config)
+    @converter = Jekyll::Converters::Markdown::KramdownParser.new(config)
+  end
+
+  def convert(content)
+    @converter.convert(content.gsub(/{[^{}]*}/) { |s|
+      text = s[1..-2].strip
+      slug_text = Jekyll::Utils.slugify(text)
+
+      search = ->(map_name) {
+        m = Jekyll::sites[0].data
+        for part in map_name.split("/")
+          m = m[part]
+        end
+        m.find {
+          |k, v| Jekyll::Utils.slugify(k) == slug_text
+        }
+      }
+
+      if search["skills"]
+        "[#{text}](skills.html)"
+      elsif search["conditions"]
+        "[#{text}](conditions.html##{slug_text})"
+      elsif search["basic-powers"]
+        "[#{text}](basic-powers.html##{slug_text})"
+      elsif search["weapons/traits"]
+        "[#{text}](weapons.html##{slug_text})"
+      else
+        print("Warning: could not resolve link to text \"#{text}\"\n")
+        "***#{text}***"
+      end
+    })
+  end
 end
 
 Liquid::Template.register_filter(CustomFilters::ProcessFilter)

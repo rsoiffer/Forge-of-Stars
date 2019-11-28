@@ -2,9 +2,9 @@ Attack of Opportunity:
   tier: Novice
   type: Reaction
   tags:
-    trigger: A creature within your reach uses a {% trait Manipulate %} action or a {% trait Move %} action, makes a ranged attack, or leaves a square during a {% trait Move %} action it's using
+    trigger: A creature within your reach uses a {% trait Manipulate %} power or a {% trait Move %} power, makes a ranged attack, or leaves a square during a {% trait Move %} power it's using
   effect:
-    You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger is a {% trait Manipulate %} action, your disrupt that action. This Strike doesn't count toward MAP, and MAP doesn't apply to this Strike.
+    You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger is a {% trait Manipulate %} power, your disrupt that power. This Strike doesn't count toward MAP, and MAP doesn't apply to this Strike.
 
 Deflect Bullet:
   tier: Novice
@@ -40,7 +40,7 @@ Lunge:
   tags:
     requirements: You are wielding a melee weapon
   effect:
-    Extending your body to its limits, you attack an enemy that would normally be beyond your reach. Make a Strike with a melee wapon, increasing your reach by 5 feet for that Strike. If the weapon has the disarm, shove, or trip trait, you can use the corresponding action instead of a Strike.
+    Extending your body to its limits, you attack an enemy that would normally be beyond your reach. Make a Strike with a melee wapon, increasing your reach by 5 feet for that Strike. If the weapon has the disarm, shove, or trip trait, you can use the corresponding power instead of a Strike.
 
 Bullet Snatching:
   tier: Veteran
@@ -66,7 +66,7 @@ Disarming Twist:
   tags:
     requirements: You are wielding a melee weapon
   effect:
-    After your initial attack redirects your foe's defenses, your follow-up wrests their weapon from their grasp. Make a melee Strike. In addition to its other effects, this Strike gains the success and critical succes effects of the Disarm action. The Strike also has the following failure effect.
+    After your initial attack redirects your foe's defenses, your follow-up wrests their weapon from their grasp. Make a melee Strike. In addition to its other effects, this Strike gains the success and critical succews effects of the {Disarm} power. The Strike also has the following failure effect.
   failure: The target is flat-footed until the end of your current turn
 
 Dueling Riposte:

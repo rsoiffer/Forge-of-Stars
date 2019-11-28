@@ -16,6 +16,12 @@ Aid:
   success: You grant your ally a +1 bonus to the roll
   critical-failure: Your ally takes a -1 penalty to the roll
 
+Command Minion:
+  type: 1-Action
+  traits: [Auditory, Concentrate]
+  effect:
+    You command a minion creature you control to immediately take two actions (minion creatures generally don't act unless given an explicit command).
+
 Delay:
   type: Free
   tags:
@@ -35,6 +41,14 @@ Disarm:
   critical-success: You knock the item out of the opponent's grasp. It falls to the ground in the opponent's space.
   success: You weaken your opponent's grasp on the item. Until the start of that creature's turn, attempts to Disarm the opponent of that item gain a +2 bonus, and the target takes a -2 penalty to {% trait Attack %} powers with the item or other rolls requiring a firm grasp on the item.
   critical-failure: You lose your balance and become {flat-footed} until the start of your next turn
+
+Draw Item:
+  type: Free
+  traits: [Manipulate]
+  tags:
+    trigger: Your turn begins
+  effect:
+    You draw one item that is secured in an easily accessible location, such as a weapon in its holster or a grenade in a belt pouch. Drawing items from a pack or picking them up from the ground requires the {Interact} power.
 
 Drop Prone:
   type: 1-Action
@@ -98,7 +112,7 @@ Ready:
   effect: |
     You prepare to use an action that will occur outside your turn. Choose a single {% icon 1-Action %} power you can use, and designate a trigger. If the trigger occurs before the start of your turn, you can use the chosen power as a reaction.
 
-    If you have MAP and your readied action is an {% trait Attack %}, your readied action takes the MAP you had at the end of your turn.
+    If you have MAP and your readied power is an {% trait Attack %}, your readied power takes the MAP you had at the end of your turn.
 
 Release:
   type: Free
