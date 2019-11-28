@@ -26,7 +26,7 @@ Lay on Hands:
   effect: |
     Your hands become infused with positive energy, healing a living creature with a touch. You heal your target 6 HP, and they gain a +2 bonus to AC for 1 round. If you target an undead, they instead take 1d6 radiant damage and must attempt a Fortitude save; if they fail, they also take a -2 penalty to AC for 1 round.
 
-    If you spend a second action when using this ability, you also remove one {% trait Fear %} or {% trait Paralysis %} effect on the target, in addition to the other benefits.
+    If you spend a second action when using this ability, you also remove one {% trait Fear %} or one effect causing the {paralyzed} condition on the target, in addition to the other benefits.
 
     Heightened (per +1 Mana)
     : The amount of healing increases by 6, and the damage to an undead target increases by 1d6

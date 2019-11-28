@@ -15,9 +15,7 @@ If you take a 5-minute rest, you recover the ability to use any {% trait Encount
 
 ## Inspiration
 
-The GM is encouraged to reward players for good roleplaying with a mechanic called inspiration. Whenever the GM thinks a player did something cool or immersive, the GM should give that player a point of inspiration.
-
-A player can spend a point of inspiration to reroll any skill roll that any character makes. You must use the new roll, and you can't spend inspiration to reroll the die a second time.
+The GM is encouraged to reward players for good roleplaying with a mechanic called inspiration. Whenever the GM thinks a player did something cool or immersive, the GM should give that player a point of inspiration. You can spend a point of inspiration to reroll any skill roll or damage roll that your character makes. This is a {% trait Fortune %} effect.
 
 ## NPC Attitude
 

@@ -43,7 +43,7 @@ Rage:
     You tap into your inner fury and begin raging. You gain temporary HP equal to Level + Strength. While raging, you gain the following benefits:
     * You deal 2 additional damage with melee or thrown weapon Strikes. This additional damage is halved if your weapon or unarmed attack is agile.
     * You take a -1 penalty to AC
-    * You can't use actions with {% trait Concentrate %} unless they also have {% trait Rage %}
+    * You can't use {% trait Concentrate %} powers
 
 Sudden Charge:
   tier: Novice
@@ -64,7 +64,6 @@ Swipe:
 Cleave:
   tier: Veteran
   type: Reaction
-  traits: [Rage]
   tags:
     trigger: Your melee {Strike} kills a creature or knocks it unconscious, and another foe is adjacent to that creature
   effect:
@@ -73,7 +72,6 @@ Cleave:
 Come and Get Me:
   tier: Veteran
   type: 1-Action
-  traits: [Concentrate, Rage]
   tags:
     prerequisites: Rage
     requirements: You are raging
@@ -91,16 +89,16 @@ Furious Focus:
 Giant's Stature:
   tier: Veteran
   type: 1-Action
-  traits: [Polymorph, Rage]
+  traits: [Polymorph]
   tags:
-    requirements: You are Medium size or smaller
+    prerequisites: Rage
+    requirements: You are raging, and you are Medium size or smaller
   effect:
     You grow to incredible size. You become Large, increasing your reach by 5 feet and taking a -1 penalty to Agility until you stop raging. Your equipment grows with you.
 
 Awesome Blow:
   tier: Master
   type: 1-Action
-  traits: [Concentrate, Rage]
   tags:
     requirements: Your last action was a successful {Strike}
   effect:
@@ -112,7 +110,6 @@ Awesome Blow:
 Vengeful Strike:
   tier: Master
   type: Reaction
-  traits: [Rage]
   tags:
     prerequisites: Come and Get Me
     trigger: A creature within your reach succeeds or critically succeeds at an attack against you

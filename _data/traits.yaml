@@ -1,40 +1,75 @@
-Acid: Incomplete
-Attack: Incomplete
-Auditory: Incomplete
-Cold: Incomplete
-Composition: Incomplete
-Concentrate: Incomplete
-Daily: Incomplete
-Death: Incomplete
-Detection: Incomplete
-Electricity: Incomplete
-Emotion: Incomplete
-Encounter: Incomplete
-Fear: Incomplete
-Fire: Incomplete
-Flourish: Incomplete
-Force: Incomplete
-Fortune: Incomplete
-Healing: Incomplete
-Incapacitation: Incomplete
-Linguistic: Incomplete
-Manipulate: Incomplete
-Mental: Incomplete
-Misfortune: Incomplete
-Move: Incomplete
-Open: Incomplete
-Paralysis: Incomplete
-Polymorph: Incomplete
-Positive: Incomplete
-Prediction: Incomplete
-Press: Incomplete
-Rage: Incomplete
-Revelation: Incomplete
-Scrying: Incomplete
-Secret: Incomplete
-Shadow: Incomplete
-Sonic: Incomplete
-Spell: Incomplete
-Stance: Incomplete
-Teleportation: Incomplete
-Visual: Incomplete
+Acid: Effects with this trait deal acid damage.
+
+Attack: A power with this trait is called an attack. An ability with this trait makes a special skill roll called an attack roll. For each attack you make beyond the first on your turn, you take a Multiple Attack Penalty.
+
+Auditory: Auditory effects rely on sound. An {% trait Auditory %} effect can only affect creatures that can hear it.
+
+Cold: Effects with this trait deal cold damage.
+
+Composition: Powers with this trait involve a type of performance. Depending on what kind of performance you make, the power gains the {% trait Auditory %} or {% trait Visual %} traits. You can only have one {% trait Composition %} power active at a time; if you use a new {% trait Composition %} power, the previous one ends immediately.
+
+Concentrate: A power with this trait requires a degree of mental concentration and discipline.
+
+Daily: Once you use a power with this trait, you cannot use that power again until you complete an 8-hour rest.
+
+Death: An effect with this trait kills you immediately if it reduces you to 0 HP.
+
+Detection: Effects with this trait attempt to determine the presence or location of a creature or object.
+
+Electricity: Effects with this trait deal electricity damage.
+
+Emotion: This effect alters a creature's emotions. Effects with this trait always have the {% trait Mental %} trait as well. Creatures that can't feel emotions are immune to {% trait Emotion %} effects.
+
+Encounter: Once you use a power with this trait, you cannot use that power again until you complete a 5-minute rest.
+
+Fear: This effect evokes the emotion of fear. Effects with this trait always have the {% trait Mental %} and {% trait Emotion %} traits as well.
+
+Fire: Effects with this trait deal fire damage or either conjure or manipulate fire.
+
+Flourish: Powers with this trait require too much exertion to perform a large number in a row. You can use only 1 power with the {% trait Flourish %} trait per turn.
+
+Force: Effects with this trait deal force damage or create objects made of pure magical force.
+
+Fortune: Effects with this trait beneficially alter how you roll your dice. You can never have more than one {% trait Fortune %} effect alter a single roll. If multiple {% trait Fortune %} effects would apply, you have to pick which to use. If a {% trait Fortune %} effect and a {% trait Misfortune %} effect would apply to the same roll, the two cancel each other out, and you roll normally.
+
+Healing: An effect with this trait restores a creature's body, typically by restoring HP, but sometimes by removing diseases or other debilitating effects.
+
+Incapacitation: An ability with this trait can take a character completely out of the fight or even kill them. These abilities are harder to use on more powerful characters, such as player characters and powerful NPC bosses (as determined by the GM). These characters have a +10 bonus to saves, AC, or other defenses against {% trait Incapacitation %} effects.
+
+Linguistic: An effect with this trait depends on language comprehension. A {% trait Linguistic %} effect that targets a creature works only if the target understands the language you are using.
+
+Manipulate: You must physically manipulate an item or make gestures to use a power with this trait. Creatures with a suitable appendage can't use powers with this trait.
+
+Mental: An effect with this trait can alter the target's mind. It has no effect on an object or a mindless creature.
+
+Misfortune: An effect with this trait detrimentally alters how you roll your dice. You can never have more than one {% trait Misfortune %} effect alter a single roll. If multiple {% trait Misfortune %} effects would apply, the GM decides which is worse and applies it. If a {% trait Fortune %} effect and {% trait Misfortune %} effect would apply to the same roll, the two cancel each other out, and you roll normally.
+
+Move: A power with this trait involves moving from one space to another.
+
+Open: These maneuvers work only as the first salvo on your turn. You can use an {% trait Open %} power only if you haven't used a power with the {% trait Attack %} or {% trait Open %} trait yet this turn.
+
+Polymorph: These effects transform the target into a new form. A target can't be under the effect of more than one {% trait Polymorph %} effect at a time, later {% trait Polymorph %} effects disrupt existing ones. While you are polymorphed, your gear is absorbed into you; the passive abilities of your gear still function, but you can't activate or use any items.
+
+Positive: Effects with this trait heal living creatures with positive energy, deal radiant damage to undead, or manipulate positive energy.
+
+Prediction: Effects with this trait determine what is likely to happen in the near future. They are never guaranteed to give correct results, only guesses or possible outcomes.
+
+Press: Powers with this trait allow you to follow up earlier attacks. A power with the {% trait Press %} trait can be used only if you are currently affected by MAP.
+
+Revelation: Effects with this trait see things as they truly are.
+
+Scrying: A scrying effect lets you see, hear, or otherwise get sensory information from a distance using a sensor or apparatus, rather than your own eyes and ears.
+
+Secret: The GM makes the skill roll for this ability in secret.
+
+Shadow: This magic involves shadows.
+
+Sonic: An effect with this trait functions only if it makes sound, meaning it has no effect in an area of silence or in a vacuum. A {% trait Sonic %} effect might deal sonic damage.
+
+Spell: See the [Spell Rules](spell-rules.html) page.
+
+Stance: A stance is a general combat strategy that you enter by using a power with the {% trait Stance %} trait, and that you remain in for some time. A stance lasts until you fall {unconscious}, until its requirements (if any) are violated, until the encounter ends, or until you enter a new stance, whichever comes first. You can be in a stance only during combat.
+
+Teleportation: Effects with this trait allow you to instantaneously move from one point in space to another. Teleportation does not usually trigger reactions based on movement.
+
+Visual: An effect with this trait can affect only creatures that can see it.

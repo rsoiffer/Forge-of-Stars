@@ -62,8 +62,8 @@ Soothing Ballad:
     targets: You and up to 9 allies
   effect: |
     You draw upon your muse to soothe your allies. Choose one of the following three effects:
-    * Dispel all {% trait Fear %} effects on the targets
-    * Dispel all {% trait Paralysis %} effects on the targets
+    * Disrupt all {% trait Fear %} effects on the targets
+    * Disrupt all effects causing the {paralyzed} condition on the targets
     * Restore 7d8 HP to the targets
 
 Fatal Performance:
