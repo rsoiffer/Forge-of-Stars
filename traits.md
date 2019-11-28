@@ -7,5 +7,5 @@ sidebar:
 
 {% for trait in site.data.traits %}
 ### {{ trait[0] }}
-{{ trait[1] }}
+{{ trait[1] | process }}
 {% endfor %}

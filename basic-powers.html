@@ -52,31 +52,31 @@ sidebar:
     <dl class="tags">
       {% for tag in power.tags %}
         <dt>{{ tag[0] | capitalize }}</dt>
-        <dd>{{ tag[1] }}</dd>
+        <dd>{{ tag[1] | process_inline }}</dd>
       {% endfor %}
     </dl>
     <hr>
   {% endif %}
 
-  {{ power.effect | liquify | markdownify }}
+  {{ power.effect | process }}
 
   {% if power.critical-success or power.success or power.failure or power.critical-failure %}
     <dl class="tags">
       {% if power.critical-success %}
         <dt>Critical Success</dt>
-        <dd>{{ power.critical-success }}</dd>
+        <dd>{{ power.critical-success | process_inline }}</dd>
       {% endif %}
       {% if power.success %}
         <dt>Success</dt>
-        <dd>{{ power.success }}</dd>
+        <dd>{{ power.success | process_inline }}</dd>
       {% endif %}
       {% if power.failure %}
         <dt>Failure</dt>
-        <dd>{{ power.failure }}</dd>
+        <dd>{{ power.failure | process_inline }}</dd>
       {% endif %}
       {% if power.critical-failure %}
         <dt>Critical Failure</dt>
-        <dd>{{ power.critical-failure }}</dd>
+        <dd>{{ power.critical-failure | process_inline }}</dd>
       {% endif %}
     </dl>
   {% endif %}

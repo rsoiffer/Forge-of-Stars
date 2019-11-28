@@ -5,10 +5,10 @@ Brutish Shove:
   tags:
     requirements: You are wielding a two-handed melee weapon
   effect: |
-    Throwing your weight behind your attack, you hit your opponent hard enough to make it stumble back. Make a Strike with a two-handed melee weapon. If you hit a target that is your size or smaller, that creature is flat-footed until the end of your current turn, and you can automatically apply the effects of the Shove action (including the critical success effect, if your Strike was a critical hit). If you move to follow the target, your movement doesn't trigger reactions.
+    Throwing your weight behind your attack, you hit your opponent hard enough to make it stumble back. Make a {Strike} with a two-handed melee weapon. If you hit a target that is your size or smaller, that creature is {flat-footed} until the end of your current turn, and you can automatically apply the effects of the {Shove} action (including the critical success effect, if your Strike was a critical hit). If you move to follow the target, your movement doesn't trigger reactions.
 
     This Strike has the following failure effect.
-  failure: The target becomes flat-footed until the end of your current turn
+  failure: The target becomes {flat-footed} until the end of your current turn
 
 Mountain Stance:
   tier: Novice
@@ -27,7 +27,7 @@ Power Attack:
   traits: [Flourish]
   effect:
     You unleash a particularly powerful attack that clobbers your foe but
-    leaves you a bit unsteady. Make a melee Strike (which counts as two
+    leaves you a bit unsteady. Make a melee {Strike} (which counts as two
     attacks when calculating your MAP). If this Strike hits, you deal an extra
     die of weapon damage.
 
@@ -50,25 +50,25 @@ Sudden Charge:
   type: 2-Action
   traits: [Flourish, Open]
   effect:
-    With a quick sprint, you dash up to your foe and swing. Stride twice. If
+    With a quick sprint, you dash up to your foe and swing. {Stride} twice. If
     you end your movement within reach of at least one enemy, you can make a
-    melee Strike against that enemy.
+    melee {Strike} against that enemy.
 
 Swipe:
   tier: Novice
   type: 2-Action
   traits: [Flourish]
   effect:
-    You make a wide, arcing swing. Make a single melee Strike and compare the attack roll result to the ACs of up to two foes, each of whom must be within your melee reach and adjacent to the other. Roll damage only once and apply it to each creature you hit. A Swipe counts a two attacks for MAP. If you're using a weapon with the sweep trait, its modifier applies to all your Swipe attacks.
+    You make a wide, arcing swing. Make a single melee {Strike} and compare the attack roll result to the ACs of up to two foes, each of whom must be within your melee reach and adjacent to the other. Roll damage only once and apply it to each creature you hit. A Swipe counts a two attacks for MAP. If you're using a weapon with the sweep trait, its modifier applies to all your Swipe attacks.
 
 Cleave:
   tier: Veteran
   type: Reaction
   traits: [Rage]
   tags:
-    trigger: Your melee Strike kills a creature or knocks it unconscious, and another foe is adjacent to that creature
+    trigger: Your melee {Strike} kills a creature or knocks it unconscious, and another foe is adjacent to that creature
   effect:
-    You swing clear through one foe and into another. Make a melee Strike against the second foe.
+    You swing clear through one foe and into another. Make a melee {Strike} against the second foe.
 
 Come and Get Me:
   tier: Veteran
@@ -78,7 +78,7 @@ Come and Get Me:
     prerequisites: Rage
     requirements: You are raging
   effect:
-    You open yourself to attacks so you can respond in turn. Until your rage ends, you are flat-footed, and damage rolls against you gain a +2 bonus. If a creature hits you, that creature is flat-footed to you until the end of your next turn. If you hit it before the end of your next turn, you gain temporary HP equal to your Constitution, or double that on a critical hit, which last until the end of your rage.
+    You open yourself to attacks so you can respond in turn. Until your rage ends, you are {flat-footed}, and damage rolls against you gain a +2 bonus. If a creature hits you, that creature is {flat-footed} to you until the end of your next turn. If you hit it before the end of your next turn, you gain temporary HP equal to your Constitution, or double that on a critical hit, which last until the end of your rage.
 
 Furious Focus:
   tier: Veteran
@@ -102,12 +102,12 @@ Awesome Blow:
   type: 1-Action
   traits: [Concentrate, Rage]
   tags:
-    requirements: Your last action was a successful Strike
+    requirements: Your last action was a successful {Strike}
   effect:
-    The weight of your swing drives your enemy back. Attempt an Athletics roll against your target's Fortitude DC.
-  critical-success: You gain the critical success effect of a Shove, then the critical success effect of a Trip against the target
-  success: You gain the success effect of a Shove, then the success effect of a Trip against the target
-  failure: You gain the success effect of a Shove against the target
+    The weight of your swing drives your enemy back. Attempt an {Athletics} roll against your target's {Fortitude} DC.
+  critical-success: You gain the critical success effect of a {Shove}, then the critical success effect of a {Trip} against the target
+  success: You gain the success effect of a {Shove}, then the success effect of a {Trip} against the target
+  failure: You gain the success effect of a {Shove} against the target
 
 Vengeful Strike:
   tier: Master
@@ -118,10 +118,10 @@ Vengeful Strike:
     trigger: A creature within your reach succeeds or critically succeeds at an attack against you
     requirements: You're under the effect of Come and Get Me
   effect:
-    When struck by an enemy, you respond in turn. Make a melee Strike against the triggering creature. This Strike doesn't count toward MAP, and MAP doesn't apply to this Strike.
+    When struck by an enemy, you respond in turn. Make a melee {Strike} against the triggering creature. This Strike doesn't count toward MAP, and MAP doesn't apply to this Strike.
 
 Savage Critical:
   tier: Epic
   type: Passive
   effect:
-    The wounds you inflict are greivous. When you Strike, you critically succeed if you roll a 19 on the die as long as that result is a success.
+    The wounds you inflict are greivous. When you {Strike}, you critically succeed if you roll a 19 on the die as long as that result is a success.

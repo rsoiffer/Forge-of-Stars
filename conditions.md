@@ -7,5 +7,5 @@ sidebar:
 
 {% for condition in site.data.conditions %}
 ### {{ condition[0] }}
-{{ condition[1] }}
+{{ condition[1] | process }}
 {% endfor %}

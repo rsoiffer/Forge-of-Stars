@@ -3,81 +3,142 @@ Administer First Aid:
   traits: [Manipulate]
   tags:
     requirements: You have healer's tools
-  effect: |
-    You perform first aid on an adjacent creature with the dying condition. Attempt a Medicine roll with DC 15.
-  success: The creature loses the dying condition (but remains downed)
-  critical-failure: The creature's dying condition increases by 1
+  effect:
+    You perform first aid on an adjacent creature with the {dying} condition. Attempt a {Medicine} roll with DC 15.
+  success: The creature loses the {dying} condition (but remains {downed})
+  critical-failure: The creature's {dying} condition increases by 1
+
+Disarm:
+  type: 1-Action
+  traits: [Attack]
+  tags:
+    requirements: You have at least one free hand, and your target is not more than one size larger than you
+  effect:
+    You try to knock something out of an opponent's grasp. Attempt a {Brawling} check against the opponent's {Reflex} DC.
+  critical-success: You knock the item out of the opponent's grasp. It falls to the ground in the opponent's space.
+  success: You weaken your opponent's grasp on the item. Until the start of that creature's turn, attempts to Disarm the opponent of that item gain a +2 bonus, and the target takes a -2 penalty to {% trait Attack %} powers with the item or other rolls requiring a firm grasp on the item.
+  critical-failure: You lose your balance and become {flat-footed} until the start of your next turn
 
 Drop Prone:
   type: 1-Action
   traits: [Move]
-  effect: |
-    You fall prone.
+  effect:
+    You fall {prone}.
+
+Escape:
+  type: 1-Action
+  traits: [Attack]
+  effect:
+    You attempt to escape from being {grabbed}, {immobilized}, or {restrained}. Choose one effect imposing any of these conditions on you. Attempt a {Acrobatics}, {Athletics}, or {Brawling} roll against the DC of the effect (such as the {Athletics} DC of a creature grabbing you, or the Spell DC of a spell effect).
+  critical-success: As success, and you can then {Stride} up to 5 feet
+  success: You get free and remove the {grabbed}, {immobilized}, and {restrained} conditions imposed by your chosen target
+  critical-failure: You don't get free, and you can't attempt to Escape again this turn
+
+Force Open:
+  type: 1-Action
+  traits: [Attack]
+  effect:
+    You attempt to forcefully open a door, window, container, or heavy gate. Make an Athletics roll against the DC of the object.
+  critical-success: You open the barrier and can avoid damaging it in the process
+  success: You break the barrier open
+  critical-failure: Your attempt jams the barrier shut, imposing a -2 penalty on future attempts to Force Open the barrier
+
+Grapple:
+  type: 1-Action
+  traits: [Attack]
+  tags:
+    requirements: You have at least one free hand, and your target is not more than one size larger than you
+  effect:
+    You attempt to grab an opponent with your free hand. Attempt a {Brawling} roll against their {Fortitude} DC. You can also use this power to keep your hold a creature you already grabbed.
+  critical-success: Your opponent is {restrained} until the end of your next turn, unless you move or your opponent succeeds on an {Escape}
+  success: Your opponent is {grabbed} until the end of your next turn, unless you move or your opponent succeeds on an {Escape}
+  failure: You fail to grab your opponent, and if you already had the opponent {grabbed} or {restrained} using Grapple, those conditions on that creature end
+  critical-failure: As failure, and your target can either grab you (as if it had succeeded at using the Grapple power against you) or force you to fall and land {prone}
 
 Interact:
   type: 1-Action
   traits: [Manipulate]
-  effect: |
+  effect:
     You use your hand or hands to manipulate an object or the terrain. You can grab an unattended or stored object, open a door, or produce some similar effect. You might have to attempt a skill roll to determine if your Interact action was successful.
 
 Leap:
   type: 1-Action
   traits: [Move]
-  effect: |
-    You take a careful, short jump. You can leap up to half your speed horizontally, or up to a quarter of your speed vertically. Jumping a greater distance requires using the Acrobatics skill.
+  effect:
+    You take a careful, short jump. You can leap up to half your Speed horizontally, or up to a quarter of your Speed vertically. Jumping a greater distance requires using the {Acrobatics} skill.
 
 Release:
   type: Free
   traits: [Manipulate]
-  effect: |
+  effect:
     You release something you're holding in your hand or hands. This might mean dropping an item, removing one hand from your weapon while continuing to hold it in another hand, releasing a rope suspending a chandelier, or performing a similar action.
 
 Seek:
   type: 1-Action
   traits: [Concentrate]
-  effect: |
+  effect:
     You look for a dude (more TBD)
 
 Sense Motive:
   type: 1-Action
   traits: [Concentrate]
-  effect: |
+  effect:
     You tell whether a dude is lying (more TBD)
+
+Shove:
+  type: 1-Action
+  traits: [Attack]
+  tags:
+  tags:
+    requirements: You have at least one free hand, and your target is not more than one size larger than you
+  effect:
+    You push an opponent away from you. Attempt a {Brawling} check against your opponent's {Fortitude} DC.
+  critical-success: You push your opponent up to 10 feet away from you. You can {Stride} after it, but you must move the same distance and in the same direction.
+  success: You push your opponent back 5 feet. You can {Stride} after it, but you must move the same distance and in the same direction.
+  critical-failure: You lose your balance, fall, and land {prone}
 
 Stand:
   type: 1-Action
   traits: [Move]
-  effect: |
-    You stand up from prone.
+  effect:
+    You stand up from {prone}.
 
 Step:
   type: 1-Action
   traits: [Move]
   tags:
-    requirements: Your speed is at least 10 feet
-  effect: |
-    You carefully move 5 feet. Unlike most types of movement, Step doesn't trigger reactions that are triggered by move actions or upon leaving or entering a square. You can't Step into difficult terrain.
+    requirements: Your Speed is at least 10 feet
+  effect:
+    You carefully move 5 feet. Unlike most types of movement, Step doesn't trigger reactions that are triggered by {% trait Move %} actions or upon leaving or entering a square. You can't Step into difficult terrain.
 
 Stride:
   type: 1-Action
   traits: [Move]
-  effect: |
-    You move a distance up to your speed.
+  effect:
+    You move a distance up to your Speed.
 
 Strike:
   type: 1-Action
   traits: [Attack]
-  effect: |
+  effect:
     You attack with a weapon you're wielding, targeting one creature within your reach (for a melee attack) or within range (for a ranged attack). Make an attack roll for the weapon you're using, and compare the result to your target's AC to determine the effect. See [here](basic-rules.html#attacking) for more information.
   critical-success: As success, but you deal double damage
   success: You deal damage according to the weapon you're wielding
+
+Sustain:
+  type: 1-Action
+  traits: [Concentrate]
+  tags:
+    requirements: You have at least one spell active with a sustained duration
+  effect:
+    Choose one spell with a sustained duration you have in effect. The duration of that spell continues until the end of your next turn. Some spells might have slightly different or expanded effects if you sustain them. If your Sustain power is disrupted, the spell immediately ends.
 
 Take Aim:
   type: 1-Action
   traits: [Concentrate]
   tags:
     requirements: You are wielding a ranged weapon
-  effect: |
+  effect:
     The [range penalty](combat-rules.html#range-penalty) you take for attacking targets beyond your first range increment decreases to -2 for each range increment after the first (instead of -5). This applies only to the first attack you make before the end of your turn.
 
 Take Cover:
@@ -85,5 +146,17 @@ Take Cover:
   traits: []
   tags:
     requirements: You are benefitting from cover or are prone
-  effect: |
-    If you are benefitting from [cover](combat-rules.html#taking-cover), the cover's bonus is doubled. Alternatively, if you are prone, you gain the benefits of standard cover against enemies at least 15 feet away from you. This lasts until you move from your current space, use an attack action, become [unconscious](conditions.html#unconscious), or end this effect as a free action.
+  effect:
+    If you are benefitting from [cover](combat-rules.html#taking-cover), the cover's bonus is doubled. Alternatively, if you are {prone}, you gain the benefits of standard cover against enemies at least 15 feet away from you. This lasts until you move from your current space, use an {% trait Attack %} power, become {unconscious}, or end this effect as a {% icon Free %} power.
+
+Trip:
+  type: 1-Action
+  traits: [Attack]
+  tags:
+  tags:
+    requirements: You have at least one free hand, and your target is not more than one size larger than you
+  effect:
+    You try to knock an opponent to the ground. Attempt a {Brawling} check againt the target's {Reflex} DC.
+  critical-success: The target falls and lands {prone} and takes 1d6 bludgeoning damage
+  success: The target falls and lands {prone}
+  critical-failure: You lose your balance and fall and land {prone}

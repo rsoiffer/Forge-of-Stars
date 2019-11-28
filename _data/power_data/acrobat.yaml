@@ -5,7 +5,7 @@ Crane Stance:
   tags:
     requirements: You are unarmored
   effect: |
-    You enter the stance of a crane, using flowing defensive motions. You gain a +1 bonus to AC, but the only Strikes you can make are crane wing attacks. These deal 1d6 bludgeoning damage, and have the agile, finesse, and unarmed traits.
+    You enter the stance of a crane, using flowing defensive motions. You gain a +1 bonus to AC, but the only {Strike} you can make is crane wing attacks. These deal 1d6 bludgeoning damage, and have the agile, finesse, and unarmed traits.
     
     While in Crane Stance, you gain a +5 bonus to skill rolls made to jump.
 
@@ -13,7 +13,7 @@ Fantastic Leap:
   tier: Novice
   type: 2-Action
   effect:
-    You launch yourself through the air at a foe. Make a Leap or attempt a High Jump or Long Jump. At the end of your jump, you can make a melee Strike, even if you're in mid-air. You fall to the ground after the Strike. If the distance of your fall is no more than the height of your jump, you take no damage and land upright.
+    You launch yourself through the air at a foe. Make a {Leap} or attempt a High Jump or Long Jump. At the end of your jump, you can make a melee {Strike}, even if you're in mid-air. You fall to the ground after the Strike. If the distance of your fall is no more than the height of your jump, you take no damage and land upright.
 
 Flurry of Blows:
   tier: Novice
@@ -34,7 +34,7 @@ Reactive Pursuit:
   tags:
     trigger: An adjacent foe moves away from you, and you can reach at least one space adjacent to the foe with a Stride action
   effect:
-    You keep pace with a retreating foe. You Stride, but you must end your movement adjacent to the triggering enemy. Your move does not trigger reactions from the triggering enemy.
+    You keep pace with a retreating foe. You {Stride}, but you must end your movement adjacent to the triggering enemy. Your move does not trigger reactions from the triggering enemy.
 
 Stunning Fist:
   tier: Novice
@@ -50,30 +50,30 @@ Agile Grace:
   tier: Veteran
   type: Passive
   effect:
-    Your graceful moves with agile weapons are beyond compare. Your multiple attack penalty with agile weapons becomes -3 for each {% trait Attack %} action you've used so far this turn (rather than -4).
+    Your graceful moves with agile weapons are beyond compare. Your multiple attack penalty with agile weapons becomes -3 for each {% trait Attack %} power you've used so far this turn (rather than -4).
 
 Sleeper Hold:
   tier: Veteran
   type: 1-Action
   traits: [Attack, Incapacitation]
   tags:
-    requirements: You have a creature grabbed or restrained
+    requirements: You have a creature {grabbed} or {restrained}
   effect:
-    You pinch crucial points of your target's nervous system, impeding its ability to function. Attempt to Grapple the creature, with the following success and critical success effects instead of the usual effects.
-  critical-success: The target falls unconscious for 1 minute, though it remains standing and doesn't drop what it holds
+    You pinch crucial points of your target's nervous system, impeding its ability to function. Attempt to {Grapple} the creature, with the following success and critical success effects instead of the usual effects.
+  critical-success: The target falls {unconscious} for 1 minute, though it remains standing and doesn't drop what it holds
   success: The target takes a -1 penalty to Agility until the end of its next turn
 
 Wall Run:
   tier: Veteran
   type: 1-Action
   effect:
-    You defy gravity, traversing vertical planes as easily as the ground. Stride up to your Speed. You must start your movement on a horizontal surface. During this movement, you can run up vertical surfaces, like walls, at your full Speed. If you end the Stride off the ground, you fall after taking your next action or when your turn ends, whichever comes first. If you have Water Step or a similar ability, Wall Run lets you run along flimsy vertical surfaces, as well as vertical liquids, such as a waterfall.
+    You defy gravity, traversing vertical planes as easily as the ground. {Stride} up to your Speed. You must start your movement on a horizontal surface. During this movement, you can run up vertical surfaces, like walls, at your full Speed. If you end the Stride off the ground, you fall after taking your next action or when your turn ends, whichever comes first. If you have Water Step or a similar ability, Wall Run lets you run along flimsy vertical surfaces, as well as vertical liquids, such as a waterfall.
 
 Water Step:
   tier: Veteran
   type: Passive
   effect:
-    You can Stride across liquid and surfaces that don't support your weight. This benefit only lasts during your movement. If you end your movement on a surface that can't support you, you fall in or it collapses as normal.
+    You can {Stride} across liquid and surfaces that don't support your weight. This benefit only lasts during your movement. If you end your movement on a surface that can't support you, you fall in or it collapses as normal.
 
 Winding Flow:
   tier: Veteran
@@ -81,25 +81,25 @@ Winding Flow:
   tags:
     frequency: Once per round
   effect:
-    "Any journey consists of more than simply reaching your destination. You use two of the following actions in any order: Stand, Step, and Stride. You can't use the same action twice."
+    "Any journey consists of more than simply reaching your destination. You use two of the following powers in any order: {Stand}, {Step}, and {Stride}. You can't use the same power twice."
 
 Whirlwind Strike:
   tier: Master
   type: 3-Action
   traits: [Flourish, Open]
   effect:
-    You attack all nearby adversaries. Make a melee Strike against each enemy within your melee reach. Each attack counts towards your MAP, but do not increase your penalty until you have made all your attacks.
+    You attack all nearby adversaries. Make a melee {Strike} against each enemy within your melee reach. Each attack counts towards your MAP, but do not increase your penalty until you have made all your attacks.
 
 Enduring Quickness:
   tier: Epic
   type: Passive
   effect:
-    You move as fast and as high as the wind itself. You're permanently quickened. You can use your extra action only to Stride or Leap.
+    You move as fast and as high as the wind itself. You're permanently quickened. You can use your extra action only to {Stride} or {Leap}.
 
 Swift River:
   tier: Epic
   type: Free
   tags:
-    trigger: Your turn ends and you have a penalty to your Speed or are immobilized or slowed
+    trigger: Your turn ends and you have a penalty to your Speed or are {immobilized} or {slowed}
   effect:
-    You flow like water, avoiding all restraints. End one penalty to your speed, or end one immobilized or slowed condition affecting you.
+    You flow like water, avoiding all restraints. End one penalty to your Speed, or end one {immobilized} or {slowed} condition affecting you.

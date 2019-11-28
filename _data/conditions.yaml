@@ -1,35 +1,35 @@
-Blinded: |
-  You can't see. All normal terrain is difficult terrain to you. You can't detect anything using vision. You automatically critically fail Perception checks that require you to be able to see. If vision is your only precise sense, you're flat-footed, and you take a -4 penalty to Perception rolls and attack rolls.
+Blinded:
+  You can't see. All normal terrain is difficult terrain to you. You can't detect anything using vision. You automatically critically fail {Perception} rolls that require you to be able to see. If vision is your only precise sense, you're flat-footed, and you take a -4 penalty to Perception rolls and attack rolls.
 
-Downed: |
-  You are severely injured and are barely able to move. You have the prone and slowed 2 conditions, and you cannot stand up. This condition ends if your HP goes above 0.
+Downed:
+  You are severely injured and are barely able to move. You have the {prone} and {slowed} 2 conditions, and you cannot stand up. This condition ends if your HP goes above 0.
 
-Dying [X]: |
-  You are bleeding out or otherwise at death's door. If you reach dying 4, you die. At the start of each of your turns while you have this condition, you must make a [death save](combat-rules.html#death-save). Your dying condition increases by 1 if you take damage while dying, or by 2 if you take damage from an enemy's critical hit or a critical failure on your save. This condition ends if your HP goes above 0.
+Dying:
+  You are bleeding out or otherwise at death's door. The dying condition is always associated with a value from 1 to 4. If you reach dying 4, you die. At the start of each of your turns while you have this condition, you must make a [death save](combat-rules.html#death-save). Your dying condition increases by 1 if you take damage while dying, or by 2 if you take damage from an enemy's critical hit or a critical failure on your save. This condition ends if your HP goes above 0.
 
-Flat-footed: |
+Flat-footed:
   You're distracted or otherwise unable to focus your full attention on defense. You take a -2 penalty to AC.
 
-Grabbed: |
-  You're held in place by another creature, giving you the flat-footed and immobilized conditions.
+Grabbed:
+  You're held in place by another creature, giving you the {flat-footed} and {immobilized} conditions.
 
-Immobilized: |
-  You can't use any action with the move trait. If you're immobilized by something holding you in place and an external force would move you out of your space, the force must succeed at a check against the DC of the effect holding you.
+Immobilized:
+  You can't use any action with the {% trait Move %} trait. If you're immobilized by something holding you in place and an external force would move you out of your space, the force must succeed at a check against the DC of the effect holding you.
 
-Prone: |
-  You're lying on the ground. You are flat-footed and take a -2 penalty to attack rolls. The only move actions you can use while you're prone are [Stand](basic-actions.html#stand) and [Stride](basic-actions.html#stride), and you can only move by crawling. Standing up ends the prone condition.
+Prone:
+  You're lying on the ground. You are {flat-footed} and take a -2 penalty to attack rolls. The only move actions you can use while you're prone are {Stand} and {Stride}, and you can only move by crawling. You can {Stand} up to end the prone condition.
 
-Quickened: |
+Quickened:
   You have more actions. You gain 1 additional action at the start of your turn each round.
 
-Restrained: |
-  You're tied up and can barely move, or a creature has you pinned. You have the flat-footed and immobilized conditions, and you can't use any actions with the attack or manipulate traits except to attempt to Escape or Force Open your bonds.
+Restrained:
+  You're tied up and can barely move, or a creature has you pinned. You have the {flat-footed} and {immobilized} conditions, and you can't use any actions with the {% trait Attack %} or {% trait Manipulate %} traits except to attempt to {Escape} or {Force Open} your bonds.
 
-Slowed [X]: |
-  You have fewer actions. When you regain your actions at the start of your turn, reduce the number of actions you regain by X.
+Slowed:
+  You have fewer actions. The slowed condition is always associated with a value X. When you regain your actions at the start of your turn, reduce the number of actions you regain by X.
 
-Stunned [X]: |
-  You've become senseless. You can't act while stunned. When you regain your actions at the start of your turn, reduce the number you regain by X, then reduce X by the number of actions you lost. For example, if you were stunned 4, you would lose all 3 of your actions on your turn, reducing you to stunned 1; on your next turn, you would lose 1 more action, and then be able to use your remaining 2 actions normally. Stunned doesn't stack with slowed.
+Stunned:
+  You've become senseless. You can't act while stunned. The stunned condition is always associated with a value X. When you regain your actions at the start of your turn, reduce the number you regain by X, then reduce X by the number of actions you lost. For example, if you were stunned 4, you would lose all 3 of your actions on your turn, reducing you to stunned 1; on your next turn, you would lose 1 more action, and then be able to use your remaining 2 actions normally. Stunned doesn't stack with {slowed}.
 
-Unconscious: |
-  You're sleeping, or you've been knocked out. You can't act. You take a -4 penalty to AC and Reflex saves, and you have the blinded and flat-footed conditions. You fall prone and drop items you are wielding or holding. Taking damage, being affected by a spell, or hearing a loud noise usually ends this condition.
+Unconscious:
+  You're sleeping, or you've been knocked out. You can't act. You take a -4 penalty to AC and {Reflex} saves, and you have the {blinded} and {flat-footed} conditions. You fall {prone} and drop items you are wielding or holding. Taking damage, being affected by a spell, or hearing a loud noise usually ends this condition.
