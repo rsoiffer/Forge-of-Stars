@@ -16,7 +16,7 @@ sidebar:
   <dl>
     {% assign my_powers = site.data.trait_to_basic_powers[name] %}
     {% if my_powers %}
-      <dt>Basic Powers</dt>
+      <dt>Basic Powers ({{ my_powers | size }})</dt>
       {% assign br_start = "{" %}
       {% assign br_end = "}" %}
       {% assign separator = "}, {" %}
@@ -26,7 +26,7 @@ sidebar:
 
     {% assign my_powers = site.data.trait_to_powers[name] %}
     {% if my_powers %}
-      <dt>Learned Powers</dt>
+      <dt>Learned Powers ({{ my_powers | size }})</dt>
       {% assign br_start = "{" %}
       {% assign br_end = "}" %}
       {% assign separator = "}, {" %}

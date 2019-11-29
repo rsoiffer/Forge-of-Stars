@@ -66,7 +66,7 @@ Shadow: This magic involves shadows.
 
 Sonic: An effect with this trait functions only if it makes sound, meaning it has no effect in an area of silence or in a vacuum. A {% trait Sonic %} effect might deal sonic damage.
 
-Spell: See the [Spell Rules](spell-rules.html) page.
+Spell: A power with this trait is called a **spell**. All spells implicitly have the {% trait Concentrate %} and {% trait Manipulate %} traits. Using such a power is called **casting** the spell. Casting a spell requires speaking a command phrase and making hand gestures, which usually make it obvious that you are casting a spell.
 
 Stance: A stance is a general combat strategy that you enter by using a power with the {% trait Stance %} trait, and that you remain in for some time. A stance lasts until you fall {unconscious}, until its requirements (if any) are violated, until the encounter ends, or until you enter a new stance, whichever comes first. You can be in a stance only during combat.
 

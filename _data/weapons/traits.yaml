@@ -23,7 +23,7 @@ Forceful: This weapon becomes more dangerous as you continue to attack with it. 
 
 Free-hand: This weapon doesn't take up your hand, usually because it is built into your body or your armor. A free-hand weapon can't be affected by {Disarm}. You can treat the hand covered by your free-hand weapon either as free or as wielding the weapon, whichever is more beneficial. For example, if you choose to treat the hand as free, you can wield other items, perform {% trait Manipulate %} actions, and so on, but you can't attack with the free-hand weapon while doing so.
 
-Messy: Damage the environment on a crit miss
+Messy: On a critical miss, the weapon hits a random inanimate target near the intended target. The GM chooses the new target.
 
 Parry: This weapon can be used defensively to block attacks. While wielding this weapon, you can use a {% icon 1-Action %} power to position your weapon defensively, gaining a +1 bonus to AC until the start of your next turn.
 

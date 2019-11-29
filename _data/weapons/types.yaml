@@ -77,7 +77,7 @@ Dart:
   damage_type: Chemical
   range: 30
   weight: 1
-  special: [Poison d6]
+  special: [Poison d4]
   shapes: [Holdout, Pistol, Rifle, Sniper, Wrist Mount]
 Disruptor:
   cost: 3000
@@ -171,7 +171,7 @@ Chemical:
   damage_type: Chemical
   radius: 10
   weight: 1
-  special: [Poison d8, Smoke]
+  special: [Poison d6, Smoke]
   shapes: [Grenade, Mine]
 Cluster:
   cost: 120
@@ -219,7 +219,7 @@ Nuclear:
   damage_type: Explosive
   radius: 5
   weight: 1
-  special: [AP 5, Poison d8]
+  special: [AP 5, Poison d6]
   shapes: [Grenade, Mine, Missile, Torpedo]
 Smoke:
   cost: 50
