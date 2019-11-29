@@ -1,33 +1,56 @@
-Agile: Less multiple attack penalty
+Agile: The MAP you take with this weapon on an attack roll on your turn is -4 instead of -5 for each {% trait Attack %} power you've used so far this turn.
+
 Anti-shield: Bonus damage on shields, less on people
-AP: Pierces through heavy armor
+
+AP: This weapon is especially effective at piercing heavy armor. When you use this weapon to Strike a target with an AC (Armor) score, you gain a bonus to the attack roll equal to the weapon's AP value or the enemy's Armor value, whichever is smaller.
+
 Automatic: Fires very rapidly
-Backswing: Bonus to hit after missing
-Blind: Blinds enemies on a hit
-Deadly: On a crit, add more damage
-Disarm: Can disarm without free hand
+
+Backswing: You can use the feedback from a missed attack with this weapon to lead into your next attack. After missing on a Strike with this weapon on your turn, you gain a +1 bonus to your next Strike with this weapon before the end of your turn.
+
+Blinding: This weapon blinds creatures it hits. On a hit, the target is {dazzled} until the end of your next turn. On a critical hit, the target is instead {blinded} until the end of your next turn.
+
+Deadly: On a critical hit, the weapon adds a damage die of the listed size. Add this **after** doubling the weapon's damage. This increases to two dice if the weapon is Master quality and three dice if the weapon is Epic quality.
+
+Disarming: You can use this weapon to {Disarm} even if you don't have a free hand. This uses the weapon's reach (if different from your own). If you critically fail a check to Disarm using the weapon, you can drop the weapon to take the effects of a failure instead of a critical failure.
+
 Downsized: Counts as one size class smaller
-Entangle: Restains enemies on a hit
-Fatal: Increase die size on a crit
-Finesse: Can use Agility instead of Strength
-Forceful: Bonus to damage after attacking
-Free-hand: Leaves your hand free
-Grapple: Can grapple without free hand
+Entangling: This weapon entangles and traps creatures it hits. On a hit, the target is {immobilized} until the end of your next turn. On a critical hit, the target is instead {restrained} until the end of your next turn.
+
+Finesse: You can use your Agility score instead of your Strength score on attack and damage rolls using this weapon.
+
+Forceful: This weapon becomes more dangerous as you continue to attack with it. When you Strike with this weapon, you gain a bonus to the damage roll equal to the number of times you've attacked with it so far this turn.
+
+Free-hand: This weapon doesn't take up your hand, usually because it is built into your body or your armor. A free-hand weapon can't be affected by {Disarm}. You can treat the hand covered by your free-hand weapon either as free or as wielding the weapon, whichever is more beneficial. For example, if you choose to treat the hand as free, you can wield other items, perform {% trait Manipulate %} actions, and so on, but you can't attack with the free-hand weapon while doing so.
+
 Messy: Damage the environment on a crit miss
-Parry: Can use action to increase defense
-Poison: Deal recurring damage on a hit
-Propulsive: Add half strength to damage
-Reach: Can attack faraway creatures
-Reload: Requires actions to reload after firing
-Shove: Can shove without free hand
-Silent: Makes no sound when attacking
-Small: Can be easily concealed
+
+Parry: This weapon can be used defensively to block attacks. While wielding this weapon, you can use a {% icon 1-Action %} power to position your weapon defensively, gaining a +1 bonus to AC until the start of your next turn.
+
+Poison: On a critical hit, you deal the listed die as persistent poison damage.
+
+Reach: This weapon is long, and your reach with it increases by 5 feet.
+
+Reload: After you fire this weapon, you must reload it before you can attack with it again. If the weapon has the reload 1 trait, then reloading it is a {% icon 1-Action %} power. If the weapon has the reload 2 trait, then reloading it is a {% icon 2-Action %} power.
+
+Shoving: You can use this weapon to {Shove} even if you don't have a free hand. This uses the weapon's reach (if different from your own). If you critically fail a check to Shove using the weapon, you can drop the weapon to take the effects of a failure instead of a critical failure.
+
+Silent: This weapon makes no sound when attacking, making it idea for stealth missions or assassinations.
+
+Small: This weapon is very small and can be easily concealed under clothing. You have a +4 bonus to skill rolls made to hide this weapon.
+
 Smoke: Explodes into obscuring fog
 Special Ammo: Uses individual explosives as ammo
 Stunner: Can deal nonlethal Electric damage
-Sweep: Bonus to hit after attacking other creature
-Thrown: Can throw weapon to attack
+
+Sweep: This weapon makes wide sweeping or area attacks, making it easier to attack multiple enemies. When you attack with this weapon, you gain a +1 bonus to your attack roll if you already attempted to attack a different target this turn using this weapon.
+
+Thrown: You can throw this weapon as a ranged attack, and it counts as a ranged weapon when throws. A thrown weapon adds your Strength score to damage just like a melee weapon does. This trait lists the weapon's range increment.
+
 Tracking: Can reroll the next round after a miss
-Trip: Can trip without free hand
-Unarmed: Not technically a weapon, but listed here anyways
+
+Tripping: You can use this weapon to {Trip} even if you don't have a free hand. This uses the weapon's reach (if different from your own). If you critically fail a check to Trip using the weapon, you can drop the weapon to take the effects of a failure instead of a critical failure.
+
+Unarmed: An unarmed attack uses your body rather than a manufactured weapon. An unarmed attack counts as a weapon for game mechanics. Unarmed attacks are always {free-hand}.
+
 Unwieldy: Penalty for attacking nearby

@@ -35,7 +35,7 @@ Flail:
   damage: 0
   weight: 2
   hands: 1
-  special: [Disarm, Sweep, Trip]
+  special: [Disarming, Sweep, Tripping]
 Glaive:
   category: Melee Weapons
   cost: 1
@@ -49,7 +49,7 @@ Hammer:
   damage: 4
   weight: 3
   hands: 2
-  special: [Backswing, Shove]
+  special: [Backswing, Shoving]
 Knife:
   category: Melee Weapons
   cost: .5
@@ -63,14 +63,14 @@ Rapier:
   damage: 0
   weight: .5
   hands: 1
-  special: [Deadly d8, Disarm, Finesse]
+  special: [Deadly d8, Disarming, Finesse]
 Scythe:
   category: Melee Weapons
   cost: 2
   damage: 2
   weight: 1.5
   hands: 2
-  special: [Deadly d10, Trip]
+  special: [Deadly d10, Tripping]
 Shortsword:
   category: Melee Weapons
   cost: .75
@@ -91,7 +91,7 @@ Staff:
   damage: 2
   weight: 2
   hands: 2
-  special: [Parry, Reach, Trip]
+  special: [Parry, Reach, Tripping]
 Sword:
   category: Melee Weapons
   cost: 1
@@ -105,7 +105,7 @@ Whip:
   damage: -2
   weight: .5
   hands: 1
-  special: [Disarm, Finesse, Reach, Trip]
+  special: [Disarming, Finesse, Reach, Tripping]
 
 Holdout:
   category: Light Weapons

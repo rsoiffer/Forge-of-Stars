@@ -62,18 +62,13 @@ module CustomFilters
     def process(input)
       input = Liquid::Template.parse(input).render(@context)
 
-      # converter = @context.registers[:site].find_converter_instance(::Jekyll::Converters::Markdown)
-      # converter = Jekyll::Converters::Markdown::KramdownParser.new(@context.registers[:site].config)
       converter = Jekyll::Converters::Markdown::LinkerProcessor.new(@context.registers[:site].config)
-      input = converter.convert(input)
-
-      input
+      
+      converter.convert(input)
     end
 
     def process_inline(input)
-      input = process(input)
-
-      input[3...-5]
+      process(input)[3...-5]
     end
   end
 
@@ -85,33 +80,35 @@ class Jekyll::Converters::Markdown::LinkerProcessor
   end
 
   def convert(content)
-    @converter.convert(content.gsub(/{[^{}]*}/) { |s|
+    new_content = content.gsub(/{[^{}]*}/) { |s|
       text = s[1..-2].strip
       slug_text = Jekyll::Utils.slugify(text)
 
-      search = ->(map_name) {
-        m = Jekyll::sites[0].data
-        for part in map_name.split("/")
-          m = m[part]
-        end
-        m.find {
-          |k, v| Jekyll::Utils.slugify(k) == slug_text
+      get_map = ->(map_name) {
+        map_name.split("/").reduce(Jekyll::sites[0].data) {
+          |m, part| m[part]
         }
       }
 
-      if search["skills"]
-        "[#{text}](skills.html)"
-      elsif search["conditions"]
-        "[#{text}](conditions.html##{slug_text})"
-      elsif search["basic-powers"]
-        "[#{text}](basic-powers.html##{slug_text})"
-      elsif search["weapons/traits"]
-        "[#{text}](weapons.html##{slug_text})"
-      else
+      m = {}
+      m["skills"] = "[#{text}](skills.html)"
+      m["conditions"] = "[#{text}](conditions.html##{slug_text})"
+      m["basic-powers"] = "[#{text}](basic-powers.html##{slug_text})"
+      m["weapons/traits"] = "[#{text}](weapons.html##{slug_text})"
+      for school in get_map["power_data"]
+        m["power_data/#{school[0]}"] = "[#{text}](#{school[0]}.html##{slug_text})"
+      end
+
+      m.map { |val|
+        val[1] if get_map[val[0]].find { |k, v|
+          Jekyll::Utils.slugify(k) == slug_text
+        }
+      }.compact.first || begin
         print("Warning: could not resolve link to text \"#{text}\"\n")
         "***#{text}***"
       end
-    })
+    }
+    @converter.convert(new_content)
   end
 end
 

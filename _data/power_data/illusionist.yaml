@@ -10,9 +10,9 @@ Color Spray:
   effect:
     Swirling colors affect viewers based on their Will saves.
   critical-success: The creature is unaffected
-  success: The creature is dazzeled for 1 round
-  failure: The creature is stunned 1, blinded for 1 round, and dazzled for 1 minute
-  critical-failure: The creature is stunned for 1 round and blinded for 1 minute
+  success: The creature is {dazzled} for 1 round
+  failure: The creature is {stunned} 1, {blinded} for 1 round, and {dazzled} for 1 minute
+  critical-failure: The creature is {stunned} for 1 round and {blinded} for 1 minute
 
 Illusory Disguise:
   tier: Novice

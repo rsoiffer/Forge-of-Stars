@@ -65,5 +65,17 @@ Now with {{ site.data.weapon_combinations | size }} unique weapons!
 
 {%- for trait in site.data.weapons.traits -%}
   <h3 id="{{ trait[0] | slugify }}">{{- trait[0] -}}</h3>
-  {{- trait[1] -}}
+  {{- trait[1] | process -}}
+
+  
+  {% assign name = trait[0] %}
+  {% assign my_powers = site.data.trait_to_weapons[name] %}
+  {% if my_powers %}
+    <small>
+      <dl>
+        <dt>Weapons</dt>
+        <dd>{{ site.data.trait_to_weapons[name] | map: "name" | sort | join: ", " }}</dd>
+      </dl>
+    </small>
+  {% endif %}
 {%- endfor -%}

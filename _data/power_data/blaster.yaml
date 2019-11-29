@@ -20,7 +20,7 @@ Dangerous Sorcery:
 Magic Missile:
   tier: Novice
   type: 1-Action
-  traits: [Attack, Force, Spell]
+  traits: [Force, Spell]
   tags:
     cost: 1 Mana
     range: 30 feet

@@ -24,7 +24,7 @@ Rocket:
   damage: 6
   damage_type: Physical
   weight: 6
-  special: [Shove]
+  special: [Shoving]
   shapes: [Axe, Fist, Flail, Glaive, Hammer, Scythe, Shuriken, Spear]
 Stun:
   cost: 600
@@ -195,7 +195,7 @@ Flashbang:
   cost: 50
   radius: 15
   weight: 1
-  special: [Blind]
+  special: [Blinding]
   shapes: [Grenade]
 Frag:
   cost: 100
@@ -210,7 +210,7 @@ Gravity:
   cost: 100
   radius: 10
   weight: 1
-  special: [Entangle]
+  special: [Entangling]
   shapes: [Grenade, Mine]
 Nuclear:
   cost: 200

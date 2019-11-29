@@ -13,6 +13,43 @@ module ForgeOfStars
             {name2 => power.merge({"school" => name.capitalize()})}
           end
         end.reduce({}, :merge)
+
+      site.data["trait_to_basic_powers"] = {}
+      for power in site.data["basic-powers"]
+        if power[1]["traits"]
+          for t in power[1]["traits"]
+            if !site.data["trait_to_basic_powers"].key?(t)
+              site.data["trait_to_basic_powers"][t] = []
+            end
+            site.data["trait_to_basic_powers"][t] << power[0]
+          end
+        end
+      end
+
+      site.data["trait_to_powers"] = {}
+      for school in site.data["power_data"]
+        for power in school[1]
+          if power[1]["traits"]
+            for t in power[1]["traits"]
+              if !site.data["trait_to_powers"].key?(t)
+                site.data["trait_to_powers"][t] = []
+              end
+              site.data["trait_to_powers"][t] << power[0]
+            end
+          end
+        end
+      end
+
+      site.data["trait_to_weapons"] = {}
+      for weapon in site.data["weapon_combinations"]
+        for s in weapon["special"]
+          t = s["name"]
+          if !site.data["trait_to_weapons"].key?(t)
+            site.data["trait_to_weapons"][t] = []
+          end
+          site.data["trait_to_weapons"][t] << weapon
+        end
+      end
     end
 
     private

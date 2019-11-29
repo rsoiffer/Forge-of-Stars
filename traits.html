@@ -1,0 +1,37 @@
+---
+layout: single
+title: Traits
+sidebar:
+  nav: system
+---
+
+{% for trait in site.data.traits %}
+  <h3 id={{ trait[0] | slugify }}>
+    {% trait {{ trait[0] }} %}
+  </h3>
+  {{ trait[1] | process }}
+
+  {% assign name = trait[0] %}
+
+  <dl>
+    {% assign my_powers = site.data.trait_to_basic_powers[name] %}
+    {% if my_powers %}
+      <dt>Basic Powers</dt>
+      {% assign br_start = "{" %}
+      {% assign br_end = "}" %}
+      {% assign separator = "}, {" %}
+      {% assign powers_str = my_powers | sort | join: separator | prepend: br_start | append: br_end %}
+      <dd>{{ powers_str | process_inline }}</dd>
+    {% endif %}
+
+    {% assign my_powers = site.data.trait_to_powers[name] %}
+    {% if my_powers %}
+      <dt>Learned Powers</dt>
+      {% assign br_start = "{" %}
+      {% assign br_end = "}" %}
+      {% assign separator = "}, {" %}
+      {% assign powers_str = my_powers | sort | join: separator | prepend: br_start | append: br_end %}
+      <dd>{{ powers_str | process_inline }}</dd>
+    {% endif %}
+  </dl>
+{% endfor %}
